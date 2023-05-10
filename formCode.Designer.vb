@@ -31,6 +31,7 @@ Partial Class formCode
         Me.btnHide = New System.Windows.Forms.Button()
         Me.lblChar = New System.Windows.Forms.Label()
         Me.lblSel = New System.Windows.Forms.Label()
+        Me.btnDone = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -118,11 +119,23 @@ Partial Class formCode
         Me.lblSel.TabIndex = 9
         Me.lblSel.Text = "lblSel"
         '
+        'btnDone
+        '
+        Me.btnDone.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDone.Location = New System.Drawing.Point(43, 235)
+        Me.btnDone.Name = "btnDone"
+        Me.btnDone.Size = New System.Drawing.Size(325, 42)
+        Me.btnDone.TabIndex = 10
+        Me.btnDone.Text = "Valider"
+        Me.btnDone.UseVisualStyleBackColor = True
+        Me.btnDone.Visible = False
+        '
         'formCode
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1130, 318)
+        Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.lblSel)
         Me.Controls.Add(Me.lblChar)
         Me.Controls.Add(Me.btnHide)
@@ -148,4 +161,5 @@ Partial Class formCode
     Friend WithEvents btnHide As Windows.Forms.Button
     Friend WithEvents lblChar As Windows.Forms.Label
     Friend WithEvents lblSel As Windows.Forms.Label
+    Friend WithEvents btnDone As Windows.Forms.Button
 End Class
