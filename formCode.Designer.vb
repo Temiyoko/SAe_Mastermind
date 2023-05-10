@@ -113,7 +113,7 @@ Partial Class formCode
         '
         Me.lblSel.AutoSize = True
         Me.lblSel.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSel.Location = New System.Drawing.Point(748, 259)
+        Me.lblSel.Location = New System.Drawing.Point(771, 259)
         Me.lblSel.Name = "lblSel"
         Me.lblSel.Size = New System.Drawing.Size(74, 40)
         Me.lblSel.TabIndex = 9
