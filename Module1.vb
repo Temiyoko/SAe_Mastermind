@@ -3,7 +3,7 @@
 Module Module1
 
     Sub Main()
-        Application.Run(formMenu)
+        Application.Run(FormMenu)
     End Sub
 
 End Module

@@ -72,22 +72,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="formCode.Designer.vb">
-      <DependentUpon>formCode.vb</DependentUpon>
+    <Compile Include="FormCode.Designer.vb">
+      <DependentUpon>FormCode.vb</DependentUpon>
     </Compile>
-    <Compile Include="formCode.vb">
+    <Compile Include="FormCode.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formGame.Designer.vb">
-      <DependentUpon>formGame.vb</DependentUpon>
+    <Compile Include="FormGame.Designer.vb">
+      <DependentUpon>FormGame.vb</DependentUpon>
     </Compile>
-    <Compile Include="formGame.vb">
+    <Compile Include="FormGame.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formMenu.Designer.vb">
-      <DependentUpon>formMenu.vb</DependentUpon>
+    <Compile Include="FormMenu.Designer.vb">
+      <DependentUpon>FormMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="formMenu.vb">
+    <Compile Include="FormMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -109,14 +109,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="formCode.resx">
-      <DependentUpon>formCode.vb</DependentUpon>
+    <EmbeddedResource Include="FormCode.resx">
+      <DependentUpon>FormCode.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formGame.resx">
-      <DependentUpon>formGame.vb</DependentUpon>
+    <EmbeddedResource Include="FormGame.resx">
+      <DependentUpon>FormGame.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formMenu.resx">
-      <DependentUpon>formMenu.vb</DependentUpon>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
