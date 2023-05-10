@@ -92,6 +92,7 @@ Partial Class formMenu
         '
         'btnScore
         '
+        Me.btnScore.AutoSize = True
         Me.btnScore.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnScore.Location = New System.Drawing.Point(579, 412)
         Me.btnScore.Name = "btnScore"
@@ -123,6 +124,7 @@ Partial Class formMenu
         Me.Controls.Add(Me.cboP1)
         Me.Controls.Add(Me.lblP1)
         Me.Controls.Add(Me.lblTitle)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "formMenu"
         Me.Text = "Menu"
         Me.ResumeLayout(False)

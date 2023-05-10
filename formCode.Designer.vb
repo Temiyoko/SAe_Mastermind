@@ -132,8 +132,7 @@ Partial Class formCode
         '
         'formCode
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(1130, 318)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.lblSel)
@@ -145,6 +144,7 @@ Partial Class formCode
         Me.Controls.Add(Me.tbCode2)
         Me.Controls.Add(Me.tbCode1)
         Me.Controls.Add(Me.lblTitle)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "formCode"
         Me.Text = "Code"
         Me.ResumeLayout(False)
