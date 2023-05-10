@@ -32,6 +32,7 @@ Partial Class formCode
         Me.lblChar = New System.Windows.Forms.Label()
         Me.lblSel = New System.Windows.Forms.Label()
         Me.btnDone = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -130,10 +131,21 @@ Partial Class formCode
         Me.btnDone.UseVisualStyleBackColor = True
         Me.btnDone.Visible = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Poppins", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(424, 124)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(282, 70)
+        Me.Label1.TabIndex = 11
+        Me.Label1.Text = "Mastermind"
+        '
         'formCode
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(1130, 318)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.lblSel)
         Me.Controls.Add(Me.lblChar)
@@ -162,4 +174,5 @@ Partial Class formCode
     Friend WithEvents lblChar As Windows.Forms.Label
     Friend WithEvents lblSel As Windows.Forms.Label
     Friend WithEvents btnDone As Windows.Forms.Button
+    Friend WithEvents Label1 As Windows.Forms.Label
 End Class

@@ -22,6 +22,7 @@ Partial Class formMenu
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblP1 = New System.Windows.Forms.Label()
         Me.cboP1 = New System.Windows.Forms.ComboBox()
@@ -30,6 +31,7 @@ Partial Class formMenu
         Me.btnStart = New System.Windows.Forms.Button()
         Me.btnScore = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'lblTitle
@@ -140,4 +142,5 @@ Partial Class formMenu
     Friend WithEvents btnStart As Windows.Forms.Button
     Friend WithEvents btnScore As Windows.Forms.Button
     Friend WithEvents btnQuit As Windows.Forms.Button
+    Friend WithEvents Timer1 As Windows.Forms.Timer
 End Class
