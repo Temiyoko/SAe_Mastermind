@@ -183,7 +183,7 @@ Partial Class FormGame
         Me.btnQuit.Text = "Quitter"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
-        'formGame
+        'FormGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -203,7 +203,7 @@ Partial Class FormGame
         Me.Controls.Add(Me.tbCode2)
         Me.Controls.Add(Me.tbCode1)
         Me.Controls.Add(Me.lblTitle)
-        Me.Name = "formGame"
+        Me.Name = "FormGame"
         Me.Text = "formGame"
         Me.ResumeLayout(False)
         Me.PerformLayout()

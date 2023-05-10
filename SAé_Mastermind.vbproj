@@ -90,10 +90,10 @@
     <Compile Include="FormMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormScore.Designer.vb">
-      <DependentUpon>FormScore.vb</DependentUpon>
+    <Compile Include="FormScores.Designer.vb">
+      <DependentUpon>FormScores.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormScore.vb">
+    <Compile Include="FormScores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -124,8 +124,8 @@
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormScore.resx">
-      <DependentUpon>FormScore.vb</DependentUpon>
+    <EmbeddedResource Include="FormScores.resx">
+      <DependentUpon>FormScores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

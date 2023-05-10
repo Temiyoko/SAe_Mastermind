@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormMenu
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,18 +20,16 @@ Partial Class FormMenu
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblP1 = New System.Windows.Forms.Label()
         Me.cboP1 = New System.Windows.Forms.ComboBox()
         Me.cboP2 = New System.Windows.Forms.ComboBox()
         Me.lblP2 = New System.Windows.Forms.Label()
         Me.btnStart = New System.Windows.Forms.Button()
-        Me.btnScore = New System.Windows.Forms.Button()
+        Me.btnScores = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'lblTitle
@@ -92,16 +90,16 @@ Partial Class FormMenu
         Me.btnStart.Text = "Jouer !"
         Me.btnStart.UseVisualStyleBackColor = True
         '
-        'btnScore
+        'btnScores
         '
-        Me.btnScore.AutoSize = True
-        Me.btnScore.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnScore.Location = New System.Drawing.Point(579, 412)
-        Me.btnScore.Name = "btnScore"
-        Me.btnScore.Size = New System.Drawing.Size(457, 58)
-        Me.btnScore.TabIndex = 7
-        Me.btnScore.Text = "Score"
-        Me.btnScore.UseVisualStyleBackColor = True
+        Me.btnScores.AutoSize = True
+        Me.btnScores.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnScores.Location = New System.Drawing.Point(579, 412)
+        Me.btnScores.Name = "btnScores"
+        Me.btnScores.Size = New System.Drawing.Size(457, 58)
+        Me.btnScores.TabIndex = 7
+        Me.btnScores.Text = "Scores"
+        Me.btnScores.UseVisualStyleBackColor = True
         '
         'btnQuit
         '
@@ -113,13 +111,13 @@ Partial Class FormMenu
         Me.btnQuit.Text = "Quitter"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
-        'formMenu
+        'FormMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1130, 587)
         Me.Controls.Add(Me.btnQuit)
-        Me.Controls.Add(Me.btnScore)
+        Me.Controls.Add(Me.btnScores)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.cboP2)
         Me.Controls.Add(Me.lblP2)
@@ -127,7 +125,7 @@ Partial Class FormMenu
         Me.Controls.Add(Me.lblP1)
         Me.Controls.Add(Me.lblTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Name = "formMenu"
+        Me.Name = "FormMenu"
         Me.Text = "Menu"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -140,7 +138,6 @@ Partial Class FormMenu
     Friend WithEvents cboP2 As Windows.Forms.ComboBox
     Friend WithEvents lblP2 As Windows.Forms.Label
     Friend WithEvents btnStart As Windows.Forms.Button
-    Friend WithEvents btnScore As Windows.Forms.Button
+    Friend WithEvents btnScores As Windows.Forms.Button
     Friend WithEvents btnQuit As Windows.Forms.Button
-    Friend WithEvents Timer1 As Windows.Forms.Timer
 End Class
