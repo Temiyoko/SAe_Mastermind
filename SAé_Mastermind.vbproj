@@ -103,6 +103,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="formCode.resx">
+      <DependentUpon>formCode.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formMenu.resx">
       <DependentUpon>formMenu.vb</DependentUpon>
     </EmbeddedResource>

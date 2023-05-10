@@ -1,3 +1,3 @@
-﻿Public Class Code
+﻿Public Class formCode
 
 End Class

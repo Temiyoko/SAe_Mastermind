@@ -1,3 +1,3 @@
-﻿Public Class Menu
+﻿Public Class formMenu
 
 End Class

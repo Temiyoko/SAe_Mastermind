@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Menu
+Partial Class formMenu
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -35,10 +35,10 @@ Partial Class Menu
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Poppins", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Font = New System.Drawing.Font("Poppins", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.Location = New System.Drawing.Point(425, 9)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(270, 70)
+        Me.lblTitle.Size = New System.Drawing.Size(282, 70)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Mastermind"
         '
@@ -110,7 +110,7 @@ Partial Class Menu
         Me.btnQuit.Text = "Quitter"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
-        'Menu
+        'formMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -123,7 +123,7 @@ Partial Class Menu
         Me.Controls.Add(Me.cboP1)
         Me.Controls.Add(Me.lblP1)
         Me.Controls.Add(Me.lblTitle)
-        Me.Name = "Menu"
+        Me.Name = "formMenu"
         Me.Text = "Menu"
         Me.ResumeLayout(False)
         Me.PerformLayout()
