@@ -130,10 +130,10 @@ Partial Class FormCode
         Me.btnDone.UseVisualStyleBackColor = True
         Me.btnDone.Visible = False
         '
-        'formCode
+        'FormCode
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(1130, 318)
+        Me.ClientSize = New System.Drawing.Size(1130, 495)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.lblSel)
         Me.Controls.Add(Me.lblChar)
@@ -145,7 +145,7 @@ Partial Class FormCode
         Me.Controls.Add(Me.tbCode1)
         Me.Controls.Add(Me.lblTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Name = "formCode"
+        Me.Name = "FormCode"
         Me.Text = "Code"
         Me.ResumeLayout(False)
         Me.PerformLayout()
