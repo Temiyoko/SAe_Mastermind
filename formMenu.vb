@@ -14,9 +14,6 @@ Public Class FormMenu
             lblP2.ForeColor = Color.Black
         End If
     End Sub
-    Private Sub cbo_LostFocus(sender As Object, e As EventArgs) Handles cboP1.LostFocus, cboP2.LostFocus
-
-    End Sub
 
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
         If cboP1.Text = "" Then
@@ -24,7 +21,7 @@ Public Class FormMenu
         ElseIf cboP2.Text = "" Then
             lblP2.ForeColor = Color.Red
         Else
-            FormGame.Show()
+            FormCode.Show()
             Me.Hide()
         End If
     End Sub

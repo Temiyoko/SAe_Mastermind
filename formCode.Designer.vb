@@ -133,7 +133,7 @@ Partial Class FormCode
         'FormCode
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(1130, 495)
+        Me.ClientSize = New System.Drawing.Size(1130, 337)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.lblSel)
         Me.Controls.Add(Me.lblChar)
