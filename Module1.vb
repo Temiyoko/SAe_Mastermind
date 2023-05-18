@@ -1,11 +1,14 @@
 ﻿Imports System.Windows.Forms
 
 Module Module1
-    Private playableChar() As Char = "#$£%@".ToCharArray()
+    Private playableChar() As Char
     Private code() As Char
-    Const taille As Integer = 5
 
-    Public Function getPlayableChar() As Char()
+    Public Sub SetPlayableChar(s As String)
+        playableChar = s.ToCharArray()
+    End Sub
+
+    Public Function GetPlayableChar() As Char()
         Return playableChar
     End Function
 
@@ -17,8 +20,15 @@ Module Module1
         Return label
     End Function
 
+    Public Sub SetCode(s As String)
+        code = s.ToCharArray()
+    End Sub
+
+    Public Function GetCode() As Char()
+        Return code
+    End Function
+
     Sub Main()
-        Dim code(taille) As Char
         Application.Run(FormMenu)
     End Sub
 

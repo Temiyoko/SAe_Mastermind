@@ -17,7 +17,7 @@ Public Class FormCode
     End Sub
 
     Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbCode1.KeyPress, tbCode2.KeyPress, tbCode3.KeyPress, tbCode4.KeyPress, tbCode5.KeyPress
-        If e.KeyChar <> ChrW(Keys.Back) And Not getPlayableChar().Contains(e.KeyChar) Then
+        If e.KeyChar <> ChrW(Keys.Back) And Not GetPlayableChar().Contains(e.KeyChar) Then
             e.Handled = True
         End If
     End Sub
@@ -57,5 +57,16 @@ Public Class FormCode
         Else
             btnDone.Visible = False
         End If
+    End Sub
+
+    Private Sub BtnDone_Click(sender As Object, e As EventArgs) Handles btnDone.Click
+        Dim code As String = ""
+        For Each tb As TextBox In pnlTextBox.Controls
+            code += tb.Text
+        Next
+        SetCode(code)
+
+        Me.Close()
+        FormGame.Show()
     End Sub
 End Class
