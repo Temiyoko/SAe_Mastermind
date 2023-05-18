@@ -23,13 +23,13 @@ Public Class FormCode
     End Sub
 
     Private Sub ObfuscateTextboxes()
-        For Each tb As TextBox In {tbCode1, tbCode2, tbCode3, tbCode4, tbCode5}
+        For Each tb As TextBox In pnlTextBox.Controls
             tb.PasswordChar = "*"c
         Next
     End Sub
 
     Private Sub RevealTextboxes()
-        For Each tb As TextBox In {tbCode1, tbCode2, tbCode3, tbCode4, tbCode5}
+        For Each tb As TextBox In pnlTextBox.Controls
             tb.PasswordChar = ControlChars.NullChar
         Next
     End Sub
@@ -42,5 +42,20 @@ Public Class FormCode
     Private Sub BtnHide_MouseUp(sender As Object, e As MouseEventArgs) Handles btnHide.MouseUp
         btnHide.Text = "Afficher"
         ObfuscateTextboxes()
+    End Sub
+
+    Private Sub TbCode_TextChanged(sender As Object, e As EventArgs) Handles tbCode1.TextChanged, tbCode2.TextChanged, tbCode3.TextChanged, tbCode4.TextChanged, tbCode5.TextChanged
+        Dim cpt As Integer = 0
+        For Each tb As TextBox In pnlTextBox.Controls
+            If Not tb.Text = "" Then
+                cpt += 1
+            End If
+        Next
+
+        If cpt = pnlTextBox.Controls.Count Then
+            btnDone.Visible = True
+        Else
+            btnDone.Visible = False
+        End If
     End Sub
 End Class

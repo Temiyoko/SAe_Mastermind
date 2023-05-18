@@ -33,6 +33,8 @@ Partial Class FormCode
         Me.lblSel = New System.Windows.Forms.Label()
         Me.btnDone = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
+        Me.pnlTextBox = New System.Windows.Forms.Panel()
+        Me.pnlTextBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -48,7 +50,7 @@ Partial Class FormCode
         'tbCode1
         '
         Me.tbCode1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode1.Location = New System.Drawing.Point(43, 134)
+        Me.tbCode1.Location = New System.Drawing.Point(9, 34)
         Me.tbCode1.MaxLength = 1
         Me.tbCode1.Name = "tbCode1"
         Me.tbCode1.Size = New System.Drawing.Size(147, 42)
@@ -58,7 +60,7 @@ Partial Class FormCode
         'tbCode2
         '
         Me.tbCode2.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode2.Location = New System.Drawing.Point(221, 134)
+        Me.tbCode2.Location = New System.Drawing.Point(187, 34)
         Me.tbCode2.MaxLength = 1
         Me.tbCode2.Name = "tbCode2"
         Me.tbCode2.Size = New System.Drawing.Size(147, 42)
@@ -68,7 +70,7 @@ Partial Class FormCode
         'tbCode3
         '
         Me.tbCode3.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode3.Location = New System.Drawing.Point(401, 134)
+        Me.tbCode3.Location = New System.Drawing.Point(367, 34)
         Me.tbCode3.MaxLength = 1
         Me.tbCode3.Name = "tbCode3"
         Me.tbCode3.Size = New System.Drawing.Size(147, 42)
@@ -78,7 +80,7 @@ Partial Class FormCode
         'tbCode4
         '
         Me.tbCode4.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode4.Location = New System.Drawing.Point(577, 134)
+        Me.tbCode4.Location = New System.Drawing.Point(543, 34)
         Me.tbCode4.MaxLength = 1
         Me.tbCode4.Name = "tbCode4"
         Me.tbCode4.Size = New System.Drawing.Size(147, 42)
@@ -88,7 +90,7 @@ Partial Class FormCode
         'tbCode5
         '
         Me.tbCode5.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode5.Location = New System.Drawing.Point(755, 134)
+        Me.tbCode5.Location = New System.Drawing.Point(721, 34)
         Me.tbCode5.MaxLength = 1
         Me.tbCode5.Name = "tbCode5"
         Me.tbCode5.Size = New System.Drawing.Size(147, 42)
@@ -146,24 +148,34 @@ Partial Class FormCode
         Me.btnQuit.Text = "Abandonner"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
+        'pnlTextBox
+        '
+        Me.pnlTextBox.Controls.Add(Me.tbCode5)
+        Me.pnlTextBox.Controls.Add(Me.tbCode1)
+        Me.pnlTextBox.Controls.Add(Me.tbCode2)
+        Me.pnlTextBox.Controls.Add(Me.tbCode3)
+        Me.pnlTextBox.Controls.Add(Me.tbCode4)
+        Me.pnlTextBox.Location = New System.Drawing.Point(33, 99)
+        Me.pnlTextBox.Name = "pnlTextBox"
+        Me.pnlTextBox.Size = New System.Drawing.Size(891, 100)
+        Me.pnlTextBox.TabIndex = 12
+        '
         'FormCode
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(1130, 337)
+        Me.Controls.Add(Me.pnlTextBox)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.lblSel)
         Me.Controls.Add(Me.lblChar)
         Me.Controls.Add(Me.btnHide)
-        Me.Controls.Add(Me.tbCode5)
-        Me.Controls.Add(Me.tbCode4)
-        Me.Controls.Add(Me.tbCode3)
-        Me.Controls.Add(Me.tbCode2)
-        Me.Controls.Add(Me.tbCode1)
         Me.Controls.Add(Me.lblTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FormCode"
         Me.Text = "Saisie du code"
+        Me.pnlTextBox.ResumeLayout(False)
+        Me.pnlTextBox.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -180,4 +192,5 @@ Partial Class FormCode
     Friend WithEvents lblSel As Windows.Forms.Label
     Friend WithEvents btnDone As Windows.Forms.Button
     Friend WithEvents btnQuit As Windows.Forms.Button
+    Friend WithEvents pnlTextBox As Windows.Forms.Panel
 End Class
