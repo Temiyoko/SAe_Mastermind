@@ -1,4 +1,6 @@
-﻿Public Class FormCode
+﻿Imports System.Windows.Forms
+
+Public Class FormCode
 
     Private Sub FormCode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblSel.Text = PlayableCharToString()
@@ -12,4 +14,9 @@
         End If
     End Sub
 
+    Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbCode1.KeyPress, tbCode2.KeyPress, tbCode3.KeyPress, tbCode4.KeyPress, tbCode5.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Or Not getPlayableChar().Contains(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
 End Class

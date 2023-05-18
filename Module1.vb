@@ -5,6 +5,10 @@ Module Module1
     Private code() As Char
     Const taille As Integer = 5
 
+    Public Function getPlayableChar() As Char()
+        Return playableChar
+    End Function
+
     Public Function PlayableCharToString() As String
         Dim label As String = ""
         For Each c As Char In playableChar
