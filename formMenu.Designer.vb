@@ -59,6 +59,7 @@ Partial Class FormMenu
         Me.cboP1.Location = New System.Drawing.Point(79, 231)
         Me.cboP1.Name = "cboP1"
         Me.cboP1.Size = New System.Drawing.Size(356, 48)
+        Me.cboP1.Sorted = True
         Me.cboP1.TabIndex = 3
         '
         'cboP2
