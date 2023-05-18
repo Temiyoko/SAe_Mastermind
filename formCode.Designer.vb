@@ -53,6 +53,7 @@ Partial Class FormCode
         Me.tbCode1.Name = "tbCode1"
         Me.tbCode1.Size = New System.Drawing.Size(147, 42)
         Me.tbCode1.TabIndex = 2
+        Me.tbCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode2
         '
@@ -62,6 +63,7 @@ Partial Class FormCode
         Me.tbCode2.Name = "tbCode2"
         Me.tbCode2.Size = New System.Drawing.Size(147, 42)
         Me.tbCode2.TabIndex = 3
+        Me.tbCode2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode3
         '
@@ -71,6 +73,7 @@ Partial Class FormCode
         Me.tbCode3.Name = "tbCode3"
         Me.tbCode3.Size = New System.Drawing.Size(147, 42)
         Me.tbCode3.TabIndex = 4
+        Me.tbCode3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode4
         '
@@ -80,6 +83,7 @@ Partial Class FormCode
         Me.tbCode4.Name = "tbCode4"
         Me.tbCode4.Size = New System.Drawing.Size(147, 42)
         Me.tbCode4.TabIndex = 5
+        Me.tbCode4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode5
         '
@@ -89,6 +93,7 @@ Partial Class FormCode
         Me.tbCode5.Name = "tbCode5"
         Me.tbCode5.Size = New System.Drawing.Size(147, 42)
         Me.tbCode5.TabIndex = 6
+        Me.tbCode5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnHide
         '
@@ -158,7 +163,7 @@ Partial Class FormCode
         Me.Controls.Add(Me.lblTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FormCode"
-        Me.Text = "Code"
+        Me.Text = "Saisie du code"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
