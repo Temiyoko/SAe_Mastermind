@@ -46,6 +46,7 @@ Public Class FormCode
 
     Private Sub TbCode_TextChanged(sender As Object, e As EventArgs) Handles tbCode1.TextChanged, tbCode2.TextChanged, tbCode3.TextChanged, tbCode4.TextChanged, tbCode5.TextChanged
         Dim cpt As Integer = 0
+
         For Each tb As TextBox In pnlTextBox.Controls
             If Not tb.Text = "" Then
                 cpt += 1
