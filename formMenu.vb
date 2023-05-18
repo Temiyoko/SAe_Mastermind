@@ -37,6 +37,8 @@ Public Class FormMenu
             CheckPlayer(cboP2.Text, cboP2)
             MsgBox("Vous ne pouvez pas jouer contre vous-même ...", MsgBoxStyle.Information, "Raté")
         Else
+            SetPlayableChar("#$£%@")
+
             CheckPlayer(cboP1.Text, cboP1)
             CheckPlayer(cboP1.Text, cboP2)
             CheckPlayer(cboP2.Text, cboP2)
