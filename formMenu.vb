@@ -21,6 +21,10 @@ Public Class FormMenu
         ElseIf cboP2.Text = "" Then
             lblP2.ForeColor = Color.Red
         Else
+            cboP1.Items.Add(cboP1.Text)
+            cboP1.Items.Add(cboP2.Text)
+            cboP2.Items.Add(cboP2.Text)
+            cboP2.Items.Add(cboP1.Text)
             Me.Hide()
             FormCode.Show()
         End If
