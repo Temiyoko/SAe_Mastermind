@@ -32,6 +32,7 @@ Partial Class FormCode
         Me.lblChar = New System.Windows.Forms.Label()
         Me.lblSel = New System.Windows.Forms.Label()
         Me.btnDone = New System.Windows.Forms.Button()
+        Me.btnQuit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -130,10 +131,22 @@ Partial Class FormCode
         Me.btnDone.UseVisualStyleBackColor = True
         Me.btnDone.Visible = False
         '
+        'btnQuit
+        '
+        Me.btnQuit.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnQuit.Location = New System.Drawing.Point(43, 283)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(325, 42)
+        Me.btnQuit.TabIndex = 11
+        Me.btnQuit.Text = "Abandonner"
+        Me.btnQuit.UseVisualStyleBackColor = True
+        Me.btnQuit.Visible = False
+        '
         'FormCode
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(1130, 337)
+        Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.lblSel)
         Me.Controls.Add(Me.lblChar)
@@ -162,4 +175,5 @@ Partial Class FormCode
     Friend WithEvents lblChar As Windows.Forms.Label
     Friend WithEvents lblSel As Windows.Forms.Label
     Friend WithEvents btnDone As Windows.Forms.Button
+    Friend WithEvents btnQuit As Windows.Forms.Button
 End Class
