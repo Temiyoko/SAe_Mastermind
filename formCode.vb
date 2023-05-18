@@ -5,6 +5,7 @@ Public Class FormCode
     Private Sub FormCode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblSel.Text = PlayableCharToString()
         btnHide.Text = "Afficher"
+        ObfuscateTextboxes()
     End Sub
 
     Private Sub BtnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
@@ -21,11 +22,25 @@ Public Class FormCode
         End If
     End Sub
 
-    Private Sub btnHide_Click(sender As Object, e As EventArgs) Handles btnHide.Click
-        If UCase(btnHide.Text) = UCase("Afficher") Then
-            btnHide.Text = "Cacher"
-        Else
-            btnHide.Text = "Afficher"
-        End If
+    Private Sub ObfuscateTextboxes()
+        For Each tb As TextBox In {tbCode1, tbCode2, tbCode3, tbCode4, tbCode5}
+            tb.PasswordChar = "*"c
+        Next
+    End Sub
+
+    Private Sub RevealTextboxes()
+        For Each tb As TextBox In {tbCode1, tbCode2, tbCode3, tbCode4, tbCode5}
+            tb.PasswordChar = ControlChars.NullChar
+        Next
+    End Sub
+
+    Private Sub BtnHide_MouseDown(sender As Object, e As MouseEventArgs) Handles btnHide.MouseDown
+        btnHide.Text = "Cacher"
+        RevealTextboxes()
+    End Sub
+
+    Private Sub BtnHide_MouseUp(sender As Object, e As MouseEventArgs) Handles btnHide.MouseUp
+        btnHide.Text = "Afficher"
+        ObfuscateTextboxes()
     End Sub
 End Class
