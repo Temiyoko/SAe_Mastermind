@@ -21,21 +21,27 @@ Public Class FormMenu
         End If
     End Sub
 
+    Private Sub CheckPlayer(Nom As String, Cbo As ComboBox)
+        If Not Cbo.Items.Contains(Nom) Then
+            Cbo.Items.Add(Nom)
+        End If
+    End Sub
+
     Private Sub BtnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
         If cboP1.Text = "" Then
             lblP1.ForeColor = Color.Red
         ElseIf cboP2.Text = "" Then
             lblP2.ForeColor = Color.Red
+        ElseIf cboP1.Text = cboP2.Text Then
+            CheckPlayer(cboP1.Text, cboP1)
+            CheckPlayer(cboP2.Text, cboP2)
+            MsgBox("Vous ne pouvez pas jouer contre vous-même ...", MsgBoxStyle.Information, "Raté")
         Else
-            If Not cboP1.Items.Contains(cboP1.Text) Then
-                cboP1.Items.Add(cboP1.Text)
-                cboP2.Items.Add(cboP1.Text)
-            End If
+            CheckPlayer(cboP1.Text, cboP1)
+            CheckPlayer(cboP1.Text, cboP2)
+            CheckPlayer(cboP2.Text, cboP2)
+            CheckPlayer(cboP2.Text, cboP1)
 
-            If Not cboP2.Items.Contains(cboP2.Text) Then
-                cboP1.Items.Add(cboP2.Text)
-                cboP2.Items.Add(cboP2.Text)
-            End If
             Me.Hide()
             FormCode.Show()
         End If
