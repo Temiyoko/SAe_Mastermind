@@ -140,7 +140,6 @@ Partial Class FormCode
         Me.btnQuit.TabIndex = 11
         Me.btnQuit.Text = "Abandonner"
         Me.btnQuit.UseVisualStyleBackColor = True
-        Me.btnQuit.Visible = False
         '
         'FormCode
         '
