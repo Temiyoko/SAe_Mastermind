@@ -2,6 +2,12 @@
 Imports System.Windows.Forms
 
 Public Class FormMenu
+
+    Private Sub FormMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cboP1.Items.Clear()
+        cboP2.Items.Clear()
+    End Sub
+
     Private Sub BtnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
         ' 276 est le résultat de 4 (Oui/Non) + 16 (Critical) + 256 (2e bouton par défaut)
         If MsgBox("Voulez-vous vraiment quitter ?", 276, "Attention") = vbYes Then Me.Close()
@@ -21,6 +27,10 @@ Public Class FormMenu
         ElseIf cboP2.Text = "" Then
             lblP2.ForeColor = Color.Red
         Else
+            cboP1.Items.Add(cboP1.Text)
+            cboP1.Items.Add(cboP2.Text)
+            cboP2.Items.Add(cboP1.Text)
+            cboP2.Items.Add(cboP2.Text)
             Me.Hide()
             FormCode.Show()
         End If
@@ -35,6 +45,5 @@ Public Class FormMenu
         Me.Hide()
         FormScores.Show()
     End Sub
-
 
 End Class
