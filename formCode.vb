@@ -15,8 +15,9 @@ Public Class FormCode
     End Sub
 
     Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbCode1.KeyPress, tbCode2.KeyPress, tbCode3.KeyPress, tbCode4.KeyPress, tbCode5.KeyPress
-        If e.KeyChar <> ChrW(Keys.Back) Or Not getPlayableChar().Contains(e.KeyChar) Then
+        If e.KeyChar <> ChrW(Keys.Back) And Not getPlayableChar().Contains(e.KeyChar) Then
             e.Handled = True
         End If
     End Sub
+
 End Class
