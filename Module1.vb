@@ -28,7 +28,7 @@ Module Module1
         Return code
     End Function
 
-    Public Function getCodeInd(i As Integer) As Char
+    Public Function GetCodeInd(i As Integer) As Char
         Debug.Assert(i >= 0 And i <= UBound(code))
         Return code(i)
     End Function
