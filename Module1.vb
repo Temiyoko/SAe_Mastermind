@@ -28,6 +28,11 @@ Module Module1
         Return code
     End Function
 
+    Public Function getCodeInd(i As Integer) As Char
+        Debug.Assert(i >= 0 And i <= UBound(code))
+        Return code(i)
+    End Function
+
     Sub Main()
         Application.Run(FormMenu)
     End Sub

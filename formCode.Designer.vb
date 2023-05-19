@@ -50,51 +50,51 @@ Partial Class FormCode
         'tbCode1
         '
         Me.tbCode1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode1.Location = New System.Drawing.Point(9, 34)
+        Me.tbCode1.Location = New System.Drawing.Point(188, 35)
         Me.tbCode1.MaxLength = 1
         Me.tbCode1.Name = "tbCode1"
         Me.tbCode1.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode1.TabIndex = 2
+        Me.tbCode1.TabIndex = 1
         Me.tbCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode2
         '
         Me.tbCode2.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode2.Location = New System.Drawing.Point(187, 34)
+        Me.tbCode2.Location = New System.Drawing.Point(366, 35)
         Me.tbCode2.MaxLength = 1
         Me.tbCode2.Name = "tbCode2"
         Me.tbCode2.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode2.TabIndex = 3
+        Me.tbCode2.TabIndex = 2
         Me.tbCode2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode3
         '
         Me.tbCode3.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode3.Location = New System.Drawing.Point(367, 34)
+        Me.tbCode3.Location = New System.Drawing.Point(546, 35)
         Me.tbCode3.MaxLength = 1
         Me.tbCode3.Name = "tbCode3"
         Me.tbCode3.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode3.TabIndex = 4
+        Me.tbCode3.TabIndex = 3
         Me.tbCode3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode4
         '
         Me.tbCode4.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode4.Location = New System.Drawing.Point(543, 34)
+        Me.tbCode4.Location = New System.Drawing.Point(722, 35)
         Me.tbCode4.MaxLength = 1
         Me.tbCode4.Name = "tbCode4"
         Me.tbCode4.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode4.TabIndex = 5
+        Me.tbCode4.TabIndex = 4
         Me.tbCode4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode5
         '
         Me.tbCode5.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode5.Location = New System.Drawing.Point(721, 34)
+        Me.tbCode5.Location = New System.Drawing.Point(10, 35)
         Me.tbCode5.MaxLength = 1
         Me.tbCode5.Name = "tbCode5"
         Me.tbCode5.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode5.TabIndex = 6
+        Me.tbCode5.TabIndex = 5
         Me.tbCode5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnHide
