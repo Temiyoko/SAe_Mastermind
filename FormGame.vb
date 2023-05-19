@@ -5,10 +5,10 @@ Public Class FormGame
     Private nbTries As Integer = 15
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblSel.Text = PlayableCharToString()
-        Me.Name = "Il vous reste " & nbTries & " coup(s)..."
+        Me.Text = "Il vous reste " & nbTries & " coup(s)..."
     End Sub
 
-    Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs)
+    Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbCode1.TextChanged, tbCode2.TextChanged, tbCode3.TextChanged, tbCode4.TextChanged, tbCode5.TextChanged
         If e.KeyChar <> ChrW(Keys.Back) And Not GetPlayableChar().Contains(e.KeyChar) Then
             e.Handled = True
         End If
