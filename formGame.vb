@@ -6,6 +6,7 @@ Public Class FormGame
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblSel.Text = PlayableCharToString()
         Me.Text = "Il vous reste " & nbTries & " coup(s)..."
+        tmEnd.Start()
 
     End Sub
 
@@ -88,4 +89,10 @@ Public Class FormGame
         Me.Text = "Il vous reste " & nbTries & " coup(s)..."
     End Sub
 
+    Private Sub tmEnd_Tick(sender As Object, e As EventArgs) Handles tmEnd.Tick
+        'Fin du jeu
+        pnlTextBox.Enabled = False
+        btnGuess.Enabled = False
+        btnBack.Visible = True
+    End Sub
 End Class
