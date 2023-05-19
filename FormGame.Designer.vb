@@ -1233,12 +1233,165 @@ Partial Class FormGame
         Me.tbCode4.TabIndex = 5
         Me.tbCode4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'Label47
+        '
+        Me.Label47.AutoSize = True
+        Me.Label47.Location = New System.Drawing.Point(247, 4)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(81, 31)
+        Me.Label47.TabIndex = 27
+        Me.Label47.Text = "Label47"
+        '
+        'Label48
+        '
+        Me.Label48.AutoSize = True
+        Me.Label48.Location = New System.Drawing.Point(163, 4)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(83, 31)
+        Me.Label48.TabIndex = 26
+        Me.Label48.Text = "Label48"
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Location = New System.Drawing.Point(84, 4)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(83, 31)
+        Me.Label49.TabIndex = 25
+        Me.Label49.Text = "Label49"
+        '
+        'Label50
+        '
+        Me.Label50.AutoSize = True
+        Me.Label50.Location = New System.Drawing.Point(5, 4)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(83, 31)
+        Me.Label50.TabIndex = 24
+        Me.Label50.Text = "Label50"
+        '
+        'pnlTry13
+        '
+        Me.pnlTry13.Controls.Add(Me.Label56)
+        Me.pnlTry13.Controls.Add(Me.Label57)
+        Me.pnlTry13.Controls.Add(Me.Label58)
+        Me.pnlTry13.Controls.Add(Me.Label59)
+        Me.pnlTry13.Controls.Add(Me.Label60)
+        Me.pnlTry13.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlTry13.Location = New System.Drawing.Point(0, 516)
+        Me.pnlTry13.Name = "pnlTry13"
+        Me.pnlTry13.Size = New System.Drawing.Size(414, 37)
+        Me.pnlTry13.TabIndex = 29
+        Me.pnlTry13.Visible = False
+        '
+        'Label56
+        '
+        Me.Label56.AutoSize = True
+        Me.Label56.Location = New System.Drawing.Point(332, 4)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(83, 31)
+        Me.Label56.TabIndex = 28
+        Me.Label56.Text = "Label56"
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.Location = New System.Drawing.Point(247, 4)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(81, 31)
+        Me.Label57.TabIndex = 27
+        Me.Label57.Text = "Label57"
+        '
+        'Label58
+        '
+        Me.Label58.AutoSize = True
+        Me.Label58.Location = New System.Drawing.Point(163, 4)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(83, 31)
+        Me.Label58.TabIndex = 26
+        Me.Label58.Text = "Label58"
+        '
+        'Label59
+        '
+        Me.Label59.AutoSize = True
+        Me.Label59.Location = New System.Drawing.Point(84, 4)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(83, 31)
+        Me.Label59.TabIndex = 25
+        Me.Label59.Text = "Label59"
+        '
+        'Label60
+        '
+        Me.Label60.AutoSize = True
+        Me.Label60.Location = New System.Drawing.Point(5, 4)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(83, 31)
+        Me.Label60.TabIndex = 24
+        Me.Label60.Text = "Label60"
+        '
+        'pnlTry15
+        '
+        Me.pnlTry15.Controls.Add(Me.Label66)
+        Me.pnlTry15.Controls.Add(Me.Label67)
+        Me.pnlTry15.Controls.Add(Me.Label68)
+        Me.pnlTry15.Controls.Add(Me.Label69)
+        Me.pnlTry15.Controls.Add(Me.Label70)
+        Me.pnlTry15.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlTry15.Location = New System.Drawing.Point(0, 602)
+        Me.pnlTry15.Name = "pnlTry15"
+        Me.pnlTry15.Size = New System.Drawing.Size(414, 37)
+        Me.pnlTry15.TabIndex = 29
+        Me.pnlTry15.Visible = False
+        '
+        'Label66
+        '
+        Me.Label66.AutoSize = True
+        Me.Label66.Location = New System.Drawing.Point(332, 4)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(83, 31)
+        Me.Label66.TabIndex = 28
+        Me.Label66.Text = "Label66"
+        '
+        'Label67
+        '
+        Me.Label67.AutoSize = True
+        Me.Label67.Location = New System.Drawing.Point(247, 4)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(81, 31)
+        Me.Label67.TabIndex = 27
+        Me.Label67.Text = "Label67"
+        '
+        'Label68
+        '
+        Me.Label68.AutoSize = True
+        Me.Label68.Location = New System.Drawing.Point(163, 4)
+        Me.Label68.Name = "Label68"
+        Me.Label68.Size = New System.Drawing.Size(83, 31)
+        Me.Label68.TabIndex = 26
+        Me.Label68.Text = "Label68"
+        '
+        'Label69
+        '
+        Me.Label69.AutoSize = True
+        Me.Label69.Location = New System.Drawing.Point(84, 4)
+        Me.Label69.Name = "Label69"
+        Me.Label69.Size = New System.Drawing.Size(83, 31)
+        Me.Label69.TabIndex = 25
+        Me.Label69.Text = "Label69"
+        '
+        'Label70
+        '
+        Me.Label70.AutoSize = True
+        Me.Label70.Location = New System.Drawing.Point(5, 4)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(81, 31)
+        Me.Label70.TabIndex = 24
+        Me.Label70.Text = "Label70"
+        '
         'FormGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1130, 908)
-        Me.Controls.Add(Me.pnlTextBox)
         Me.Controls.Add(Me.lblRight)
         Me.Controls.Add(Me.lblWrong)
         Me.Controls.Add(Me.btnBack)
@@ -1392,10 +1545,4 @@ Partial Class FormGame
     Friend WithEvents Label68 As Windows.Forms.Label
     Friend WithEvents Label69 As Windows.Forms.Label
     Friend WithEvents Label70 As Windows.Forms.Label
-    Friend WithEvents pnlTextBox As Windows.Forms.Panel
-    Friend WithEvents tbCode5 As Windows.Forms.TextBox
-    Friend WithEvents tbCode1 As Windows.Forms.TextBox
-    Friend WithEvents tbCode2 As Windows.Forms.TextBox
-    Friend WithEvents tbCode3 As Windows.Forms.TextBox
-    Friend WithEvents tbCode4 As Windows.Forms.TextBox
 End Class
