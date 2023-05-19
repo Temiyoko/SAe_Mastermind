@@ -124,6 +124,12 @@ Partial Class FormGame
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.pnlTextBox = New System.Windows.Forms.Panel()
+        Me.tbCode5 = New System.Windows.Forms.TextBox()
+        Me.tbCode1 = New System.Windows.Forms.TextBox()
+        Me.tbCode2 = New System.Windows.Forms.TextBox()
+        Me.tbCode3 = New System.Windows.Forms.TextBox()
+        Me.tbCode4 = New System.Windows.Forms.TextBox()
         Me.pnlTry1.SuspendLayout()
         Me.pnlTries.SuspendLayout()
         Me.pnlTry11.SuspendLayout()
@@ -140,6 +146,7 @@ Partial Class FormGame
         Me.pnlTry4.SuspendLayout()
         Me.pnlTry3.SuspendLayout()
         Me.pnlTry2.SuspendLayout()
+        Me.pnlTextBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnGuess
@@ -1165,11 +1172,74 @@ Partial Class FormGame
         Me.Label5.TabIndex = 24
         Me.Label5.Text = "Label5"
         '
+        'pnlTextBox
+        '
+        Me.pnlTextBox.Controls.Add(Me.tbCode5)
+        Me.pnlTextBox.Controls.Add(Me.tbCode1)
+        Me.pnlTextBox.Controls.Add(Me.tbCode2)
+        Me.pnlTextBox.Controls.Add(Me.tbCode3)
+        Me.pnlTextBox.Controls.Add(Me.tbCode4)
+        Me.pnlTextBox.Location = New System.Drawing.Point(33, 99)
+        Me.pnlTextBox.Name = "pnlTextBox"
+        Me.pnlTextBox.Size = New System.Drawing.Size(891, 100)
+        Me.pnlTextBox.TabIndex = 26
+        '
+        'tbCode5
+        '
+        Me.tbCode5.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbCode5.Location = New System.Drawing.Point(721, 34)
+        Me.tbCode5.MaxLength = 1
+        Me.tbCode5.Name = "tbCode5"
+        Me.tbCode5.Size = New System.Drawing.Size(147, 42)
+        Me.tbCode5.TabIndex = 6
+        Me.tbCode5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbCode1
+        '
+        Me.tbCode1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbCode1.Location = New System.Drawing.Point(9, 34)
+        Me.tbCode1.MaxLength = 1
+        Me.tbCode1.Name = "tbCode1"
+        Me.tbCode1.Size = New System.Drawing.Size(147, 42)
+        Me.tbCode1.TabIndex = 2
+        Me.tbCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbCode2
+        '
+        Me.tbCode2.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbCode2.Location = New System.Drawing.Point(187, 34)
+        Me.tbCode2.MaxLength = 1
+        Me.tbCode2.Name = "tbCode2"
+        Me.tbCode2.Size = New System.Drawing.Size(147, 42)
+        Me.tbCode2.TabIndex = 3
+        Me.tbCode2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbCode3
+        '
+        Me.tbCode3.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbCode3.Location = New System.Drawing.Point(367, 34)
+        Me.tbCode3.MaxLength = 1
+        Me.tbCode3.Name = "tbCode3"
+        Me.tbCode3.Size = New System.Drawing.Size(147, 42)
+        Me.tbCode3.TabIndex = 4
+        Me.tbCode3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbCode4
+        '
+        Me.tbCode4.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbCode4.Location = New System.Drawing.Point(543, 34)
+        Me.tbCode4.MaxLength = 1
+        Me.tbCode4.Name = "tbCode4"
+        Me.tbCode4.Size = New System.Drawing.Size(147, 42)
+        Me.tbCode4.TabIndex = 5
+        Me.tbCode4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'FormGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1130, 908)
+        Me.Controls.Add(Me.pnlTextBox)
         Me.Controls.Add(Me.lblRight)
         Me.Controls.Add(Me.lblWrong)
         Me.Controls.Add(Me.btnBack)
@@ -1215,6 +1285,8 @@ Partial Class FormGame
         Me.pnlTry3.PerformLayout()
         Me.pnlTry2.ResumeLayout(False)
         Me.pnlTry2.PerformLayout()
+        Me.pnlTextBox.ResumeLayout(False)
+        Me.pnlTextBox.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1321,4 +1393,10 @@ Partial Class FormGame
     Friend WithEvents Label68 As Windows.Forms.Label
     Friend WithEvents Label69 As Windows.Forms.Label
     Friend WithEvents Label70 As Windows.Forms.Label
+    Friend WithEvents pnlTextBox As Windows.Forms.Panel
+    Friend WithEvents tbCode5 As Windows.Forms.TextBox
+    Friend WithEvents tbCode1 As Windows.Forms.TextBox
+    Friend WithEvents tbCode2 As Windows.Forms.TextBox
+    Friend WithEvents tbCode3 As Windows.Forms.TextBox
+    Friend WithEvents tbCode4 As Windows.Forms.TextBox
 End Class
