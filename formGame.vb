@@ -8,7 +8,7 @@ Public Class FormGame
         Me.Text = "Il vous reste " & nbTries & " coup(s)..."
     End Sub
 
-    Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbCode1.TextChanged, tbCode2.TextChanged, tbCode3.TextChanged, tbCode4.TextChanged, tbCode5.TextChanged
+    Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbCode1.KeyPress, tbCode2.KeyPress, tbCode3.KeyPress, tbCode4.KeyPress, tbCode5.KeyPress
         If e.KeyChar <> ChrW(Keys.Back) And Not GetPlayableChar().Contains(e.KeyChar) Then
             e.Handled = True
         End If
@@ -39,8 +39,7 @@ Public Class FormGame
         End If
     End Sub
 
-    Private Sub btnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
-        nbTries -= 1
+    Private Sub BtnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
         Dim cpt As Integer = 0
         For Each tb As TextBox In pnlTextBox.Controls
             If tb.Text = getCodeInd(cpt) Then
@@ -52,5 +51,8 @@ Public Class FormGame
             End If
             cpt += 1
         Next
+
+        nbTries = nbTries - 1
+        Me.Text = "Il vous reste " & nbTries & " coup(s)..."
     End Sub
 End Class
