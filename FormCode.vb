@@ -45,20 +45,30 @@ Public Class FormCode
     End Sub
 
     Private Sub TbCode_TextChanged(sender As Object, e As EventArgs) Handles tbCode1.TextChanged, tbCode2.TextChanged, tbCode3.TextChanged, tbCode4.TextChanged, tbCode5.TextChanged
-        Dim cpt As Integer = 0
+        Dim currentTextBox As TextBox = DirectCast(sender, TextBox)
 
+        If currentTextBox.Text.Length = currentTextBox.MaxLength Then
+            Dim currentIndex As Integer = pnlTextBox.Controls.IndexOf(currentTextBox)
+            Dim nextIndex As Integer = (currentIndex + 1) Mod pnlTextBox.Controls.Count
+
+            Dim nextTextBox As TextBox = DirectCast(pnlTextBox.Controls(nextIndex), TextBox)
+            nextTextBox.Focus()
+        End If
+
+        Dim filledTextBoxCount As Integer = 0
         For Each tb As TextBox In pnlTextBox.Controls
             If Not tb.Text = "" Then
-                cpt += 1
+                filledTextBoxCount += 1
             End If
         Next
 
-        If cpt = pnlTextBox.Controls.Count Then
+        If filledTextBoxCount = pnlTextBox.Controls.Count Then
             btnDone.Visible = True
         Else
             btnDone.Visible = False
         End If
     End Sub
+
 
     Private Sub BtnDone_Click(sender As Object, e As EventArgs) Handles btnDone.Click
         Dim code As String = ""
