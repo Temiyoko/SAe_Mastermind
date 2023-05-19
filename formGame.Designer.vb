@@ -39,8 +39,36 @@ Partial Class FormGame
         Me.tbCode2 = New System.Windows.Forms.TextBox()
         Me.tbCode3 = New System.Windows.Forms.TextBox()
         Me.tbCode4 = New System.Windows.Forms.TextBox()
+        Me.pnlTries = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.pnlTextBox.SuspendLayout()
+        Me.pnlTries.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnGuess
@@ -221,12 +249,248 @@ Partial Class FormGame
         Me.tbCode4.TabIndex = 4
         Me.tbCode4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'pnlTries
+        '
+        Me.pnlTries.Controls.Add(Me.Panel15)
+        Me.pnlTries.Controls.Add(Me.Panel14)
+        Me.pnlTries.Controls.Add(Me.Panel13)
+        Me.pnlTries.Controls.Add(Me.Panel12)
+        Me.pnlTries.Controls.Add(Me.Panel11)
+        Me.pnlTries.Controls.Add(Me.Panel10)
+        Me.pnlTries.Controls.Add(Me.Panel9)
+        Me.pnlTries.Controls.Add(Me.Panel8)
+        Me.pnlTries.Controls.Add(Me.Panel1)
+        Me.pnlTries.Controls.Add(Me.Panel7)
+        Me.pnlTries.Controls.Add(Me.Panel6)
+        Me.pnlTries.Controls.Add(Me.Panel5)
+        Me.pnlTries.Controls.Add(Me.Panel4)
+        Me.pnlTries.Controls.Add(Me.Panel3)
+        Me.pnlTries.Controls.Add(Me.Panel2)
+        Me.pnlTries.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlTries.Location = New System.Drawing.Point(176, 252)
+        Me.pnlTries.Name = "pnlTries"
+        Me.pnlTries.Size = New System.Drawing.Size(405, 642)
+        Me.pnlTries.TabIndex = 27
+        '
+        'Panel7
+        '
+        Me.Panel7.Location = New System.Drawing.Point(0, 383)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(619, 37)
+        Me.Panel7.TabIndex = 5
+        Me.Panel7.Visible = False
+        '
+        'Panel6
+        '
+        Me.Panel6.Location = New System.Drawing.Point(0, 426)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(619, 37)
+        Me.Panel6.TabIndex = 4
+        Me.Panel6.Visible = False
+        '
+        'Panel5
+        '
+        Me.Panel5.Location = New System.Drawing.Point(0, 469)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(619, 37)
+        Me.Panel5.TabIndex = 3
+        Me.Panel5.Visible = False
+        '
+        'Panel4
+        '
+        Me.Panel4.Location = New System.Drawing.Point(0, 512)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(619, 37)
+        Me.Panel4.TabIndex = 2
+        Me.Panel4.Visible = False
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.Label6)
+        Me.Panel3.Controls.Add(Me.Label8)
+        Me.Panel3.Controls.Add(Me.Label7)
+        Me.Panel3.Controls.Add(Me.Label10)
+        Me.Panel3.Controls.Add(Me.Label9)
+        Me.Panel3.Location = New System.Drawing.Point(0, 555)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(619, 37)
+        Me.Panel3.TabIndex = 1
+        Me.Panel3.Visible = False
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Label5)
+        Me.Panel2.Controls.Add(Me.Label4)
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Location = New System.Drawing.Point(0, 598)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(619, 37)
+        Me.Panel2.TabIndex = 0
+        Me.Panel2.Visible = False
+        '
         'Panel1
         '
-        Me.Panel1.Location = New System.Drawing.Point(77, 255)
+        Me.Panel1.Location = New System.Drawing.Point(0, 340)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(620, 175)
-        Me.Panel1.TabIndex = 27
+        Me.Panel1.Size = New System.Drawing.Size(619, 37)
+        Me.Panel1.TabIndex = 6
+        Me.Panel1.Visible = False
+        '
+        'Panel8
+        '
+        Me.Panel8.Location = New System.Drawing.Point(0, 297)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(619, 37)
+        Me.Panel8.TabIndex = 7
+        Me.Panel8.Visible = False
+        '
+        'Panel9
+        '
+        Me.Panel9.Location = New System.Drawing.Point(0, 254)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(619, 37)
+        Me.Panel9.TabIndex = 8
+        Me.Panel9.Visible = False
+        '
+        'Panel10
+        '
+        Me.Panel10.Location = New System.Drawing.Point(0, 211)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(619, 37)
+        Me.Panel10.TabIndex = 9
+        Me.Panel10.Visible = False
+        '
+        'Panel11
+        '
+        Me.Panel11.Location = New System.Drawing.Point(0, 171)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(619, 37)
+        Me.Panel11.TabIndex = 10
+        Me.Panel11.Visible = False
+        '
+        'Panel12
+        '
+        Me.Panel12.Location = New System.Drawing.Point(0, 128)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(619, 37)
+        Me.Panel12.TabIndex = 11
+        Me.Panel12.Visible = False
+        '
+        'Panel13
+        '
+        Me.Panel13.Location = New System.Drawing.Point(0, 85)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(619, 37)
+        Me.Panel13.TabIndex = 12
+        Me.Panel13.Visible = False
+        '
+        'Panel14
+        '
+        Me.Panel14.Location = New System.Drawing.Point(0, 42)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(619, 37)
+        Me.Panel14.TabIndex = 13
+        Me.Panel14.Visible = False
+        '
+        'Panel15
+        '
+        Me.Panel15.Location = New System.Drawing.Point(0, 3)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(619, 37)
+        Me.Panel15.TabIndex = 28
+        Me.Panel15.Visible = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(325, 6)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(66, 31)
+        Me.Label1.TabIndex = 28
+        Me.Label1.Text = "Label1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(248, 6)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(71, 31)
+        Me.Label2.TabIndex = 29
+        Me.Label2.Text = "Label2"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(170, 6)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(72, 31)
+        Me.Label3.TabIndex = 30
+        Me.Label3.Text = "Label3"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(92, 6)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(72, 31)
+        Me.Label4.TabIndex = 31
+        Me.Label4.Text = "Label4"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(14, 6)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(72, 31)
+        Me.Label5.TabIndex = 32
+        Me.Label5.Text = "Label5"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(14, 6)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(72, 31)
+        Me.Label6.TabIndex = 37
+        Me.Label6.Text = "Label6"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(92, 6)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(70, 31)
+        Me.Label7.TabIndex = 36
+        Me.Label7.Text = "Label7"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(170, 6)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(72, 31)
+        Me.Label8.TabIndex = 35
+        Me.Label8.Text = "Label8"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(248, 6)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(72, 31)
+        Me.Label9.TabIndex = 34
+        Me.Label9.Text = "Label9"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(325, 6)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(77, 31)
+        Me.Label10.TabIndex = 33
+        Me.Label10.Text = "Label10"
         '
         'FormGame
         '
@@ -234,7 +498,7 @@ Partial Class FormGame
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1135, 933)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlTries)
         Me.Controls.Add(Me.pnlTextBox)
         Me.Controls.Add(Me.lblRight)
         Me.Controls.Add(Me.lblWrong)
@@ -252,6 +516,11 @@ Partial Class FormGame
         Me.Text = "formGame"
         Me.pnlTextBox.ResumeLayout(False)
         Me.pnlTextBox.PerformLayout()
+        Me.pnlTries.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -273,5 +542,30 @@ Partial Class FormGame
     Friend WithEvents tbCode2 As Windows.Forms.TextBox
     Friend WithEvents tbCode3 As Windows.Forms.TextBox
     Friend WithEvents tbCode4 As Windows.Forms.TextBox
+    Friend WithEvents pnlTries As Windows.Forms.Panel
+    Friend WithEvents Panel7 As Windows.Forms.Panel
+    Friend WithEvents Panel6 As Windows.Forms.Panel
+    Friend WithEvents Panel5 As Windows.Forms.Panel
+    Friend WithEvents Panel4 As Windows.Forms.Panel
+    Friend WithEvents Panel3 As Windows.Forms.Panel
+    Friend WithEvents Panel2 As Windows.Forms.Panel
+    Friend WithEvents Panel15 As Windows.Forms.Panel
+    Friend WithEvents Panel14 As Windows.Forms.Panel
+    Friend WithEvents Panel13 As Windows.Forms.Panel
+    Friend WithEvents Panel12 As Windows.Forms.Panel
+    Friend WithEvents Panel11 As Windows.Forms.Panel
+    Friend WithEvents Panel10 As Windows.Forms.Panel
+    Friend WithEvents Panel9 As Windows.Forms.Panel
+    Friend WithEvents Panel8 As Windows.Forms.Panel
     Friend WithEvents Panel1 As Windows.Forms.Panel
+    Friend WithEvents Label6 As Windows.Forms.Label
+    Friend WithEvents Label8 As Windows.Forms.Label
+    Friend WithEvents Label7 As Windows.Forms.Label
+    Friend WithEvents Label10 As Windows.Forms.Label
+    Friend WithEvents Label9 As Windows.Forms.Label
+    Friend WithEvents Label5 As Windows.Forms.Label
+    Friend WithEvents Label4 As Windows.Forms.Label
+    Friend WithEvents Label3 As Windows.Forms.Label
+    Friend WithEvents Label2 As Windows.Forms.Label
+    Friend WithEvents Label1 As Windows.Forms.Label
 End Class
