@@ -3,11 +3,6 @@ Imports System.Windows.Forms
 
 Public Class FormMenu
 
-    Private Sub FormMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cboP1.Items.Clear()
-        cboP2.Items.Clear()
-    End Sub
-
     Private Sub BtnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
         ' 276 est le résultat de 4 (Oui/Non) + 16 (Critical) + 256 (2e bouton par défaut)
         If MsgBox("Voulez-vous vraiment quitter ?", 276, "Attention") = vbYes Then Me.Close()
