@@ -305,8 +305,6 @@ Partial Class FormGame
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1130, 775)
-        Me.Controls.Add(Me.lblRight)
-        Me.Controls.Add(Me.lblWrong)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.lblFound)
         Me.Controls.Add(Me.lblSel)

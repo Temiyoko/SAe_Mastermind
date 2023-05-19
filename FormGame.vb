@@ -11,7 +11,7 @@ Public Class FormGame
         End If
     End Sub
 
-    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+    Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
         FormMenu.Show()
     End Sub
