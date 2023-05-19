@@ -15,4 +15,5 @@ Public Class FormGame
         Me.Close()
         FormMenu.Show()
     End Sub
+
 End Class
