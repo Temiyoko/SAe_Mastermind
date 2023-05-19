@@ -41,6 +41,7 @@ Public Class FormGame
 
     Private Sub btnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
         nbTries -= 1
+        Me.Text = "Il vous reste " & nbTries & " coup(s)..."
         Dim cpt As Integer = 0
         For Each tb As TextBox In pnlTextBox.Controls
             If tb.Text = getCodeInd(cpt) Then
