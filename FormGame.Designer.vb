@@ -1252,6 +1252,7 @@ Partial Class FormGame
         Me.Controls.Add(Me.lblTries)
         Me.Controls.Add(Me.btnGuess)
         Me.Controls.Add(Me.lblTitle)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FormGame"
         Me.Text = "formGame"
         Me.pnlTry1.ResumeLayout(False)
