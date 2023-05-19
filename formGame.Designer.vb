@@ -106,6 +106,12 @@ Partial Class FormGame
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
+        Me.pnlTry2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.pnlTry4 = New System.Windows.Forms.Panel()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -118,12 +124,6 @@ Partial Class FormGame
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.pnlTry2 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.pnlTextBox = New System.Windows.Forms.Panel()
         Me.tbCode5 = New System.Windows.Forms.TextBox()
         Me.tbCode1 = New System.Windows.Forms.TextBox()
@@ -143,9 +143,9 @@ Partial Class FormGame
         Me.pnlTry7.SuspendLayout()
         Me.pnlTry6.SuspendLayout()
         Me.pnlTry5.SuspendLayout()
+        Me.pnlTry2.SuspendLayout()
         Me.pnlTry4.SuspendLayout()
         Me.pnlTry3.SuspendLayout()
-        Me.pnlTry2.SuspendLayout()
         Me.pnlTextBox.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -996,6 +996,65 @@ Partial Class FormGame
         Me.Label20.TabIndex = 24
         Me.Label20.Text = "Label20"
         '
+        'pnlTry2
+        '
+        Me.pnlTry2.Controls.Add(Me.Label1)
+        Me.pnlTry2.Controls.Add(Me.Label2)
+        Me.pnlTry2.Controls.Add(Me.Label3)
+        Me.pnlTry2.Controls.Add(Me.Label4)
+        Me.pnlTry2.Controls.Add(Me.Label5)
+        Me.pnlTry2.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlTry2.Location = New System.Drawing.Point(1, 473)
+        Me.pnlTry2.Name = "pnlTry2"
+        Me.pnlTry2.Size = New System.Drawing.Size(414, 37)
+        Me.pnlTry2.TabIndex = 29
+        Me.pnlTry2.Visible = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(332, 4)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(66, 31)
+        Me.Label1.TabIndex = 28
+        Me.Label1.Text = "Label1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(247, 4)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(71, 31)
+        Me.Label2.TabIndex = 27
+        Me.Label2.Text = "Label2"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(163, 4)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(72, 31)
+        Me.Label3.TabIndex = 26
+        Me.Label3.Text = "Label3"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(84, 4)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(72, 31)
+        Me.Label4.TabIndex = 25
+        Me.Label4.Text = "Label4"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(5, 4)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(72, 31)
+        Me.Label5.TabIndex = 24
+        Me.Label5.Text = "Label5"
+        '
         'pnlTry4
         '
         Me.pnlTry4.Controls.Add(Me.Label11)
@@ -1114,65 +1173,6 @@ Partial Class FormGame
         Me.Label10.TabIndex = 24
         Me.Label10.Text = "Label10"
         '
-        'pnlTry2
-        '
-        Me.pnlTry2.Controls.Add(Me.Label1)
-        Me.pnlTry2.Controls.Add(Me.Label2)
-        Me.pnlTry2.Controls.Add(Me.Label3)
-        Me.pnlTry2.Controls.Add(Me.Label4)
-        Me.pnlTry2.Controls.Add(Me.Label5)
-        Me.pnlTry2.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlTry2.Location = New System.Drawing.Point(1, 473)
-        Me.pnlTry2.Name = "pnlTry2"
-        Me.pnlTry2.Size = New System.Drawing.Size(414, 37)
-        Me.pnlTry2.TabIndex = 29
-        Me.pnlTry2.Visible = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(332, 4)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 31)
-        Me.Label1.TabIndex = 28
-        Me.Label1.Text = "Label1"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(247, 4)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 31)
-        Me.Label2.TabIndex = 27
-        Me.Label2.Text = "Label2"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(163, 4)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(72, 31)
-        Me.Label3.TabIndex = 26
-        Me.Label3.Text = "Label3"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(84, 4)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(72, 31)
-        Me.Label4.TabIndex = 25
-        Me.Label4.Text = "Label4"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(5, 4)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(72, 31)
-        Me.Label5.TabIndex = 24
-        Me.Label5.Text = "Label5"
-        '
         'pnlTextBox
         '
         Me.pnlTextBox.Controls.Add(Me.tbCode5)
@@ -1239,6 +1239,7 @@ Partial Class FormGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1130, 908)
         Me.Controls.Add(Me.pnlTextBox)
         Me.Controls.Add(Me.lblRight)
@@ -1281,12 +1282,12 @@ Partial Class FormGame
         Me.pnlTry6.PerformLayout()
         Me.pnlTry5.ResumeLayout(False)
         Me.pnlTry5.PerformLayout()
+        Me.pnlTry2.ResumeLayout(False)
+        Me.pnlTry2.PerformLayout()
         Me.pnlTry4.ResumeLayout(False)
         Me.pnlTry4.PerformLayout()
         Me.pnlTry3.ResumeLayout(False)
         Me.pnlTry3.PerformLayout()
-        Me.pnlTry2.ResumeLayout(False)
-        Me.pnlTry2.PerformLayout()
         Me.pnlTextBox.ResumeLayout(False)
         Me.pnlTextBox.PerformLayout()
         Me.ResumeLayout(False)
