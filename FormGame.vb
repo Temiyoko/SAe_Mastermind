@@ -39,8 +39,7 @@ Public Class FormGame
         End If
     End Sub
 
-    Private Sub btnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
-        nbTries -= 1
+    Private Sub BtnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
         Dim cpt As Integer = 0
         For Each tb As TextBox In pnlTextBox.Controls
             If tb.Text = getCodeInd(cpt) Then
@@ -52,5 +51,8 @@ Public Class FormGame
             End If
             cpt += 1
         Next
+
+        nbTries -= 1
+        Me.Text = "Il vous reste " & nbTries & " coup(s)..."
     End Sub
 End Class
