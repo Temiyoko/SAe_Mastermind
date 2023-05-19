@@ -15,4 +15,36 @@ Public Class FormGame
         Me.Close()
         FormMenu.Show()
     End Sub
+
+    Private Sub lblTry1_Click(sender As Object, e As EventArgs) Handles lblTry1.Click
+
+    End Sub
+
+    Private Sub lblTry2_Click(sender As Object, e As EventArgs) Handles lblTry2.Click
+
+    End Sub
+
+    Private Sub lblTry3_Click(sender As Object, e As EventArgs) Handles lblTry3.Click
+
+    End Sub
+
+    Private Sub lblTry4_Click(sender As Object, e As EventArgs) Handles lblTry4.Click
+
+    End Sub
+
+    Private Sub lblTry5_Click(sender As Object, e As EventArgs) Handles lblTry5.Click
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
 End Class
