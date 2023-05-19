@@ -45,12 +45,36 @@ Partial Class FormGame
         Me.lblTry2 = New System.Windows.Forms.Label()
         Me.lblTry1 = New System.Windows.Forms.Label()
         Me.pnlTries = New System.Windows.Forms.Panel()
+        Me.pnlTry11 = New System.Windows.Forms.Panel()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.Label47 = New System.Windows.Forms.Label()
+        Me.Label48 = New System.Windows.Forms.Label()
+        Me.Label49 = New System.Windows.Forms.Label()
+        Me.Label50 = New System.Windows.Forms.Label()
+        Me.pnlTry15 = New System.Windows.Forms.Panel()
+        Me.Label66 = New System.Windows.Forms.Label()
+        Me.Label67 = New System.Windows.Forms.Label()
+        Me.Label68 = New System.Windows.Forms.Label()
+        Me.Label69 = New System.Windows.Forms.Label()
+        Me.Label70 = New System.Windows.Forms.Label()
+        Me.pnlTry10 = New System.Windows.Forms.Panel()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Label45 = New System.Windows.Forms.Label()
         Me.pnlTry14 = New System.Windows.Forms.Panel()
         Me.Label61 = New System.Windows.Forms.Label()
         Me.Label62 = New System.Windows.Forms.Label()
         Me.Label63 = New System.Windows.Forms.Label()
         Me.Label64 = New System.Windows.Forms.Label()
         Me.Label65 = New System.Windows.Forms.Label()
+        Me.pnlTry13 = New System.Windows.Forms.Panel()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.Label58 = New System.Windows.Forms.Label()
+        Me.Label59 = New System.Windows.Forms.Label()
+        Me.Label60 = New System.Windows.Forms.Label()
         Me.pnlTry12 = New System.Windows.Forms.Panel()
         Me.Label51 = New System.Windows.Forms.Label()
         Me.Label52 = New System.Windows.Forms.Label()
@@ -105,33 +129,13 @@ Partial Class FormGame
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.pnlTry10 = New System.Windows.Forms.Panel()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.Label43 = New System.Windows.Forms.Label()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.Label45 = New System.Windows.Forms.Label()
-        Me.pnlTry11 = New System.Windows.Forms.Panel()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.Label47 = New System.Windows.Forms.Label()
-        Me.Label48 = New System.Windows.Forms.Label()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.Label50 = New System.Windows.Forms.Label()
-        Me.pnlTry13 = New System.Windows.Forms.Panel()
-        Me.Label56 = New System.Windows.Forms.Label()
-        Me.Label57 = New System.Windows.Forms.Label()
-        Me.Label58 = New System.Windows.Forms.Label()
-        Me.Label59 = New System.Windows.Forms.Label()
-        Me.Label60 = New System.Windows.Forms.Label()
-        Me.pnlTry15 = New System.Windows.Forms.Panel()
-        Me.Label66 = New System.Windows.Forms.Label()
-        Me.Label67 = New System.Windows.Forms.Label()
-        Me.Label68 = New System.Windows.Forms.Label()
-        Me.Label69 = New System.Windows.Forms.Label()
-        Me.Label70 = New System.Windows.Forms.Label()
         Me.pnlTry1.SuspendLayout()
         Me.pnlTries.SuspendLayout()
+        Me.pnlTry11.SuspendLayout()
+        Me.pnlTry15.SuspendLayout()
+        Me.pnlTry10.SuspendLayout()
         Me.pnlTry14.SuspendLayout()
+        Me.pnlTry13.SuspendLayout()
         Me.pnlTry12.SuspendLayout()
         Me.pnlTry9.SuspendLayout()
         Me.pnlTry8.SuspendLayout()
@@ -141,14 +145,11 @@ Partial Class FormGame
         Me.pnlTry4.SuspendLayout()
         Me.pnlTry3.SuspendLayout()
         Me.pnlTry2.SuspendLayout()
-        Me.pnlTry10.SuspendLayout()
-        Me.pnlTry11.SuspendLayout()
-        Me.pnlTry13.SuspendLayout()
-        Me.pnlTry15.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnGuess
         '
+        Me.btnGuess.Enabled = False
         Me.btnGuess.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuess.Location = New System.Drawing.Point(930, 134)
         Me.btnGuess.Name = "btnGuess"
@@ -393,6 +394,183 @@ Partial Class FormGame
         Me.pnlTries.Size = New System.Drawing.Size(417, 647)
         Me.pnlTries.TabIndex = 17
         '
+        'pnlTry11
+        '
+        Me.pnlTry11.Controls.Add(Me.Label46)
+        Me.pnlTry11.Controls.Add(Me.Label47)
+        Me.pnlTry11.Controls.Add(Me.Label48)
+        Me.pnlTry11.Controls.Add(Me.Label49)
+        Me.pnlTry11.Controls.Add(Me.Label50)
+        Me.pnlTry11.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlTry11.Location = New System.Drawing.Point(0, 430)
+        Me.pnlTry11.Name = "pnlTry11"
+        Me.pnlTry11.Size = New System.Drawing.Size(414, 37)
+        Me.pnlTry11.TabIndex = 29
+        Me.pnlTry11.Visible = False
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.Location = New System.Drawing.Point(332, 4)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(83, 31)
+        Me.Label46.TabIndex = 28
+        Me.Label46.Text = "Label46"
+        '
+        'Label47
+        '
+        Me.Label47.AutoSize = True
+        Me.Label47.Location = New System.Drawing.Point(247, 4)
+        Me.Label47.Name = "Label47"
+        Me.Label47.Size = New System.Drawing.Size(81, 31)
+        Me.Label47.TabIndex = 27
+        Me.Label47.Text = "Label47"
+        '
+        'Label48
+        '
+        Me.Label48.AutoSize = True
+        Me.Label48.Location = New System.Drawing.Point(163, 4)
+        Me.Label48.Name = "Label48"
+        Me.Label48.Size = New System.Drawing.Size(83, 31)
+        Me.Label48.TabIndex = 26
+        Me.Label48.Text = "Label48"
+        '
+        'Label49
+        '
+        Me.Label49.AutoSize = True
+        Me.Label49.Location = New System.Drawing.Point(84, 4)
+        Me.Label49.Name = "Label49"
+        Me.Label49.Size = New System.Drawing.Size(83, 31)
+        Me.Label49.TabIndex = 25
+        Me.Label49.Text = "Label49"
+        '
+        'Label50
+        '
+        Me.Label50.AutoSize = True
+        Me.Label50.Location = New System.Drawing.Point(5, 4)
+        Me.Label50.Name = "Label50"
+        Me.Label50.Size = New System.Drawing.Size(83, 31)
+        Me.Label50.TabIndex = 24
+        Me.Label50.Text = "Label50"
+        '
+        'pnlTry15
+        '
+        Me.pnlTry15.Controls.Add(Me.Label66)
+        Me.pnlTry15.Controls.Add(Me.Label67)
+        Me.pnlTry15.Controls.Add(Me.Label68)
+        Me.pnlTry15.Controls.Add(Me.Label69)
+        Me.pnlTry15.Controls.Add(Me.Label70)
+        Me.pnlTry15.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlTry15.Location = New System.Drawing.Point(0, 602)
+        Me.pnlTry15.Name = "pnlTry15"
+        Me.pnlTry15.Size = New System.Drawing.Size(414, 37)
+        Me.pnlTry15.TabIndex = 29
+        Me.pnlTry15.Visible = False
+        '
+        'Label66
+        '
+        Me.Label66.AutoSize = True
+        Me.Label66.Location = New System.Drawing.Point(332, 4)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(83, 31)
+        Me.Label66.TabIndex = 28
+        Me.Label66.Text = "Label66"
+        '
+        'Label67
+        '
+        Me.Label67.AutoSize = True
+        Me.Label67.Location = New System.Drawing.Point(247, 4)
+        Me.Label67.Name = "Label67"
+        Me.Label67.Size = New System.Drawing.Size(81, 31)
+        Me.Label67.TabIndex = 27
+        Me.Label67.Text = "Label67"
+        '
+        'Label68
+        '
+        Me.Label68.AutoSize = True
+        Me.Label68.Location = New System.Drawing.Point(163, 4)
+        Me.Label68.Name = "Label68"
+        Me.Label68.Size = New System.Drawing.Size(83, 31)
+        Me.Label68.TabIndex = 26
+        Me.Label68.Text = "Label68"
+        '
+        'Label69
+        '
+        Me.Label69.AutoSize = True
+        Me.Label69.Location = New System.Drawing.Point(84, 4)
+        Me.Label69.Name = "Label69"
+        Me.Label69.Size = New System.Drawing.Size(83, 31)
+        Me.Label69.TabIndex = 25
+        Me.Label69.Text = "Label69"
+        '
+        'Label70
+        '
+        Me.Label70.AutoSize = True
+        Me.Label70.Location = New System.Drawing.Point(5, 4)
+        Me.Label70.Name = "Label70"
+        Me.Label70.Size = New System.Drawing.Size(81, 31)
+        Me.Label70.TabIndex = 24
+        Me.Label70.Text = "Label70"
+        '
+        'pnlTry10
+        '
+        Me.pnlTry10.Controls.Add(Me.Label41)
+        Me.pnlTry10.Controls.Add(Me.Label42)
+        Me.pnlTry10.Controls.Add(Me.Label43)
+        Me.pnlTry10.Controls.Add(Me.Label44)
+        Me.pnlTry10.Controls.Add(Me.Label45)
+        Me.pnlTry10.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlTry10.Location = New System.Drawing.Point(0, 387)
+        Me.pnlTry10.Name = "pnlTry10"
+        Me.pnlTry10.Size = New System.Drawing.Size(414, 37)
+        Me.pnlTry10.TabIndex = 29
+        Me.pnlTry10.Visible = False
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Location = New System.Drawing.Point(332, 4)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(77, 31)
+        Me.Label41.TabIndex = 28
+        Me.Label41.Text = "Label41"
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.Location = New System.Drawing.Point(247, 4)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(82, 31)
+        Me.Label42.TabIndex = 27
+        Me.Label42.Text = "Label42"
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Location = New System.Drawing.Point(163, 4)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(83, 31)
+        Me.Label43.TabIndex = 26
+        Me.Label43.Text = "Label43"
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Location = New System.Drawing.Point(84, 4)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(83, 31)
+        Me.Label44.TabIndex = 25
+        Me.Label44.Text = "Label44"
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.Location = New System.Drawing.Point(5, 4)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(83, 31)
+        Me.Label45.TabIndex = 24
+        Me.Label45.Text = "Label45"
+        '
         'pnlTry14
         '
         Me.pnlTry14.Controls.Add(Me.Label61)
@@ -451,6 +629,65 @@ Partial Class FormGame
         Me.Label65.Size = New System.Drawing.Size(83, 31)
         Me.Label65.TabIndex = 24
         Me.Label65.Text = "Label65"
+        '
+        'pnlTry13
+        '
+        Me.pnlTry13.Controls.Add(Me.Label56)
+        Me.pnlTry13.Controls.Add(Me.Label57)
+        Me.pnlTry13.Controls.Add(Me.Label58)
+        Me.pnlTry13.Controls.Add(Me.Label59)
+        Me.pnlTry13.Controls.Add(Me.Label60)
+        Me.pnlTry13.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pnlTry13.Location = New System.Drawing.Point(0, 516)
+        Me.pnlTry13.Name = "pnlTry13"
+        Me.pnlTry13.Size = New System.Drawing.Size(414, 37)
+        Me.pnlTry13.TabIndex = 29
+        Me.pnlTry13.Visible = False
+        '
+        'Label56
+        '
+        Me.Label56.AutoSize = True
+        Me.Label56.Location = New System.Drawing.Point(332, 4)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(83, 31)
+        Me.Label56.TabIndex = 28
+        Me.Label56.Text = "Label56"
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.Location = New System.Drawing.Point(247, 4)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(81, 31)
+        Me.Label57.TabIndex = 27
+        Me.Label57.Text = "Label57"
+        '
+        'Label58
+        '
+        Me.Label58.AutoSize = True
+        Me.Label58.Location = New System.Drawing.Point(163, 4)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(83, 31)
+        Me.Label58.TabIndex = 26
+        Me.Label58.Text = "Label58"
+        '
+        'Label59
+        '
+        Me.Label59.AutoSize = True
+        Me.Label59.Location = New System.Drawing.Point(84, 4)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(83, 31)
+        Me.Label59.TabIndex = 25
+        Me.Label59.Text = "Label59"
+        '
+        'Label60
+        '
+        Me.Label60.AutoSize = True
+        Me.Label60.Location = New System.Drawing.Point(5, 4)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(83, 31)
+        Me.Label60.TabIndex = 24
+        Me.Label60.Text = "Label60"
         '
         'pnlTry12
         '
@@ -983,242 +1220,6 @@ Partial Class FormGame
         Me.Label5.TabIndex = 24
         Me.Label5.Text = "Label5"
         '
-        'pnlTry10
-        '
-        Me.pnlTry10.Controls.Add(Me.Label41)
-        Me.pnlTry10.Controls.Add(Me.Label42)
-        Me.pnlTry10.Controls.Add(Me.Label43)
-        Me.pnlTry10.Controls.Add(Me.Label44)
-        Me.pnlTry10.Controls.Add(Me.Label45)
-        Me.pnlTry10.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlTry10.Location = New System.Drawing.Point(0, 387)
-        Me.pnlTry10.Name = "pnlTry10"
-        Me.pnlTry10.Size = New System.Drawing.Size(414, 37)
-        Me.pnlTry10.TabIndex = 29
-        Me.pnlTry10.Visible = False
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(332, 4)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(77, 31)
-        Me.Label41.TabIndex = 28
-        Me.Label41.Text = "Label41"
-        '
-        'Label42
-        '
-        Me.Label42.AutoSize = True
-        Me.Label42.Location = New System.Drawing.Point(247, 4)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(82, 31)
-        Me.Label42.TabIndex = 27
-        Me.Label42.Text = "Label42"
-        '
-        'Label43
-        '
-        Me.Label43.AutoSize = True
-        Me.Label43.Location = New System.Drawing.Point(163, 4)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(83, 31)
-        Me.Label43.TabIndex = 26
-        Me.Label43.Text = "Label43"
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(84, 4)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(83, 31)
-        Me.Label44.TabIndex = 25
-        Me.Label44.Text = "Label44"
-        '
-        'Label45
-        '
-        Me.Label45.AutoSize = True
-        Me.Label45.Location = New System.Drawing.Point(5, 4)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(83, 31)
-        Me.Label45.TabIndex = 24
-        Me.Label45.Text = "Label45"
-        '
-        'pnlTry11
-        '
-        Me.pnlTry11.Controls.Add(Me.Label46)
-        Me.pnlTry11.Controls.Add(Me.Label47)
-        Me.pnlTry11.Controls.Add(Me.Label48)
-        Me.pnlTry11.Controls.Add(Me.Label49)
-        Me.pnlTry11.Controls.Add(Me.Label50)
-        Me.pnlTry11.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlTry11.Location = New System.Drawing.Point(0, 430)
-        Me.pnlTry11.Name = "pnlTry11"
-        Me.pnlTry11.Size = New System.Drawing.Size(414, 37)
-        Me.pnlTry11.TabIndex = 29
-        Me.pnlTry11.Visible = False
-        '
-        'Label46
-        '
-        Me.Label46.AutoSize = True
-        Me.Label46.Location = New System.Drawing.Point(332, 4)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(83, 31)
-        Me.Label46.TabIndex = 28
-        Me.Label46.Text = "Label46"
-        '
-        'Label47
-        '
-        Me.Label47.AutoSize = True
-        Me.Label47.Location = New System.Drawing.Point(247, 4)
-        Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(81, 31)
-        Me.Label47.TabIndex = 27
-        Me.Label47.Text = "Label47"
-        '
-        'Label48
-        '
-        Me.Label48.AutoSize = True
-        Me.Label48.Location = New System.Drawing.Point(163, 4)
-        Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(83, 31)
-        Me.Label48.TabIndex = 26
-        Me.Label48.Text = "Label48"
-        '
-        'Label49
-        '
-        Me.Label49.AutoSize = True
-        Me.Label49.Location = New System.Drawing.Point(84, 4)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(83, 31)
-        Me.Label49.TabIndex = 25
-        Me.Label49.Text = "Label49"
-        '
-        'Label50
-        '
-        Me.Label50.AutoSize = True
-        Me.Label50.Location = New System.Drawing.Point(5, 4)
-        Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(83, 31)
-        Me.Label50.TabIndex = 24
-        Me.Label50.Text = "Label50"
-        '
-        'pnlTry13
-        '
-        Me.pnlTry13.Controls.Add(Me.Label56)
-        Me.pnlTry13.Controls.Add(Me.Label57)
-        Me.pnlTry13.Controls.Add(Me.Label58)
-        Me.pnlTry13.Controls.Add(Me.Label59)
-        Me.pnlTry13.Controls.Add(Me.Label60)
-        Me.pnlTry13.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlTry13.Location = New System.Drawing.Point(0, 516)
-        Me.pnlTry13.Name = "pnlTry13"
-        Me.pnlTry13.Size = New System.Drawing.Size(414, 37)
-        Me.pnlTry13.TabIndex = 29
-        Me.pnlTry13.Visible = False
-        '
-        'Label56
-        '
-        Me.Label56.AutoSize = True
-        Me.Label56.Location = New System.Drawing.Point(332, 4)
-        Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(83, 31)
-        Me.Label56.TabIndex = 28
-        Me.Label56.Text = "Label56"
-        '
-        'Label57
-        '
-        Me.Label57.AutoSize = True
-        Me.Label57.Location = New System.Drawing.Point(247, 4)
-        Me.Label57.Name = "Label57"
-        Me.Label57.Size = New System.Drawing.Size(81, 31)
-        Me.Label57.TabIndex = 27
-        Me.Label57.Text = "Label57"
-        '
-        'Label58
-        '
-        Me.Label58.AutoSize = True
-        Me.Label58.Location = New System.Drawing.Point(163, 4)
-        Me.Label58.Name = "Label58"
-        Me.Label58.Size = New System.Drawing.Size(83, 31)
-        Me.Label58.TabIndex = 26
-        Me.Label58.Text = "Label58"
-        '
-        'Label59
-        '
-        Me.Label59.AutoSize = True
-        Me.Label59.Location = New System.Drawing.Point(84, 4)
-        Me.Label59.Name = "Label59"
-        Me.Label59.Size = New System.Drawing.Size(83, 31)
-        Me.Label59.TabIndex = 25
-        Me.Label59.Text = "Label59"
-        '
-        'Label60
-        '
-        Me.Label60.AutoSize = True
-        Me.Label60.Location = New System.Drawing.Point(5, 4)
-        Me.Label60.Name = "Label60"
-        Me.Label60.Size = New System.Drawing.Size(83, 31)
-        Me.Label60.TabIndex = 24
-        Me.Label60.Text = "Label60"
-        '
-        'pnlTry15
-        '
-        Me.pnlTry15.Controls.Add(Me.Label66)
-        Me.pnlTry15.Controls.Add(Me.Label67)
-        Me.pnlTry15.Controls.Add(Me.Label68)
-        Me.pnlTry15.Controls.Add(Me.Label69)
-        Me.pnlTry15.Controls.Add(Me.Label70)
-        Me.pnlTry15.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlTry15.Location = New System.Drawing.Point(0, 602)
-        Me.pnlTry15.Name = "pnlTry15"
-        Me.pnlTry15.Size = New System.Drawing.Size(414, 37)
-        Me.pnlTry15.TabIndex = 29
-        Me.pnlTry15.Visible = False
-        '
-        'Label66
-        '
-        Me.Label66.AutoSize = True
-        Me.Label66.Location = New System.Drawing.Point(332, 4)
-        Me.Label66.Name = "Label66"
-        Me.Label66.Size = New System.Drawing.Size(83, 31)
-        Me.Label66.TabIndex = 28
-        Me.Label66.Text = "Label66"
-        '
-        'Label67
-        '
-        Me.Label67.AutoSize = True
-        Me.Label67.Location = New System.Drawing.Point(247, 4)
-        Me.Label67.Name = "Label67"
-        Me.Label67.Size = New System.Drawing.Size(81, 31)
-        Me.Label67.TabIndex = 27
-        Me.Label67.Text = "Label67"
-        '
-        'Label68
-        '
-        Me.Label68.AutoSize = True
-        Me.Label68.Location = New System.Drawing.Point(163, 4)
-        Me.Label68.Name = "Label68"
-        Me.Label68.Size = New System.Drawing.Size(83, 31)
-        Me.Label68.TabIndex = 26
-        Me.Label68.Text = "Label68"
-        '
-        'Label69
-        '
-        Me.Label69.AutoSize = True
-        Me.Label69.Location = New System.Drawing.Point(84, 4)
-        Me.Label69.Name = "Label69"
-        Me.Label69.Size = New System.Drawing.Size(83, 31)
-        Me.Label69.TabIndex = 25
-        Me.Label69.Text = "Label69"
-        '
-        'Label70
-        '
-        Me.Label70.AutoSize = True
-        Me.Label70.Location = New System.Drawing.Point(5, 4)
-        Me.Label70.Name = "Label70"
-        Me.Label70.Size = New System.Drawing.Size(81, 31)
-        Me.Label70.TabIndex = 24
-        Me.Label70.Text = "Label70"
-        '
         'FormGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1246,8 +1247,16 @@ Partial Class FormGame
         Me.pnlTry1.ResumeLayout(False)
         Me.pnlTry1.PerformLayout()
         Me.pnlTries.ResumeLayout(False)
+        Me.pnlTry11.ResumeLayout(False)
+        Me.pnlTry11.PerformLayout()
+        Me.pnlTry15.ResumeLayout(False)
+        Me.pnlTry15.PerformLayout()
+        Me.pnlTry10.ResumeLayout(False)
+        Me.pnlTry10.PerformLayout()
         Me.pnlTry14.ResumeLayout(False)
         Me.pnlTry14.PerformLayout()
+        Me.pnlTry13.ResumeLayout(False)
+        Me.pnlTry13.PerformLayout()
         Me.pnlTry12.ResumeLayout(False)
         Me.pnlTry12.PerformLayout()
         Me.pnlTry9.ResumeLayout(False)
@@ -1266,14 +1275,6 @@ Partial Class FormGame
         Me.pnlTry3.PerformLayout()
         Me.pnlTry2.ResumeLayout(False)
         Me.pnlTry2.PerformLayout()
-        Me.pnlTry10.ResumeLayout(False)
-        Me.pnlTry10.PerformLayout()
-        Me.pnlTry11.ResumeLayout(False)
-        Me.pnlTry11.PerformLayout()
-        Me.pnlTry13.ResumeLayout(False)
-        Me.pnlTry13.PerformLayout()
-        Me.pnlTry15.ResumeLayout(False)
-        Me.pnlTry15.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
