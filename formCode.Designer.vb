@@ -162,7 +162,9 @@ Partial Class FormCode
         '
         'FormCode
         '
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1130, 337)
         Me.Controls.Add(Me.pnlTextBox)
         Me.Controls.Add(Me.btnQuit)
