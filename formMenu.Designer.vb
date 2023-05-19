@@ -117,6 +117,7 @@ Partial Class FormMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1130, 587)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnScores)
