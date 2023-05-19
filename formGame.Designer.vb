@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormGame
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormGame
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnGuess = New System.Windows.Forms.Button()
         Me.tbCode5 = New System.Windows.Forms.TextBox()
@@ -37,8 +37,17 @@ Partial Class FormGame
         Me.lblChar = New System.Windows.Forms.Label()
         Me.lblFound = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.lblWrong = New System.Windows.Forms.Label()
-        Me.lblRight = New System.Windows.Forms.Label()
+        Me.lblTry1 = New System.Windows.Forms.Label()
+        Me.lblTry2 = New System.Windows.Forms.Label()
+        Me.lblTry3 = New System.Windows.Forms.Label()
+        Me.lblTry4 = New System.Windows.Forms.Label()
+        Me.lblTry5 = New System.Windows.Forms.Label()
+        Me.lblTry10 = New System.Windows.Forms.Label()
+        Me.lblTry9 = New System.Windows.Forms.Label()
+        Me.lblTry8 = New System.Windows.Forms.Label()
+        Me.lblTry7 = New System.Windows.Forms.Label()
+        Me.lblTry6 = New System.Windows.Forms.Label()
+        Me.pnlTries.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnGuess
@@ -133,6 +142,16 @@ Partial Class FormGame
         '
         'pnlTries
         '
+        Me.pnlTries.Controls.Add(Me.lblTry10)
+        Me.pnlTries.Controls.Add(Me.lblTry9)
+        Me.pnlTries.Controls.Add(Me.lblTry8)
+        Me.pnlTries.Controls.Add(Me.lblTry7)
+        Me.pnlTries.Controls.Add(Me.lblTry6)
+        Me.pnlTries.Controls.Add(Me.lblTry5)
+        Me.pnlTries.Controls.Add(Me.lblTry4)
+        Me.pnlTries.Controls.Add(Me.lblTry3)
+        Me.pnlTries.Controls.Add(Me.lblTry2)
+        Me.pnlTries.Controls.Add(Me.lblTry1)
         Me.pnlTries.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pnlTries.Location = New System.Drawing.Point(221, 274)
         Me.pnlTries.Name = "pnlTries"
@@ -191,27 +210,95 @@ Partial Class FormGame
         Me.btnBack.Text = "Retour"
         Me.btnBack.UseVisualStyleBackColor = True
         '
-        'lblWrong
+        'lblTry1
         '
-        Me.lblWrong.AutoSize = True
-        Me.lblWrong.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWrong.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblWrong.Location = New System.Drawing.Point(748, 292)
-        Me.lblWrong.Name = "lblWrong"
-        Me.lblWrong.Size = New System.Drawing.Size(126, 40)
-        Me.lblWrong.TabIndex = 24
-        Me.lblWrong.Text = "Mal placé"
+        Me.lblTry1.AutoSize = True
+        Me.lblTry1.Location = New System.Drawing.Point(22, 14)
+        Me.lblTry1.Name = "lblTry1"
+        Me.lblTry1.Size = New System.Drawing.Size(83, 40)
+        Me.lblTry1.TabIndex = 24
+        Me.lblTry1.Text = "lblTry1"
         '
-        'lblRight
+        'lblTry2
         '
-        Me.lblRight.AutoSize = True
-        Me.lblRight.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRight.ForeColor = System.Drawing.Color.LimeGreen
-        Me.lblRight.Location = New System.Drawing.Point(748, 332)
-        Me.lblRight.Name = "lblRight"
-        Me.lblRight.Size = New System.Drawing.Size(134, 40)
-        Me.lblRight.TabIndex = 25
-        Me.lblRight.Text = "Bien placé"
+        Me.lblTry2.AutoSize = True
+        Me.lblTry2.Location = New System.Drawing.Point(22, 54)
+        Me.lblTry2.Name = "lblTry2"
+        Me.lblTry2.Size = New System.Drawing.Size(89, 40)
+        Me.lblTry2.TabIndex = 25
+        Me.lblTry2.Text = "lblTry2"
+        '
+        'lblTry3
+        '
+        Me.lblTry3.AutoSize = True
+        Me.lblTry3.Location = New System.Drawing.Point(21, 94)
+        Me.lblTry3.Name = "lblTry3"
+        Me.lblTry3.Size = New System.Drawing.Size(90, 40)
+        Me.lblTry3.TabIndex = 26
+        Me.lblTry3.Text = "lblTry3"
+        '
+        'lblTry4
+        '
+        Me.lblTry4.AutoSize = True
+        Me.lblTry4.Location = New System.Drawing.Point(22, 134)
+        Me.lblTry4.Name = "lblTry4"
+        Me.lblTry4.Size = New System.Drawing.Size(90, 40)
+        Me.lblTry4.TabIndex = 27
+        Me.lblTry4.Text = "lblTry4"
+        '
+        'lblTry5
+        '
+        Me.lblTry5.AutoSize = True
+        Me.lblTry5.Location = New System.Drawing.Point(22, 174)
+        Me.lblTry5.Name = "lblTry5"
+        Me.lblTry5.Size = New System.Drawing.Size(90, 40)
+        Me.lblTry5.TabIndex = 28
+        Me.lblTry5.Text = "lblTry5"
+        '
+        'lblTry10
+        '
+        Me.lblTry10.AutoSize = True
+        Me.lblTry10.Location = New System.Drawing.Point(21, 374)
+        Me.lblTry10.Name = "lblTry10"
+        Me.lblTry10.Size = New System.Drawing.Size(97, 40)
+        Me.lblTry10.TabIndex = 33
+        Me.lblTry10.Text = "lblTry10"
+        '
+        'lblTry9
+        '
+        Me.lblTry9.AutoSize = True
+        Me.lblTry9.Location = New System.Drawing.Point(21, 334)
+        Me.lblTry9.Name = "lblTry9"
+        Me.lblTry9.Size = New System.Drawing.Size(90, 40)
+        Me.lblTry9.TabIndex = 32
+        Me.lblTry9.Text = "lblTry9"
+        '
+        'lblTry8
+        '
+        Me.lblTry8.AutoSize = True
+        Me.lblTry8.Location = New System.Drawing.Point(20, 294)
+        Me.lblTry8.Name = "lblTry8"
+        Me.lblTry8.Size = New System.Drawing.Size(90, 40)
+        Me.lblTry8.TabIndex = 31
+        Me.lblTry8.Text = "lblTry8"
+        '
+        'lblTry7
+        '
+        Me.lblTry7.AutoSize = True
+        Me.lblTry7.Location = New System.Drawing.Point(21, 254)
+        Me.lblTry7.Name = "lblTry7"
+        Me.lblTry7.Size = New System.Drawing.Size(88, 40)
+        Me.lblTry7.TabIndex = 30
+        Me.lblTry7.Text = "lblTry7"
+        '
+        'lblTry6
+        '
+        Me.lblTry6.AutoSize = True
+        Me.lblTry6.Location = New System.Drawing.Point(21, 214)
+        Me.lblTry6.Name = "lblTry6"
+        Me.lblTry6.Size = New System.Drawing.Size(90, 40)
+        Me.lblTry6.TabIndex = 29
+        Me.lblTry6.Text = "lblTry6"
         '
         'FormGame
         '
@@ -237,6 +324,8 @@ Partial Class FormGame
         Me.Controls.Add(Me.lblTitle)
         Me.Name = "FormGame"
         Me.Text = "formGame"
+        Me.pnlTries.ResumeLayout(False)
+        Me.pnlTries.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -256,6 +345,14 @@ Partial Class FormGame
     Friend WithEvents btnGuess As Windows.Forms.Button
     Friend WithEvents lblFound As Windows.Forms.Label
     Friend WithEvents btnBack As Windows.Forms.Button
-    Friend WithEvents lblWrong As Windows.Forms.Label
-    Friend WithEvents lblRight As Windows.Forms.Label
+    Friend WithEvents lblTry10 As Windows.Forms.Label
+    Friend WithEvents lblTry9 As Windows.Forms.Label
+    Friend WithEvents lblTry8 As Windows.Forms.Label
+    Friend WithEvents lblTry7 As Windows.Forms.Label
+    Friend WithEvents lblTry6 As Windows.Forms.Label
+    Friend WithEvents lblTry5 As Windows.Forms.Label
+    Friend WithEvents lblTry4 As Windows.Forms.Label
+    Friend WithEvents lblTry3 As Windows.Forms.Label
+    Friend WithEvents lblTry2 As Windows.Forms.Label
+    Friend WithEvents lblTry1 As Windows.Forms.Label
 End Class
