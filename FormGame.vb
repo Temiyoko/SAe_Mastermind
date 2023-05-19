@@ -25,7 +25,6 @@ Public Class FormGame
                 DirectCast(pnlTextBox.Controls(nextTb), TextBox).Focus()
                 cpt += 1
             End If
-            'ok
         Next
     End Sub
 End Class
