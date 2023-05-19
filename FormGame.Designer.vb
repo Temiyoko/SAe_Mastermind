@@ -32,11 +32,13 @@ Partial Class FormGame
         Me.lblTries = New System.Windows.Forms.Label()
         Me.lblColorCode = New System.Windows.Forms.Label()
         Me.pnlTries = New System.Windows.Forms.Panel()
-        Me.lblColors = New System.Windows.Forms.Label()
+        Me.lblMissing = New System.Windows.Forms.Label()
         Me.lblSel = New System.Windows.Forms.Label()
         Me.lblChar = New System.Windows.Forms.Label()
         Me.lblFound = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.lblWrong = New System.Windows.Forms.Label()
+        Me.lblRight = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnGuess
@@ -57,6 +59,7 @@ Partial Class FormGame
         Me.tbCode5.Name = "tbCode5"
         Me.tbCode5.Size = New System.Drawing.Size(147, 42)
         Me.tbCode5.TabIndex = 13
+        Me.tbCode5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode4
         '
@@ -66,6 +69,7 @@ Partial Class FormGame
         Me.tbCode4.Name = "tbCode4"
         Me.tbCode4.Size = New System.Drawing.Size(147, 42)
         Me.tbCode4.TabIndex = 12
+        Me.tbCode4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode3
         '
@@ -75,6 +79,7 @@ Partial Class FormGame
         Me.tbCode3.Name = "tbCode3"
         Me.tbCode3.Size = New System.Drawing.Size(147, 42)
         Me.tbCode3.TabIndex = 11
+        Me.tbCode3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode2
         '
@@ -84,6 +89,7 @@ Partial Class FormGame
         Me.tbCode2.Name = "tbCode2"
         Me.tbCode2.Size = New System.Drawing.Size(147, 42)
         Me.tbCode2.TabIndex = 10
+        Me.tbCode2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode1
         '
@@ -93,6 +99,7 @@ Partial Class FormGame
         Me.tbCode1.Name = "tbCode1"
         Me.tbCode1.Size = New System.Drawing.Size(147, 42)
         Me.tbCode1.TabIndex = 9
+        Me.tbCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'lblTitle
         '
@@ -132,15 +139,16 @@ Partial Class FormGame
         Me.pnlTries.Size = New System.Drawing.Size(327, 489)
         Me.pnlTries.TabIndex = 17
         '
-        'lblColors
+        'lblMissing
         '
-        Me.lblColors.AutoSize = True
-        Me.lblColors.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblColors.Location = New System.Drawing.Point(748, 252)
-        Me.lblColors.Name = "lblColors"
-        Me.lblColors.Size = New System.Drawing.Size(116, 40)
-        Me.lblColors.TabIndex = 18
-        Me.lblColors.Text = "lblColors"
+        Me.lblMissing.AutoSize = True
+        Me.lblMissing.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMissing.ForeColor = System.Drawing.Color.Red
+        Me.lblMissing.Location = New System.Drawing.Point(748, 252)
+        Me.lblMissing.Name = "lblMissing"
+        Me.lblMissing.Size = New System.Drawing.Size(97, 40)
+        Me.lblMissing.TabIndex = 18
+        Me.lblMissing.Text = "Absent"
         '
         'lblSel
         '
@@ -183,16 +191,40 @@ Partial Class FormGame
         Me.btnBack.Text = "Retour"
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'lblWrong
+        '
+        Me.lblWrong.AutoSize = True
+        Me.lblWrong.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWrong.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblWrong.Location = New System.Drawing.Point(748, 292)
+        Me.lblWrong.Name = "lblWrong"
+        Me.lblWrong.Size = New System.Drawing.Size(126, 40)
+        Me.lblWrong.TabIndex = 24
+        Me.lblWrong.Text = "Mal placé"
+        '
+        'lblRight
+        '
+        Me.lblRight.AutoSize = True
+        Me.lblRight.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRight.ForeColor = System.Drawing.Color.LimeGreen
+        Me.lblRight.Location = New System.Drawing.Point(748, 332)
+        Me.lblRight.Name = "lblRight"
+        Me.lblRight.Size = New System.Drawing.Size(134, 40)
+        Me.lblRight.TabIndex = 25
+        Me.lblRight.Text = "Bien placé"
+        '
         'FormGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1130, 775)
+        Me.Controls.Add(Me.lblRight)
+        Me.Controls.Add(Me.lblWrong)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.lblFound)
         Me.Controls.Add(Me.lblSel)
         Me.Controls.Add(Me.lblChar)
-        Me.Controls.Add(Me.lblColors)
+        Me.Controls.Add(Me.lblMissing)
         Me.Controls.Add(Me.pnlTries)
         Me.Controls.Add(Me.lblColorCode)
         Me.Controls.Add(Me.lblTries)
@@ -218,10 +250,12 @@ Partial Class FormGame
     Friend WithEvents lblTries As Windows.Forms.Label
     Friend WithEvents lblColorCode As Windows.Forms.Label
     Friend WithEvents pnlTries As Windows.Forms.Panel
-    Friend WithEvents lblColors As Windows.Forms.Label
+    Friend WithEvents lblMissing As Windows.Forms.Label
     Friend WithEvents lblSel As Windows.Forms.Label
     Friend WithEvents lblChar As Windows.Forms.Label
     Friend WithEvents btnGuess As Windows.Forms.Button
     Friend WithEvents lblFound As Windows.Forms.Label
     Friend WithEvents btnBack As Windows.Forms.Button
+    Friend WithEvents lblWrong As Windows.Forms.Label
+    Friend WithEvents lblRight As Windows.Forms.Label
 End Class

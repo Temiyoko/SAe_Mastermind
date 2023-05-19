@@ -4,8 +4,8 @@ Imports System.Windows.Forms
 Public Class FormMenu
 
     Private Sub FormMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cboP1.Items.Clear()
-        cboP2.Items.Clear()
+        ' cboP1.Items.Clear()
+        ' cboP2.Items.Clear()
     End Sub
 
     Private Sub BtnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
