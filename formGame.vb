@@ -39,13 +39,16 @@ Public Class FormGame
         End If
     End Sub
 
-    Private Sub SaveTry(s As String)
+    Private Sub SaveTry(s As String, c As Color())
+        Dim ind As Integer = 0
         For Each pnl As Panel In pnlTries.Controls
             If pnl.Visible = False Then
                 pnl.Visible = True
                 For Each label As Label In pnl.Controls
                     label.Text = s.Substring(0, 1)
+                    label.ForeColor = c(ind)
                     s = s.Remove(0, 1)
+                    ind += 1
                 Next
                 Exit Sub
             End If
@@ -56,6 +59,7 @@ Public Class FormGame
         Dim ind As Integer = 0
         Dim cpt As Integer = 0
         Dim entry As String = ""
+        Dim colors(pnlTextBox.Controls.Count) As Color
 
         For Each tb As TextBox In pnlTextBox.Controls
             entry += tb.Text
@@ -67,9 +71,10 @@ Public Class FormGame
             Else
                 tb.BackColor = Color.Red
             End If
+            colors(ind) = tb.BackColor
             ind += 1
         Next
-        SaveTry(entry)
+        SaveTry(entry, colors)
 
         If cpt = GetCode().Length Then
             pnlTextBox.Enabled = False
