@@ -2,8 +2,10 @@
 Imports System.Windows.Forms
 
 Public Class FormGame
+    Private nbTries As Integer = 15
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblSel.Text = PlayableCharToString()
+
     End Sub
 
     Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs)
@@ -38,6 +40,7 @@ Public Class FormGame
     End Sub
 
     Private Sub btnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
+        nbTries -= 1
         Dim cpt As Integer = 0
         For Each tb As TextBox In pnlTextBox.Controls
             If tb.Text = getCodeInd(cpt) Then
