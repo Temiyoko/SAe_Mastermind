@@ -39,9 +39,25 @@ Public Class FormGame
         End If
     End Sub
 
+    Private Sub SaveTry(s As String)
+        For Each pnl As Panel In pnlTries.Controls
+            If pnl.Visible = False Then
+                pnl.Visible = True
+                For Each label As Label In pnl.Controls
+                    label.Text = s.Substring(0, 1)
+                    s = s.Remove(0, 1)
+                Next
+                Exit Sub
+            End If
+        Next
+    End Sub
+
     Private Sub BtnGuess_Click(sender As Object, e As EventArgs) Handles btnGuess.Click
         Dim cpt As Integer = 0
+        Dim entry As String = ""
+
         For Each tb As TextBox In pnlTextBox.Controls
+            entry += tb.Text
             If tb.Text = getCodeInd(cpt) Then
                 tb.BackColor = Color.LimeGreen
             ElseIf GetCode().Contains(tb.Text) Then
@@ -51,8 +67,9 @@ Public Class FormGame
             End If
             cpt += 1
         Next
-
+        SaveTry(entry)
         nbTries -= 1
         Me.Text = "Il vous reste " & nbTries & " coup(s)..."
     End Sub
+
 End Class
