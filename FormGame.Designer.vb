@@ -272,7 +272,7 @@ Partial Class FormGame
         Me.pnlTry1.Controls.Add(Me.lblTry2)
         Me.pnlTry1.Controls.Add(Me.lblTry1)
         Me.pnlTry1.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlTry1.Location = New System.Drawing.Point(0, 3)
+        Me.pnlTry1.Location = New System.Drawing.Point(3, 430)
         Me.pnlTry1.Name = "pnlTry1"
         Me.pnlTry1.Size = New System.Drawing.Size(414, 37)
         Me.pnlTry1.TabIndex = 26
@@ -336,9 +336,9 @@ Partial Class FormGame
         Me.pnlTries.Controls.Add(Me.pnlTry7)
         Me.pnlTries.Controls.Add(Me.pnlTry6)
         Me.pnlTries.Controls.Add(Me.pnlTry5)
+        Me.pnlTries.Controls.Add(Me.pnlTry2)
         Me.pnlTries.Controls.Add(Me.pnlTry4)
         Me.pnlTries.Controls.Add(Me.pnlTry3)
-        Me.pnlTries.Controls.Add(Me.pnlTry2)
         Me.pnlTries.Controls.Add(Me.pnlTry1)
         Me.pnlTries.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pnlTries.Location = New System.Drawing.Point(173, 252)
@@ -354,7 +354,7 @@ Partial Class FormGame
         Me.pnlTry11.Controls.Add(Me.Label49)
         Me.pnlTry11.Controls.Add(Me.Label50)
         Me.pnlTry11.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlTry11.Location = New System.Drawing.Point(0, 430)
+        Me.pnlTry11.Location = New System.Drawing.Point(1, 3)
         Me.pnlTry11.Name = "pnlTry11"
         Me.pnlTry11.Size = New System.Drawing.Size(414, 37)
         Me.pnlTry11.TabIndex = 29
@@ -649,7 +649,7 @@ Partial Class FormGame
         Me.pnlTry12.Controls.Add(Me.Label54)
         Me.pnlTry12.Controls.Add(Me.Label55)
         Me.pnlTry12.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlTry12.Location = New System.Drawing.Point(0, 473)
+        Me.pnlTry12.Location = New System.Drawing.Point(1, 43)
         Me.pnlTry12.Name = "pnlTry12"
         Me.pnlTry12.Size = New System.Drawing.Size(414, 37)
         Me.pnlTry12.TabIndex = 29
@@ -1121,7 +1121,7 @@ Partial Class FormGame
         Me.pnlTry2.Controls.Add(Me.Label4)
         Me.pnlTry2.Controls.Add(Me.Label5)
         Me.pnlTry2.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlTry2.Location = New System.Drawing.Point(0, 43)
+        Me.pnlTry2.Location = New System.Drawing.Point(1, 473)
         Me.pnlTry2.Name = "pnlTry2"
         Me.pnlTry2.Size = New System.Drawing.Size(414, 37)
         Me.pnlTry2.TabIndex = 29
