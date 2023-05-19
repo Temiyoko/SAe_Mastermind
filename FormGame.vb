@@ -8,7 +8,7 @@ Public Class FormGame
         Me.Name = "Il vous reste " & nbTries & " coup(s)..."
     End Sub
 
-    Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs)
+    Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbCode1.TextChanged, tbCode2.TextChanged, tbCode3.TextChanged, tbCode4.TextChanged, tbCode5.TextChanged
         If e.KeyChar <> ChrW(Keys.Back) And Not GetPlayableChar().Contains(e.KeyChar) Then
             e.Handled = True
         End If
