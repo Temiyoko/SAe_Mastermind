@@ -1224,7 +1224,7 @@ Partial Class FormGame
         '
         'tmEnd
         '
-        Me.tmEnd.Interval = 90000
+        Me.tmEnd.Interval = 1000
         '
         'FormGame
         '
