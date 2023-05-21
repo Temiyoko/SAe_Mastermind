@@ -6,7 +6,7 @@ Public Class FormGame
     Private maxTime = 90
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblSel.Text = PlayableCharToString()
-        Me.Text = "Il vous reste " & nbTries & " coup(s) et " & maxTime & " secondes"
+        UpdateTime()
         tmEnd.Start()
 
     End Sub
@@ -81,23 +81,27 @@ Public Class FormGame
         SaveTry(entry, colors)
 
         If cpt = GetCode().Length Then
+            tmEnd.Stop()
             pnlTextBox.Enabled = False
             btnGuess.Enabled = False
             lblFound.Visible = True
             btnBack.Visible = True
         End If
+
         nbTries -= 1
+
         If nbTries = 0 Then
             EndGame()
             MsgBox("Vous avez utilisé tous vos essais", MsgBoxStyle.Critical, "Dommage...")
         End If
 
-
+        UpdateTime()
     End Sub
 
     Private Sub TmEnd_Tick(sender As Object, e As EventArgs) Handles tmEnd.Tick
         maxTime -= 1
-        Me.Text = "Il vous reste " & nbTries & " coup(s) et " & maxTime & " secondes"
+        UpdateTime()
+
         If maxTime = 0 Then
             EndGame()
             MsgBox("Le temps est écoulé", MsgBoxStyle.Critical, "Zut...")
@@ -110,6 +114,13 @@ Public Class FormGame
         pnlTextBox.Enabled = False
         btnGuess.Enabled = False
         btnBack.Visible = True
-        Me.Text = "Il vous reste " & nbTries & " coup(s) et " & maxTime & " secondes"
+        UpdateTime()
+    End Sub
+
+    Private Sub UpdateTime()
+        Dim minutes As Integer = maxTime \ 60
+        Dim seconds As Integer = maxTime Mod 60
+
+        Me.Text = "Il vous reste " & nbTries & " coup(s) et " & minutes & " minute et " & seconds & " secondes"
     End Sub
 End Class
