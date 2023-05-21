@@ -4,6 +4,7 @@ Imports System.Windows.Forms
 Module Module1
     Private playableChar() As Char
     Private code() As Char
+    Private idFile As Integer = FreeFile()
 
     Public Sub SetPlayableChar(s As String)
         playableChar = s.ToCharArray()
@@ -38,12 +39,13 @@ Module Module1
         Dim score As Integer = 0
         '$ facilite la concatenation des variables dans une chaîne de format
         Dim playerInfo As String = $"{s} {score}"
-        Dim file As New StreamWriter("playerSave.txt", True)
-        file.WriteLine(playerInfo)
-        file.Close()
+        PrintLine(idFile, playerInfo)
     End Sub
+
     Sub Main()
+        FileOpen(idFile, "playerSave.txt", OpenMode.Append)
         Application.Run(FormMenu)
+        FileClose(idFile)
     End Sub
 
 End Module
