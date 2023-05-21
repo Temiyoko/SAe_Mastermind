@@ -3,9 +3,10 @@ Imports System.Windows.Forms
 
 Public Class FormGame
     Private nbTries As Integer = 15
+    Private maxTime = 90
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblSel.Text = PlayableCharToString()
-        Me.Text = "Il vous reste " & nbTries & " coup(s)..."
+        Me.Text = "Il vous reste " & nbTries & " coup(s) et " & maxTime & " secondes"
         tmEnd.Start()
 
     End Sub
@@ -84,15 +85,30 @@ Public Class FormGame
             lblFound.Visible = True
             btnBack.Visible = True
         End If
-
         nbTries -= 1
-        Me.Text = "Il vous reste " & nbTries & " coup(s)..."
+        If nbTries = 0 Then
+            EndGame()
+            MsgBox("Vous avez utilisé tous vos essais", MsgBoxStyle.Critical, "Dommage...")
+        End If
+
+
     End Sub
 
-    Private Sub tmEnd_Tick(sender As Object, e As EventArgs) Handles tmEnd.Tick
+    Private Sub TmEnd_Tick(sender As Object, e As EventArgs) Handles tmEnd.Tick
+        maxTime -= 1
+        Me.Text = "Il vous reste " & nbTries & " coup(s) et " & maxTime & " secondes"
+        If maxTime = 0 Then
+            EndGame()
+            MsgBox("Le temps est écoulé", MsgBoxStyle.Critical, "Zut...")
+        End If
+    End Sub
+
+    Private Sub EndGame()
         'Fin du jeu
+        tmEnd.Stop()
         pnlTextBox.Enabled = False
         btnGuess.Enabled = False
         btnBack.Visible = True
+        Me.Text = "Il vous reste " & nbTries & " coup(s) et " & maxTime & " secondes"
     End Sub
 End Class
