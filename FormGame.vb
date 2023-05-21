@@ -19,6 +19,7 @@ Public Class FormGame
 
     Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
+        FormMenu.NextGame()
         FormMenu.Show()
     End Sub
 
@@ -66,7 +67,7 @@ Public Class FormGame
 
         For Each tb As TextBox In pnlTextBox.Controls
             entry += tb.Text
-            If tb.Text = getCodeInd(ind) Then
+            If tb.Text = GetCodeInd(ind) Then
                 tb.BackColor = Color.LimeGreen
                 cpt += 1
             ElseIf GetCode().Contains(tb.Text) Then

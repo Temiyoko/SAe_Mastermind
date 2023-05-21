@@ -54,4 +54,10 @@ Public Class FormMenu
         FormScores.Show()
     End Sub
 
+    Public Sub NextGame()
+        Dim name As String = cboP1.Text
+        cboP1.Text = cboP2.Text
+        cboP2.Text = name
+    End Sub
+
 End Class
