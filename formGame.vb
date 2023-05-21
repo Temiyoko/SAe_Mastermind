@@ -19,6 +19,8 @@ Public Class FormGame
 
     Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
+        NewPlayer(FormMenu.cboP1.Text)
+        NewPlayer(FormMenu.cboP2.Text)
         FormMenu.NextGame()
         FormMenu.Show()
     End Sub

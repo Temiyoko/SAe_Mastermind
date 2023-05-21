@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Forms
+﻿Imports System.IO
+Imports System.Windows.Forms
 
 Module Module1
     Private playableChar() As Char
@@ -33,6 +34,14 @@ Module Module1
         Return code(i)
     End Function
 
+    Public Sub NewPlayer(s As String)
+        Dim score As Integer = 0
+        '$ facilite la concatenation des variables dans une chaîne de format
+        Dim playerInfo As String = $"{s} {score}"
+        Dim file As New StreamWriter("playerSave.txt", True)
+        file.WriteLine(playerInfo)
+        file.Close()
+    End Sub
     Sub Main()
         Application.Run(FormMenu)
     End Sub
