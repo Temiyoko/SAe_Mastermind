@@ -174,6 +174,7 @@ Partial Class FormCode
         Me.Controls.Add(Me.btnHide)
         Me.Controls.Add(Me.lblTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "FormCode"
         Me.Text = "Saisie du code"
         Me.pnlTextBox.ResumeLayout(False)

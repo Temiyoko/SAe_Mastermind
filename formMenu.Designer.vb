@@ -128,6 +128,7 @@ Partial Class FormMenu
         Me.Controls.Add(Me.lblP1)
         Me.Controls.Add(Me.lblTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "FormMenu"
         Me.Text = "Menu"
         Me.ResumeLayout(False)

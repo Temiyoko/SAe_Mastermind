@@ -43,17 +43,20 @@ Module Module1
         Dim score As Integer = 0
         '$ facilite la concatenation des variables dans une chaîne de format
         Dim playerInfo As String = $"{s} {score}"
+        FileOpen(idFile, "playerSave.txt", OpenMode.Append)
         PrintLine(idFile, playerInfo)
+        FileClose(idFile)
     End Sub
 
     Public Sub AddScore(s As String)
-        Dim nextLine As String
-        Dim idTemp As Integer = FreeFile()
-        FileOpen(idTemp, "temp.txt", OpenMode.Output)
-        ' Lire le contenu du fichier
+        Dim lines As New List(Of String)()
+
+        FileOpen(idFile, "playerSave.txt", OpenMode.Input)
+
         Do Until EOF(idFile)
-            nextLine = LineInput(idFile)
+            Dim nextLine As String = LineInput(idFile)
             Dim playerInfo As String() = nextLine.Split(" ")
+
             If playerInfo(0) = s Then
                 Dim score As Integer
                 If Integer.TryParse(playerInfo(1), score) Then
@@ -61,19 +64,42 @@ Module Module1
                     playerInfo(1) = score.ToString()
                 End If
             End If
-            PrintLine(idTemp, String.Join(" ", playerInfo))
+
+            lines.Add(String.Join(" ", playerInfo))
         Loop
 
         FileClose(idFile)
-        FileClose(idTemp)
-        File.Delete("playerSave.txt")
-        File.Move("temp.txt", "playerSave.txt")
+        FileOpen(idFile, "playerSave.txt", OpenMode.Output)
+
+        For Each line As String In lines
+            PrintLine(idFile, line)
+        Next
+
+        FileClose(idFile)
+    End Sub
+
+    Public Sub UpdateScore(s As String, won As Boolean)
+        Dim nextLine As String
+        FileOpen(idFile, "playerSave.txt", OpenMode.Input)
+
+        Do Until EOF(idFile)
+            nextLine = LineInput(idFile)
+            Dim playerInfo As String() = nextLine.Split(" ")
+
+            If playerInfo(0) = s Then
+                FileClose(idFile)
+                If won Then AddScore(s)
+                Exit Sub
+            End If
+        Loop
+
+        FileClose(idFile)
+        NewPlayer(s)
+        If won Then AddScore(s)
     End Sub
 
     Sub Main()
-        FileOpen(idFile, "playerSave.txt", OpenMode.Append)
         Application.Run(FormMenu)
-        FileClose(idFile)
     End Sub
 
 End Module

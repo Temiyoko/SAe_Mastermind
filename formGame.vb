@@ -19,23 +19,8 @@ Public Class FormGame
 
     Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
-        UpdateScore(FormMenu.cboP1.Text)
-        UpdateScore(FormMenu.cboP2.Text)
         FormMenu.NextGame()
         FormMenu.Show()
-    End Sub
-
-    Private Sub UpdateScore(s As String)
-        Dim nextLine As String
-        Do Until EOF(GetIdFile)
-            nextLine = LineInput(GetIdFile)
-            Dim playerInfo As String() = nextLine.Split(" ")
-            If playerInfo(0) = s Then
-                AddScore(s)
-                Exit Sub
-            End If
-        Loop
-        NewPlayer(s)
     End Sub
 
     Private Sub TbCode_TextChanged(sender As Object, e As EventArgs) Handles tbCode1.TextChanged, tbCode2.TextChanged, tbCode3.TextChanged, tbCode4.TextChanged, tbCode5.TextChanged
@@ -96,17 +81,13 @@ Public Class FormGame
         SaveTry(entry, colors)
 
         If cpt = GetCode().Length Then
-            tmEnd.Stop()
-            pnlTextBox.Enabled = False
-            btnGuess.Enabled = False
-            lblFound.Visible = True
-            btnBack.Visible = True
+            WonGame()
         End If
 
         nbTries -= 1
 
         If nbTries = 0 Then
-            EndGame()
+            LostGame()
             MsgBox("Vous avez utilisé tous vos essais", MsgBoxStyle.Critical, "Dommage...")
         End If
 
@@ -118,18 +99,29 @@ Public Class FormGame
         UpdateTime()
 
         If maxTime = 0 Then
-            EndGame()
+            LostGame()
             MsgBox("Le temps est écoulé", MsgBoxStyle.Critical, "Zut...")
         End If
     End Sub
 
-    Private Sub EndGame()
-        'Fin du jeu
+    Private Sub LostGame()
         tmEnd.Stop()
         pnlTextBox.Enabled = False
         btnGuess.Enabled = False
         btnBack.Visible = True
         UpdateTime()
+        UpdateScore(FormMenu.cboP1.Text, True)
+        UpdateScore(FormMenu.cboP2.Text, False)
+    End Sub
+
+    Private Sub WonGame()
+        tmEnd.Stop()
+        pnlTextBox.Enabled = False
+        btnGuess.Enabled = False
+        lblFound.Visible = True
+        btnBack.Visible = True
+        UpdateScore(FormMenu.cboP1.Text, False)
+        UpdateScore(FormMenu.cboP2.Text, True)
     End Sub
 
     Private Sub UpdateTime()

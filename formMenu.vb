@@ -16,10 +16,8 @@ Public Class FormMenu
         End If
     End Sub
 
-    Private Sub CheckPlayer(Nom As String, Cbo As ComboBox)
-        If Not Cbo.Items.Contains(Nom) Then
-            Cbo.Items.Add(Nom)
-        End If
+    Private Sub CheckPlayer(Name As String, Cbo As ComboBox)
+        If Not Cbo.Items.Contains(Name) Then Cbo.Items.Add(Name)
     End Sub
 
     Private Sub BtnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
@@ -60,5 +58,7 @@ Public Class FormMenu
         cboP2.Text = name
     End Sub
 
-
+    Private Sub Cbo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboP1.KeyPress, cboP2.KeyPress
+        If e.KeyChar = ChrW(Keys.Space) Then e.Handled = True
+    End Sub
 End Class

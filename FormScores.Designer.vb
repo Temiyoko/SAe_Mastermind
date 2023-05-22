@@ -175,6 +175,7 @@ Partial Class FormScores
         Me.Controls.Add(Me.lstName)
         Me.Controls.Add(Me.lblTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "FormScores"
         Me.Text = "FormScore"
         Me.ResumeLayout(False)
