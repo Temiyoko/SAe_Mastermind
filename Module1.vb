@@ -8,6 +8,15 @@ Module Module1
     Private code() As Char
     Private idFile As Integer = FreeFile()
 
+    Public Structure Player
+        Dim Name As String
+        Dim Score As Integer
+        Dim BestTime As Integer
+        Dim P1 As Integer
+        Dim P2 As Integer
+        Dim TotalTime As Integer
+    End Structure
+
     Public Sub SetPlayableChar(s As String)
         playableChar = s.ToCharArray()
     End Sub
@@ -107,19 +116,28 @@ Module Module1
         Next
         FileClose(idFile)
     End Sub
-    Public Function GetStat(i As Integer) As String()
-        Debug.Assert(i >= 0 And i <= 5)
-        Dim lines As New List(Of String)()
 
+    Public Function GetAllPlayer() As List(Of Player)
+        Dim nextLine As String
+        Dim list As New List(Of Player)
         FileOpen(idFile, "playerSave.txt", OpenMode.Input)
+
         Do Until EOF(idFile)
-            Dim nextLine As String = LineInput(idFile)
+            nextLine = LineInput(idFile)
             Dim playerInfo As String() = nextLine.Split(" ")
-            Dim info As String = If(playerInfo(i).ToString() = Integer.MaxValue.ToString(), "-", playerInfo(i).ToString())
-            lines.Add(info)
+            Dim p As Player
+            With p
+                .Name = playerInfo(0)
+                .Score = playerInfo(1)
+                .BestTime = playerInfo(2)
+                .P1 = playerInfo(3)
+                .P2 = playerInfo(4)
+                .TotalTime = playerInfo(5)
+            End With
+            list.Add(p)
         Loop
         FileClose(idFile)
-        Return lines.ToArray()
+        Return list
     End Function
 
     Sub Main()
