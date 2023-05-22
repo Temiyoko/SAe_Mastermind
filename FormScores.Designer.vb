@@ -140,11 +140,12 @@ Partial Class FormScores
         '
         Me.lblBestTime.AutoSize = True
         Me.lblBestTime.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBestTime.Location = New System.Drawing.Point(378, 136)
+        Me.lblBestTime.Location = New System.Drawing.Point(356, 136)
         Me.lblBestTime.Name = "lblBestTime"
-        Me.lblBestTime.Size = New System.Drawing.Size(184, 40)
+        Me.lblBestTime.Size = New System.Drawing.Size(220, 40)
         Me.lblBestTime.TabIndex = 10
-        Me.lblBestTime.Text = "Meilleur temps"
+        Me.lblBestTime.Text = "Meilleur temps (s)"
+        Me.lblBestTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblNbGames
         '
@@ -160,11 +161,11 @@ Partial Class FormScores
         '
         Me.lblTotalTime.AutoSize = True
         Me.lblTotalTime.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalTime.Location = New System.Drawing.Point(968, 136)
+        Me.lblTotalTime.Location = New System.Drawing.Point(932, 136)
         Me.lblTotalTime.Name = "lblTotalTime"
-        Me.lblTotalTime.Size = New System.Drawing.Size(150, 40)
+        Me.lblTotalTime.Size = New System.Drawing.Size(186, 40)
         Me.lblTotalTime.TabIndex = 12
-        Me.lblTotalTime.Text = "Temps joué"
+        Me.lblTotalTime.Text = "Temps joué (s)"
         '
         'lblP1
         '
@@ -211,6 +212,8 @@ Partial Class FormScores
         '
         'cboSearch
         '
+        Me.cboSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cboSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cboSearch.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboSearch.FormattingEnabled = True
         Me.cboSearch.Location = New System.Drawing.Point(13, 440)
@@ -282,7 +285,7 @@ Partial Class FormScores
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "FormScores"
-        Me.Text = "FormScore"
+        Me.Text = "Scores"
         Me.pnlList.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()

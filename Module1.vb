@@ -140,6 +140,25 @@ Module Module1
         Return list
     End Function
 
+    Public Function PlayerToString(s As String, list As List(Of Player)) As String
+        Dim ppl As Player = Nothing
+
+        For Each p As Player In list
+            If p.Name = s Then
+                ppl = p
+                Exit For
+            End If
+        Next
+
+        If Not IsNothing(ppl) Then
+            Dim bestTime As String = If(ppl.BestTime.ToString() = Integer.MaxValue.ToString(), "-", ppl.BestTime.ToString())
+            Return "Le joueur " & ppl.Name & " a un score de " & ppl.Score & " point(s)." & vbCr _
+                & "Il a joué " & ppl.P1 & " fois comme joueur 1 et " & ppl.P2 & " fois comme joueur 2." _
+                & vbCr & "Son meilleur temps est de " & bestTime & " secondes sur un total de " & ppl.TotalTime & " secondes."
+        End If
+        Return "Aucun joueur n'a été trouvé."
+    End Function
+
     Sub Main()
         Application.Run(FormMenu)
     End Sub

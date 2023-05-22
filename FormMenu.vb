@@ -61,4 +61,5 @@ Public Class FormMenu
     Private Sub Cbo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles cboP1.KeyPress, cboP2.KeyPress
         If e.KeyChar = ChrW(Keys.Space) Then e.Handled = True
     End Sub
+
 End Class

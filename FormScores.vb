@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Forms
+﻿Imports System.ComponentModel
+Imports System.Windows.Forms
 Public Class FormScores
 
     Private playerList As New List(Of Player)()
@@ -7,6 +8,11 @@ Public Class FormScores
         playerList.Clear()
         playerList.AddRange(GetAllPlayer())
         PopulateListBoxes()
+        cboSearch.Items.Clear()
+
+        For Each p As Player In playerList
+            cboSearch.Items.Add(p.Name)
+        Next
     End Sub
 
     Private Sub Lst_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstName.SelectedIndexChanged, lstScore.SelectedIndexChanged, lstBestTime.SelectedIndexChanged, lstP1.SelectedIndexChanged, lstP2.SelectedIndexChanged, lstTotalTime.SelectedIndexChanged
@@ -51,4 +57,7 @@ Public Class FormScores
         Next
     End Sub
 
+    Private Sub CboSearch_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboSearch.SelectedIndexChanged
+        MsgBox(PlayerToString(cboSearch.Text, playerList), vbInformation, "Statistiques")
+    End Sub
 End Class
