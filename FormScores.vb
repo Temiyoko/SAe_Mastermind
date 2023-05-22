@@ -10,7 +10,6 @@ Public Class FormScores
         lstP1.Items.AddRange(GetStat(3))
         lstP2.Items.AddRange(GetStat(4))
         lstTotalTime.Items.AddRange(GetStat(5))
-
     End Sub
 
     Private Sub Lst_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstName.SelectedIndexChanged, lstScore.SelectedIndexChanged, lstBestTime.SelectedIndexChanged, lstP1.SelectedIndexChanged, lstP2.SelectedIndexChanged, lstTotalTime.SelectedIndexChanged

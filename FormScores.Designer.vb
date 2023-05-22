@@ -38,6 +38,11 @@ Partial Class FormScores
         Me.lstP2 = New System.Windows.Forms.ListBox()
         Me.lblP2 = New System.Windows.Forms.Label()
         Me.pnlList = New System.Windows.Forms.Panel()
+        Me.cboSearch = New System.Windows.Forms.ComboBox()
+        Me.btnName = New System.Windows.Forms.Button()
+        Me.btnBestScore = New System.Windows.Forms.Button()
+        Me.btnBestTime = New System.Windows.Forms.Button()
+        Me.lblFilter = New System.Windows.Forms.Label()
         Me.pnlList.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -104,9 +109,9 @@ Partial Class FormScores
         'btnRetour
         '
         Me.btnRetour.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRetour.Location = New System.Drawing.Point(12, 464)
+        Me.btnRetour.Location = New System.Drawing.Point(956, 436)
         Me.btnRetour.Name = "btnRetour"
-        Me.btnRetour.Size = New System.Drawing.Size(150, 52)
+        Me.btnRetour.Size = New System.Drawing.Size(162, 52)
         Me.btnRetour.TabIndex = 7
         Me.btnRetour.Text = "Retour"
         Me.btnRetour.UseVisualStyleBackColor = True
@@ -204,12 +209,66 @@ Partial Class FormScores
         Me.pnlList.Size = New System.Drawing.Size(1106, 71)
         Me.pnlList.TabIndex = 16
         '
+        'cboSearch
+        '
+        Me.cboSearch.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboSearch.FormattingEnabled = True
+        Me.cboSearch.Location = New System.Drawing.Point(13, 440)
+        Me.cboSearch.Name = "cboSearch"
+        Me.cboSearch.Size = New System.Drawing.Size(498, 48)
+        Me.cboSearch.TabIndex = 17
+        '
+        'btnName
+        '
+        Me.btnName.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnName.Location = New System.Drawing.Point(13, 386)
+        Me.btnName.Name = "btnName"
+        Me.btnName.Size = New System.Drawing.Size(162, 48)
+        Me.btnName.TabIndex = 18
+        Me.btnName.Text = "A-Z"
+        Me.btnName.UseVisualStyleBackColor = True
+        '
+        'btnBestScore
+        '
+        Me.btnBestScore.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBestScore.Location = New System.Drawing.Point(181, 386)
+        Me.btnBestScore.Name = "btnBestScore"
+        Me.btnBestScore.Size = New System.Drawing.Size(162, 48)
+        Me.btnBestScore.TabIndex = 19
+        Me.btnBestScore.Text = "Score"
+        Me.btnBestScore.UseVisualStyleBackColor = True
+        '
+        'btnBestTime
+        '
+        Me.btnBestTime.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBestTime.Location = New System.Drawing.Point(349, 386)
+        Me.btnBestTime.Name = "btnBestTime"
+        Me.btnBestTime.Size = New System.Drawing.Size(162, 48)
+        Me.btnBestTime.TabIndex = 20
+        Me.btnBestTime.Text = "Temps"
+        Me.btnBestTime.UseVisualStyleBackColor = True
+        '
+        'lblFilter
+        '
+        Me.lblFilter.AutoSize = True
+        Me.lblFilter.Font = New System.Drawing.Font("Poppins SemiBold", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFilter.Location = New System.Drawing.Point(220, 343)
+        Me.lblFilter.Name = "lblFilter"
+        Me.lblFilter.Size = New System.Drawing.Size(86, 40)
+        Me.lblFilter.TabIndex = 21
+        Me.lblFilter.Text = "Filtres"
+        '
         'FormScores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1130, 587)
+        Me.Controls.Add(Me.lblFilter)
+        Me.Controls.Add(Me.btnBestTime)
+        Me.Controls.Add(Me.btnBestScore)
+        Me.Controls.Add(Me.btnName)
+        Me.Controls.Add(Me.cboSearch)
         Me.Controls.Add(Me.pnlList)
         Me.Controls.Add(Me.lblP2)
         Me.Controls.Add(Me.lblP1)
@@ -246,4 +305,9 @@ Partial Class FormScores
     Friend WithEvents lstP2 As Windows.Forms.ListBox
     Friend WithEvents lblP2 As Windows.Forms.Label
     Friend WithEvents pnlList As Windows.Forms.Panel
+    Friend WithEvents cboSearch As Windows.Forms.ComboBox
+    Friend WithEvents btnName As Windows.Forms.Button
+    Friend WithEvents btnBestScore As Windows.Forms.Button
+    Friend WithEvents btnBestTime As Windows.Forms.Button
+    Friend WithEvents lblFilter As Windows.Forms.Label
 End Class
