@@ -19,10 +19,23 @@ Public Class FormGame
 
     Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Close()
-        NewPlayer(FormMenu.cboP1.Text)
-        NewPlayer(FormMenu.cboP2.Text)
+        UpdateScore(FormMenu.cboP1.Text)
+        UpdateScore(FormMenu.cboP2.Text)
         FormMenu.NextGame()
         FormMenu.Show()
+    End Sub
+
+    Private Sub UpdateScore(s As String)
+        Dim nextLine As String
+        Do Until EOF(GetIdFile)
+            nextLine = LineInput(GetIdFile)
+            Dim playerInfo As String() = nextLine.Split(" ")
+            If playerInfo(0) = s Then
+                AddScore(s)
+                Exit Sub
+            End If
+        Loop
+        NewPlayer(s)
     End Sub
 
     Private Sub TbCode_TextChanged(sender As Object, e As EventArgs) Handles tbCode1.TextChanged, tbCode2.TextChanged, tbCode3.TextChanged, tbCode4.TextChanged, tbCode5.TextChanged

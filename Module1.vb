@@ -14,6 +14,10 @@ Module Module1
         Return playableChar
     End Function
 
+    Public Function GetIdFile() As Integer
+        Return idFile
+    End Function
+
     Public Function PlayableCharToString() As String
         Dim label As String = ""
         For Each c As Char In playableChar
@@ -40,6 +44,30 @@ Module Module1
         '$ facilite la concatenation des variables dans une chaîne de format
         Dim playerInfo As String = $"{s} {score}"
         PrintLine(idFile, playerInfo)
+    End Sub
+
+    Public Sub AddScore(s As String)
+        Dim nextLine As String
+        Dim idTemp As Integer = FreeFile()
+        FileOpen(idTemp, "temp.txt", OpenMode.Output)
+        ' Lire le contenu du fichier
+        Do Until EOF(idFile)
+            nextLine = LineInput(idFile)
+            Dim playerInfo As String() = nextLine.Split(" ")
+            If playerInfo(0) = s Then
+                Dim score As Integer
+                If Integer.TryParse(playerInfo(1), score) Then
+                    score += 1
+                    playerInfo(1) = score.ToString()
+                End If
+            End If
+            PrintLine(idTemp, String.Join(" ", playerInfo))
+        Loop
+
+        FileClose(idFile)
+        FileClose(idTemp)
+        File.Delete("playerSave.txt")
+        File.Move("temp.txt", "playerSave.txt")
     End Sub
 
     Sub Main()
