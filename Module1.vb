@@ -40,9 +40,9 @@ Module Module1
     End Function
 
     Public Sub NewPlayer(s As String)
-        Dim score As Integer = 0
+        Dim score As Integer = 0, bestTime = 0, p1Games = 0, p2Games = 0, totalGuessTime = 0
         '$ facilite la concatenation des variables dans une chaîne de format
-        Dim playerInfo As String = $"{s} {score}"
+        Dim playerInfo As String = $"{s} {score} {bestTime} {p1Games} {p2Games} {totalGuessTime}"
         FileOpen(idFile, "playerSave.txt", OpenMode.Append)
         PrintLine(idFile, playerInfo)
         FileClose(idFile)
