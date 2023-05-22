@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports System.Windows.Forms
 Imports System.Windows.Forms.LinkLabel
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock
 
 Module Module1
     Private playableChar() As Char
@@ -106,6 +107,20 @@ Module Module1
         Next
         FileClose(idFile)
     End Sub
+    Public Function GetStat(i As Integer) As String()
+        Debug.Assert(i >= 0 And i <= 5)
+        Dim lines As New List(Of String)()
+
+        FileOpen(idFile, "playerSave.txt", OpenMode.Input)
+        Do Until EOF(idFile)
+            Dim nextLine As String = LineInput(idFile)
+            Dim playerInfo As String() = nextLine.Split(" ")
+            Dim info As String = If(playerInfo(i).ToString() = Integer.MaxValue.ToString(), "-", playerInfo(i).ToString())
+            lines.Add(info)
+        Loop
+        FileClose(idFile)
+        Return lines.ToArray()
+    End Function
 
     Sub Main()
         Application.Run(FormMenu)
