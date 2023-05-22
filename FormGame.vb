@@ -4,6 +4,7 @@ Imports System.Windows.Forms
 Public Class FormGame
     Private nbTries As Integer = 15
     Private maxTime = 90
+    Private currentTime = 90
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblSel.Text = PlayableCharToString()
         UpdateTime()
@@ -95,10 +96,10 @@ Public Class FormGame
     End Sub
 
     Private Sub TmEnd_Tick(sender As Object, e As EventArgs) Handles tmEnd.Tick
-        maxTime -= 1
+        currentTime -= 1
         UpdateTime()
 
-        If maxTime = 0 Then
+        If currentTime = 0 Then
             LostGame()
             MsgBox("Le temps est écoulé", MsgBoxStyle.Critical, "Zut...")
         End If
@@ -110,8 +111,8 @@ Public Class FormGame
         btnGuess.Enabled = False
         btnBack.Visible = True
         UpdateTime()
-        UpdateScore(FormMenu.cboP1.Text, True)
-        UpdateScore(FormMenu.cboP2.Text, False)
+        UpdatePlayer(FormMenu.cboP1.Text, maxTime - currentTime, 1, True)
+        UpdatePlayer(FormMenu.cboP2.Text, maxTime - currentTime, 2, False)
     End Sub
 
     Private Sub WonGame()
@@ -120,13 +121,13 @@ Public Class FormGame
         btnGuess.Enabled = False
         lblFound.Visible = True
         btnBack.Visible = True
-        UpdateScore(FormMenu.cboP1.Text, False)
-        UpdateScore(FormMenu.cboP2.Text, True)
+        UpdatePlayer(FormMenu.cboP1.Text, maxTime - currentTime, 1, False)
+        UpdatePlayer(FormMenu.cboP2.Text, maxTime - currentTime, 2, True)
     End Sub
 
     Private Sub UpdateTime()
-        Dim minutes As Integer = maxTime \ 60
-        Dim seconds As Integer = maxTime Mod 60
+        Dim minutes As Integer = currentTime \ 60
+        Dim seconds As Integer = currentTime Mod 60
 
         Me.Text = "Il vous reste " & nbTries & " coup(s) et " & minutes & " minute et " & seconds & " secondes"
     End Sub
