@@ -47,6 +47,16 @@ Partial Class FormCode
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Mastermind"
         '
+        'tbCode1
+        '
+        Me.tbCode1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbCode1.Location = New System.Drawing.Point(188, 35)
+        Me.tbCode1.MaxLength = 1
+        Me.tbCode1.Name = "tbCode1"
+        Me.tbCode1.Size = New System.Drawing.Size(147, 42)
+        Me.tbCode1.TabIndex = 2
+        Me.tbCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'tbCode2
         '
         Me.tbCode2.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -54,7 +64,7 @@ Partial Class FormCode
         Me.tbCode2.MaxLength = 1
         Me.tbCode2.Name = "tbCode2"
         Me.tbCode2.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode2.TabIndex = 2
+        Me.tbCode2.TabIndex = 3
         Me.tbCode2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode3
@@ -64,7 +74,7 @@ Partial Class FormCode
         Me.tbCode3.MaxLength = 1
         Me.tbCode3.Name = "tbCode3"
         Me.tbCode3.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode3.TabIndex = 3
+        Me.tbCode3.TabIndex = 4
         Me.tbCode3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode4
@@ -74,7 +84,7 @@ Partial Class FormCode
         Me.tbCode4.MaxLength = 1
         Me.tbCode4.Name = "tbCode4"
         Me.tbCode4.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode4.TabIndex = 4
+        Me.tbCode4.TabIndex = 5
         Me.tbCode4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode5
@@ -84,7 +94,7 @@ Partial Class FormCode
         Me.tbCode5.MaxLength = 1
         Me.tbCode5.Name = "tbCode5"
         Me.tbCode5.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode5.TabIndex = 5
+        Me.tbCode5.TabIndex = 1
         Me.tbCode5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode1
