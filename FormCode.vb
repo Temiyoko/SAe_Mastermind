@@ -3,7 +3,6 @@
 Public Class FormCode
 
     Private Sub FormCode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        tbCode1.Focus()
         lblSel.Text = PlayableCharToString()
         btnHide.Text = "Afficher"
         ObfuscateTextboxes()
