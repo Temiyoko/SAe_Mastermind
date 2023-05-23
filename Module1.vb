@@ -117,6 +117,20 @@ Module Module1
         FileClose(idFile)
     End Sub
 
+    Public Function GetAllNames() As String()
+        Dim nextLine As String
+        Dim list As New List(Of String)
+        FileOpen(idFile, "playerSave.txt", OpenMode.Input)
+
+        Do Until EOF(idFile)
+            nextLine = LineInput(idFile)
+            Dim playerInfo As String() = nextLine.Split(" ")
+            list.Add(playerInfo(0))
+        Loop
+        FileClose(idFile)
+        Return list.ToArray()
+    End Function
+
     Public Function GetAllPlayer() As List(Of Player)
         Dim nextLine As String
         Dim list As New List(Of Player)

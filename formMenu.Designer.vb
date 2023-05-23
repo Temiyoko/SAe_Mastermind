@@ -54,6 +54,8 @@ Partial Class FormMenu
         '
         'cboP1
         '
+        Me.cboP1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
+        Me.cboP1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cboP1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboP1.FormattingEnabled = True
         Me.cboP1.Location = New System.Drawing.Point(79, 231)
@@ -64,6 +66,8 @@ Partial Class FormMenu
         '
         'cboP2
         '
+        Me.cboP2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
+        Me.cboP2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cboP2.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboP2.FormattingEnabled = True
         Me.cboP2.Location = New System.Drawing.Point(680, 231)
