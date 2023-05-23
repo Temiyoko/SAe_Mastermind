@@ -23,11 +23,11 @@ Partial Class FormCode
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.tbCode1 = New System.Windows.Forms.TextBox()
         Me.tbCode2 = New System.Windows.Forms.TextBox()
         Me.tbCode3 = New System.Windows.Forms.TextBox()
         Me.tbCode4 = New System.Windows.Forms.TextBox()
         Me.tbCode5 = New System.Windows.Forms.TextBox()
+        Me.tbCode1 = New System.Windows.Forms.TextBox()
         Me.btnHide = New System.Windows.Forms.Button()
         Me.lblChar = New System.Windows.Forms.Label()
         Me.lblSel = New System.Windows.Forms.Label()
@@ -44,23 +44,13 @@ Partial Class FormCode
         Me.lblTitle.Location = New System.Drawing.Point(425, 9)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(282, 70)
-        Me.lblTitle.TabIndex = 1
+        Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Mastermind"
-        '
-        'tbCode1
-        '
-        Me.tbCode1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode1.Location = New System.Drawing.Point(188, 35)
-        Me.tbCode1.MaxLength = 1
-        Me.tbCode1.Name = "tbCode1"
-        Me.tbCode1.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode1.TabIndex = 1
-        Me.tbCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode2
         '
         Me.tbCode2.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode2.Location = New System.Drawing.Point(366, 35)
+        Me.tbCode2.Location = New System.Drawing.Point(188, 35)
         Me.tbCode2.MaxLength = 1
         Me.tbCode2.Name = "tbCode2"
         Me.tbCode2.Size = New System.Drawing.Size(147, 42)
@@ -70,7 +60,7 @@ Partial Class FormCode
         'tbCode3
         '
         Me.tbCode3.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode3.Location = New System.Drawing.Point(546, 35)
+        Me.tbCode3.Location = New System.Drawing.Point(366, 35)
         Me.tbCode3.MaxLength = 1
         Me.tbCode3.Name = "tbCode3"
         Me.tbCode3.Size = New System.Drawing.Size(147, 42)
@@ -80,7 +70,7 @@ Partial Class FormCode
         'tbCode4
         '
         Me.tbCode4.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode4.Location = New System.Drawing.Point(722, 35)
+        Me.tbCode4.Location = New System.Drawing.Point(546, 35)
         Me.tbCode4.MaxLength = 1
         Me.tbCode4.Name = "tbCode4"
         Me.tbCode4.Size = New System.Drawing.Size(147, 42)
@@ -90,12 +80,22 @@ Partial Class FormCode
         'tbCode5
         '
         Me.tbCode5.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode5.Location = New System.Drawing.Point(10, 35)
+        Me.tbCode5.Location = New System.Drawing.Point(722, 35)
         Me.tbCode5.MaxLength = 1
         Me.tbCode5.Name = "tbCode5"
         Me.tbCode5.Size = New System.Drawing.Size(147, 42)
         Me.tbCode5.TabIndex = 5
         Me.tbCode5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'tbCode1
+        '
+        Me.tbCode1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbCode1.Location = New System.Drawing.Point(10, 35)
+        Me.tbCode1.MaxLength = 1
+        Me.tbCode1.Name = "tbCode1"
+        Me.tbCode1.Size = New System.Drawing.Size(147, 42)
+        Me.tbCode1.TabIndex = 1
+        Me.tbCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnHide
         '
@@ -103,7 +103,7 @@ Partial Class FormCode
         Me.btnHide.Location = New System.Drawing.Point(930, 134)
         Me.btnHide.Name = "btnHide"
         Me.btnHide.Size = New System.Drawing.Size(147, 42)
-        Me.btnHide.TabIndex = 7
+        Me.btnHide.TabIndex = 6
         Me.btnHide.Text = "btnHide"
         Me.btnHide.UseVisualStyleBackColor = True
         '
@@ -114,7 +114,7 @@ Partial Class FormCode
         Me.lblChar.Location = New System.Drawing.Point(748, 219)
         Me.lblChar.Name = "lblChar"
         Me.lblChar.Size = New System.Drawing.Size(265, 40)
-        Me.lblChar.TabIndex = 8
+        Me.lblChar.TabIndex = 9
         Me.lblChar.Text = "Caractères jouables :"
         '
         'lblSel
@@ -124,7 +124,7 @@ Partial Class FormCode
         Me.lblSel.Location = New System.Drawing.Point(771, 259)
         Me.lblSel.Name = "lblSel"
         Me.lblSel.Size = New System.Drawing.Size(74, 40)
-        Me.lblSel.TabIndex = 9
+        Me.lblSel.TabIndex = 10
         Me.lblSel.Text = "lblSel"
         '
         'btnDone
@@ -133,7 +133,7 @@ Partial Class FormCode
         Me.btnDone.Location = New System.Drawing.Point(43, 235)
         Me.btnDone.Name = "btnDone"
         Me.btnDone.Size = New System.Drawing.Size(325, 42)
-        Me.btnDone.TabIndex = 10
+        Me.btnDone.TabIndex = 7
         Me.btnDone.Text = "Valider"
         Me.btnDone.UseVisualStyleBackColor = True
         Me.btnDone.Visible = False
@@ -144,21 +144,21 @@ Partial Class FormCode
         Me.btnQuit.Location = New System.Drawing.Point(43, 283)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(325, 42)
-        Me.btnQuit.TabIndex = 11
+        Me.btnQuit.TabIndex = 8
         Me.btnQuit.Text = "Abandonner"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
         'pnlTextBox
         '
-        Me.pnlTextBox.Controls.Add(Me.tbCode5)
         Me.pnlTextBox.Controls.Add(Me.tbCode1)
         Me.pnlTextBox.Controls.Add(Me.tbCode2)
         Me.pnlTextBox.Controls.Add(Me.tbCode3)
         Me.pnlTextBox.Controls.Add(Me.tbCode4)
+        Me.pnlTextBox.Controls.Add(Me.tbCode5)
         Me.pnlTextBox.Location = New System.Drawing.Point(33, 99)
         Me.pnlTextBox.Name = "pnlTextBox"
         Me.pnlTextBox.Size = New System.Drawing.Size(891, 100)
-        Me.pnlTextBox.TabIndex = 12
+        Me.pnlTextBox.TabIndex = 11
         '
         'FormCode
         '
@@ -185,11 +185,11 @@ Partial Class FormCode
     End Sub
 
     Friend WithEvents lblTitle As Windows.Forms.Label
-    Friend WithEvents tbCode1 As Windows.Forms.TextBox
     Friend WithEvents tbCode2 As Windows.Forms.TextBox
     Friend WithEvents tbCode3 As Windows.Forms.TextBox
     Friend WithEvents tbCode4 As Windows.Forms.TextBox
     Friend WithEvents tbCode5 As Windows.Forms.TextBox
+    Friend WithEvents tbCode1 As Windows.Forms.TextBox
     Friend WithEvents btnHide As Windows.Forms.Button
     Friend WithEvents lblChar As Windows.Forms.Label
     Friend WithEvents lblSel As Windows.Forms.Label
