@@ -212,7 +212,7 @@ Partial Class FormScores
         '
         'cboSearch
         '
-        Me.cboSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cboSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
         Me.cboSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cboSearch.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboSearch.FormattingEnabled = True
