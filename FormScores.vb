@@ -33,7 +33,7 @@ Public Class FormScores
     End Sub
 
     Private Sub BtnBestScore_Click(sender As Object, e As EventArgs) Handles btnBestScore.Click
-        playerList.Sort(Function(p1, p2) p1.Score.CompareTo(p2.Score))
+        playerList.Sort(Function(p1, p2) p2.Score.CompareTo(p1.Score))
         PopulateListBoxes()
     End Sub
 
@@ -60,4 +60,5 @@ Public Class FormScores
     Private Sub CboSearch_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboSearch.SelectedIndexChanged
         MsgBox(PlayerToString(cboSearch.Text, playerList), vbInformation, "Statistiques")
     End Sub
+
 End Class
