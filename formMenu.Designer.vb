@@ -30,7 +30,6 @@ Partial Class FormMenu
         Me.btnStart = New System.Windows.Forms.Button()
         Me.btnScores = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
-        Me.btnSettings = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -118,21 +117,12 @@ Partial Class FormMenu
         Me.btnQuit.Text = "Quitter"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
-        'btnSettings
-        '
-        Me.btnSettings.Location = New System.Drawing.Point(961, 12)
-        Me.btnSettings.Name = "btnSettings"
-        Me.btnSettings.Size = New System.Drawing.Size(75, 75)
-        Me.btnSettings.TabIndex = 9
-        Me.btnSettings.UseVisualStyleBackColor = True
-        '
         'FormMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1130, 587)
-        Me.Controls.Add(Me.btnSettings)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnScores)
         Me.Controls.Add(Me.btnStart)
@@ -158,5 +148,4 @@ Partial Class FormMenu
     Friend WithEvents btnStart As Windows.Forms.Button
     Friend WithEvents btnScores As Windows.Forms.Button
     Friend WithEvents btnQuit As Windows.Forms.Button
-    Friend WithEvents btnSettings As Windows.Forms.Button
 End Class
