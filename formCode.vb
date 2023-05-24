@@ -3,6 +3,7 @@
 Public Class FormCode
 
     Private Sub FormCode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SetCloseSource("")
         lblSel.Text = PlayableCharToString()
         btnHide.Text = "Afficher"
         ObfuscateTextboxes()
@@ -11,8 +12,8 @@ Public Class FormCode
     Private Sub BtnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
         ' 308 est le résultat de 4 (Oui/Non) + 48 (Exclamation ) + 256 (2e bouton par défaut)
         If MsgBox("Voulez-vous abandonner ?", 308, "Attention !") = vbYes Then
+            SetCloseSource("Button")
             Me.Close()
-            FormMenu.Show()
         End If
     End Sub
 
@@ -68,7 +69,20 @@ Public Class FormCode
         Next
         SetCode(code)
 
+        SetCloseSource("Validation")
         Me.Close()
-        FormGame.Show()
+    End Sub
+
+    Private Sub FormCode_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        If GetCloseSource() <> "Button" And GetCloseSource() <> "Validation" Then
+            If MsgBox("Voulez-vous vraiment fermer cette fenêtre ?", 276, "Attention !") = vbNo Then
+                e.Cancel = True
+            End If
+        End If
+        If GetCloseSource() <> "Validation" Then
+            FormMenu.Show()
+        Else
+            FormGame.Show()
+        End If
     End Sub
 End Class

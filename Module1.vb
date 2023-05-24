@@ -5,6 +5,7 @@ Module Module1
     Private playableChar() As Char
     Private code() As Char
     Private idFile As Integer = FreeFile()
+    Private closeSource As String = ""
 
     Public Structure Player
         Dim Name As String
@@ -14,6 +15,14 @@ Module Module1
         Dim P2 As Integer
         Dim TotalTime As Integer
     End Structure
+
+    Public Function GetCloseSource() As String
+        Return closeSource
+    End Function
+
+    Public Sub SetCloseSource(s As String)
+        closeSource = s
+    End Sub
 
     Public Sub SetPlayableChar(s As String)
         playableChar = s.ToCharArray()

@@ -5,6 +5,7 @@ Public Class FormScores
     Private playerList As New List(Of Player)()
 
     Private Sub FormScores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SetCloseSource("")
         playerList.Clear()
         playerList.AddRange(GetAllPlayer())
         PopulateListBoxes()
@@ -23,8 +24,8 @@ Public Class FormScores
     End Sub
 
     Private Sub BtnRetour_Click(sender As Object, e As EventArgs) Handles btnRetour.Click
+        SetCloseSource("Button")
         Me.Close()
-        FormMenu.Show()
     End Sub
 
     Private Sub BtnName_Click(sender As Object, e As EventArgs) Handles btnName.Click
@@ -59,6 +60,15 @@ Public Class FormScores
 
     Private Sub CboSearch_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboSearch.SelectedIndexChanged
         MsgBox(PlayerToString(cboSearch.Text, playerList), vbInformation, "Statistiques")
+    End Sub
+
+    Private Sub FormScores_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        If GetCloseSource() <> "Button" Then
+            If MsgBox("Voulez-vous vraiment fermer cette fenêtre ?", 276, "Attention !") = vbNo Then
+                e.Cancel = True
+            End If
+        End If
+        FormMenu.Show()
     End Sub
 
 End Class

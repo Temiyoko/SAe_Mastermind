@@ -6,6 +6,7 @@ Public Class FormGame
     Private maxTime = 90
     Private currentTime = 90
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SetCloseSource("")
         lblSel.Text = PlayableCharToString()
         UpdateTime()
         tmEnd.Start()
@@ -19,9 +20,9 @@ Public Class FormGame
     End Sub
 
     Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
-        Me.Close()
+        SetCloseSource("Button")
         FormMenu.NextGame()
-        FormMenu.Show()
+        Me.Close()
     End Sub
 
     Private Sub TbCode_TextChanged(sender As Object, e As EventArgs) Handles tbCode1.TextChanged, tbCode2.TextChanged, tbCode3.TextChanged, tbCode4.TextChanged, tbCode5.TextChanged
@@ -130,5 +131,19 @@ Public Class FormGame
         Dim seconds As Integer = currentTime Mod 60
 
         Me.Text = "Il vous reste " & nbTries & " coup(s) et " & minutes & " minute et " & seconds & " secondes"
+    End Sub
+
+    Private Sub FormGame_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        If GetCloseSource() <> "Button" Then
+            tmEnd.Stop()
+            If MsgBox("Voulez-vous vraiment fermer cette fenêtre ?", 276, "Attention !") = vbNo Then
+                e.Cancel = True
+                tmEnd.Start()
+            Else
+                FormMenu.Show()
+            End If
+        Else
+            FormMenu.Show()
+        End If
     End Sub
 End Class
