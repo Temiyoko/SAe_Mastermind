@@ -1,7 +1,5 @@
 ﻿Imports System.IO
 Imports System.Windows.Forms
-Imports System.Windows.Forms.LinkLabel
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock
 
 Module Module1
     Private playableChar() As Char
@@ -174,6 +172,10 @@ Module Module1
     End Function
 
     Sub Main()
+        If Not File.Exists("playerSave.txt") Then
+            File.Create("playerSave.txt").Dispose() ' Crée le fichier s'il n'existe pas
+        End If
+
         Application.Run(FormMenu)
     End Sub
 
