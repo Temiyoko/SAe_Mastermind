@@ -22,6 +22,7 @@ Partial Class FormCode
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormCode))
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.tbCode2 = New System.Windows.Forms.TextBox()
         Me.tbCode3 = New System.Windows.Forms.TextBox()
@@ -46,16 +47,6 @@ Partial Class FormCode
         Me.lblTitle.Size = New System.Drawing.Size(282, 70)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Mastermind"
-        '
-        'tbCode1
-        '
-        Me.tbCode1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCode1.Location = New System.Drawing.Point(188, 35)
-        Me.tbCode1.MaxLength = 1
-        Me.tbCode1.Name = "tbCode1"
-        Me.tbCode1.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode1.TabIndex = 2
-        Me.tbCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode2
         '
@@ -184,6 +175,7 @@ Partial Class FormCode
         Me.Controls.Add(Me.btnHide)
         Me.Controls.Add(Me.lblTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FormCode"
         Me.Text = "Saisie du code"
