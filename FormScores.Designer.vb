@@ -66,6 +66,8 @@ Partial Class FormScores
         Me.lstName.Name = "lstName"
         Me.lstName.Size = New System.Drawing.Size(162, 44)
         Me.lstName.TabIndex = 2
+        Me.lstName.TabStop = False
+        Me.lstName.UseTabStops = False
         '
         'lstScore
         '
@@ -76,6 +78,8 @@ Partial Class FormScores
         Me.lstScore.Name = "lstScore"
         Me.lstScore.Size = New System.Drawing.Size(162, 44)
         Me.lstScore.TabIndex = 3
+        Me.lstScore.TabStop = False
+        Me.lstScore.UseTabStops = False
         '
         'lstBestTime
         '
@@ -86,6 +90,8 @@ Partial Class FormScores
         Me.lstBestTime.Name = "lstBestTime"
         Me.lstBestTime.Size = New System.Drawing.Size(162, 44)
         Me.lstBestTime.TabIndex = 4
+        Me.lstBestTime.TabStop = False
+        Me.lstBestTime.UseTabStops = False
         '
         'lstP1
         '
@@ -96,6 +102,8 @@ Partial Class FormScores
         Me.lstP1.Name = "lstP1"
         Me.lstP1.Size = New System.Drawing.Size(162, 44)
         Me.lstP1.TabIndex = 5
+        Me.lstP1.TabStop = False
+        Me.lstP1.UseTabStops = False
         '
         'lstTotalTime
         '
@@ -106,6 +114,8 @@ Partial Class FormScores
         Me.lstTotalTime.Name = "lstTotalTime"
         Me.lstTotalTime.Size = New System.Drawing.Size(162, 44)
         Me.lstTotalTime.TabIndex = 6
+        Me.lstTotalTime.TabStop = False
+        Me.lstTotalTime.UseTabStops = False
         '
         'btnRetour
         '
@@ -192,6 +202,8 @@ Partial Class FormScores
         Me.lstP2.Name = "lstP2"
         Me.lstP2.Size = New System.Drawing.Size(162, 44)
         Me.lstP2.TabIndex = 14
+        Me.lstP2.TabStop = False
+        Me.lstP2.UseTabStops = False
         '
         'lblP2
         '
