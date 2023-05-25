@@ -1,5 +1,4 @@
-﻿Imports System.ComponentModel
-Imports System.Windows.Forms
+﻿Imports System.Windows.Forms
 Public Class FormScores
 
     Private playerList As New List(Of Player)()
@@ -18,6 +17,10 @@ Public Class FormScores
         For Each p As Player In playerList
             cboSearch.Items.Add(p.Name)
         Next
+    End Sub
+
+    Private Sub FormScores_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        lstName.Focus()
     End Sub
 
     Private Sub Lst_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstName.SelectedIndexChanged, lstScore.SelectedIndexChanged, lstBestTime.SelectedIndexChanged, lstP1.SelectedIndexChanged, lstP2.SelectedIndexChanged, lstTotalTime.SelectedIndexChanged
