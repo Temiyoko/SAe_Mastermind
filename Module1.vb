@@ -1,4 +1,6 @@
-﻿Imports System.IO
+﻿Imports System.Drawing
+Imports System.Drawing.Drawing2D
+Imports System.IO
 Imports System.Windows.Forms
 
 Module Module1
@@ -179,6 +181,20 @@ Module Module1
         End If
         Return "Aucun joueur n'a été trouvé."
     End Function
+
+    Public Sub RoundButton(button As Button, cornerRadius As Integer)
+        Dim path As New GraphicsPath()
+        path.AddArc(0, 0, cornerRadius * 2, cornerRadius * 2, 180, 90)
+        path.AddLine(cornerRadius, 0, button.Width - cornerRadius, 0)
+        path.AddArc(button.Width - cornerRadius * 2, 0, cornerRadius * 2, cornerRadius * 2, 270, 90)
+        path.AddLine(button.Width, cornerRadius, button.Width, button.Height - cornerRadius)
+        path.AddArc(button.Width - cornerRadius * 2, button.Height - cornerRadius * 2, cornerRadius * 2, cornerRadius * 2, 0, 90)
+        path.AddLine(button.Width - cornerRadius, button.Height, cornerRadius, button.Height)
+        path.AddArc(0, button.Height - cornerRadius * 2, cornerRadius * 2, cornerRadius * 2, 90, 90)
+        path.AddLine(0, button.Height - cornerRadius, 0, cornerRadius)
+
+        button.Region = New Region(path)
+    End Sub
 
     Sub Main()
         If Not File.Exists("playerSave.txt") Then
