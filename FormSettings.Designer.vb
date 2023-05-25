@@ -64,7 +64,7 @@ Partial Class FormSettings
         Me.pnlColors.Controls.Add(Me.lblRight)
         Me.pnlColors.Controls.Add(Me.lblColorCode)
         Me.pnlColors.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlColors.Location = New System.Drawing.Point(11, 309)
+        Me.pnlColors.Location = New System.Drawing.Point(57, 309)
         Me.pnlColors.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.pnlColors.Name = "pnlColors"
         Me.pnlColors.Size = New System.Drawing.Size(434, 259)

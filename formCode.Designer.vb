@@ -108,6 +108,7 @@ Partial Class FormCode
         Me.btnHide.Name = "btnHide"
         Me.btnHide.Size = New System.Drawing.Size(147, 42)
         Me.btnHide.TabIndex = 7
+        Me.btnHide.TabStop = False
         Me.btnHide.Text = "btnHide"
         Me.btnHide.UseVisualStyleBackColor = False
         '
@@ -141,6 +142,7 @@ Partial Class FormCode
         Me.btnDone.Name = "btnDone"
         Me.btnDone.Size = New System.Drawing.Size(325, 42)
         Me.btnDone.TabIndex = 8
+        Me.btnDone.TabStop = False
         Me.btnDone.Text = "Valider"
         Me.btnDone.UseVisualStyleBackColor = False
         Me.btnDone.Visible = False
@@ -155,6 +157,7 @@ Partial Class FormCode
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(325, 42)
         Me.btnQuit.TabIndex = 9
+        Me.btnQuit.TabStop = False
         Me.btnQuit.Text = "Abandonner"
         Me.btnQuit.UseVisualStyleBackColor = False
         '
