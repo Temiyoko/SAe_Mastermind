@@ -27,12 +27,12 @@ Partial Class FormGame
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblTries = New System.Windows.Forms.Label()
         Me.lblColorCode = New System.Windows.Forms.Label()
-        Me.lblMissing = New System.Windows.Forms.Label()
+        Me.lblWrong = New System.Windows.Forms.Label()
         Me.lblSel = New System.Windows.Forms.Label()
         Me.lblChar = New System.Windows.Forms.Label()
         Me.lblFound = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.lblWrong = New System.Windows.Forms.Label()
+        Me.lblMissing = New System.Windows.Forms.Label()
         Me.lblRight = New System.Windows.Forms.Label()
         Me.pnlTextBox = New System.Windows.Forms.Panel()
         Me.tbCode5 = New System.Windows.Forms.TextBox()
@@ -132,6 +132,7 @@ Partial Class FormGame
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.tmEnd = New System.Windows.Forms.Timer(Me.components)
+        Me.pnlLabels = New System.Windows.Forms.Panel()
         Me.pnlTextBox.SuspendLayout()
         Me.pnlTries.SuspendLayout()
         Me.Panel15.SuspendLayout()
@@ -149,6 +150,7 @@ Partial Class FormGame
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.pnlLabels.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnGuess
@@ -192,16 +194,16 @@ Partial Class FormGame
         Me.lblColorCode.TabIndex = 16
         Me.lblColorCode.Text = "Code couleur :"
         '
-        'lblMissing
+        'lblWrong
         '
-        Me.lblMissing.AutoSize = True
-        Me.lblMissing.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblMissing.ForeColor = System.Drawing.Color.Red
-        Me.lblMissing.Location = New System.Drawing.Point(748, 252)
-        Me.lblMissing.Name = "lblMissing"
-        Me.lblMissing.Size = New System.Drawing.Size(97, 40)
-        Me.lblMissing.TabIndex = 18
-        Me.lblMissing.Text = "Absent"
+        Me.lblWrong.AutoSize = True
+        Me.lblWrong.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWrong.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblWrong.Location = New System.Drawing.Point(21, 46)
+        Me.lblWrong.Name = "lblWrong"
+        Me.lblWrong.Size = New System.Drawing.Size(126, 40)
+        Me.lblWrong.TabIndex = 18
+        Me.lblWrong.Text = "Mal placé"
         '
         'lblSel
         '
@@ -245,23 +247,23 @@ Partial Class FormGame
         Me.btnBack.UseVisualStyleBackColor = True
         Me.btnBack.Visible = False
         '
-        'lblWrong
+        'lblMissing
         '
-        Me.lblWrong.AutoSize = True
-        Me.lblWrong.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWrong.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblWrong.Location = New System.Drawing.Point(748, 292)
-        Me.lblWrong.Name = "lblWrong"
-        Me.lblWrong.Size = New System.Drawing.Size(126, 40)
-        Me.lblWrong.TabIndex = 24
-        Me.lblWrong.Text = "Mal placé"
+        Me.lblMissing.AutoSize = True
+        Me.lblMissing.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMissing.ForeColor = System.Drawing.Color.Red
+        Me.lblMissing.Location = New System.Drawing.Point(21, 8)
+        Me.lblMissing.Name = "lblMissing"
+        Me.lblMissing.Size = New System.Drawing.Size(97, 40)
+        Me.lblMissing.TabIndex = 24
+        Me.lblMissing.Text = "Absent"
         '
         'lblRight
         '
         Me.lblRight.AutoSize = True
         Me.lblRight.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRight.ForeColor = System.Drawing.Color.LimeGreen
-        Me.lblRight.Location = New System.Drawing.Point(748, 328)
+        Me.lblRight.Location = New System.Drawing.Point(21, 82)
         Me.lblRight.Name = "lblRight"
         Me.lblRight.Size = New System.Drawing.Size(134, 40)
         Me.lblRight.TabIndex = 25
@@ -1226,21 +1228,29 @@ Partial Class FormGame
         '
         Me.tmEnd.Interval = 1000
         '
+        'pnlLabels
+        '
+        Me.pnlLabels.Controls.Add(Me.lblRight)
+        Me.pnlLabels.Controls.Add(Me.lblWrong)
+        Me.pnlLabels.Controls.Add(Me.lblMissing)
+        Me.pnlLabels.Location = New System.Drawing.Point(727, 252)
+        Me.pnlLabels.Name = "pnlLabels"
+        Me.pnlLabels.Size = New System.Drawing.Size(200, 131)
+        Me.pnlLabels.TabIndex = 28
+        '
         'FormGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1135, 933)
+        Me.Controls.Add(Me.pnlLabels)
         Me.Controls.Add(Me.pnlTries)
         Me.Controls.Add(Me.pnlTextBox)
-        Me.Controls.Add(Me.lblRight)
-        Me.Controls.Add(Me.lblWrong)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.lblFound)
         Me.Controls.Add(Me.lblSel)
         Me.Controls.Add(Me.lblChar)
-        Me.Controls.Add(Me.lblMissing)
         Me.Controls.Add(Me.lblColorCode)
         Me.Controls.Add(Me.lblTries)
         Me.Controls.Add(Me.btnGuess)
@@ -1282,6 +1292,8 @@ Partial Class FormGame
         Me.Panel3.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.pnlLabels.ResumeLayout(False)
+        Me.pnlLabels.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1289,13 +1301,13 @@ Partial Class FormGame
     Friend WithEvents lblTitle As Windows.Forms.Label
     Friend WithEvents lblTries As Windows.Forms.Label
     Friend WithEvents lblColorCode As Windows.Forms.Label
-    Friend WithEvents lblMissing As Windows.Forms.Label
+    Friend WithEvents lblWrong As Windows.Forms.Label
     Friend WithEvents lblSel As Windows.Forms.Label
     Friend WithEvents lblChar As Windows.Forms.Label
     Friend WithEvents btnGuess As Windows.Forms.Button
     Friend WithEvents lblFound As Windows.Forms.Label
     Friend WithEvents btnBack As Windows.Forms.Button
-    Friend WithEvents lblWrong As Windows.Forms.Label
+    Friend WithEvents lblMissing As Windows.Forms.Label
     Friend WithEvents lblRight As Windows.Forms.Label
     Friend WithEvents pnlTextBox As Windows.Forms.Panel
     Friend WithEvents tbCode5 As Windows.Forms.TextBox
@@ -1395,4 +1407,5 @@ Partial Class FormGame
     Friend WithEvents Label52 As Windows.Forms.Label
     Friend WithEvents Label51 As Windows.Forms.Label
     Friend WithEvents tmEnd As Windows.Forms.Timer
+    Friend WithEvents pnlLabels As Windows.Forms.Panel
 End Class

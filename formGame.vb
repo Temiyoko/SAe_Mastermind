@@ -7,10 +7,14 @@ Public Class FormGame
     Private currentTime = 90
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetCloseSource("")
+        Dim cpt As Integer = 0
+        For Each lbl As Label In pnlLabels.Controls
+            lbl.ForeColor = GetColor(cpt)
+            cpt += 1
+        Next
         lblSel.Text = PlayableCharToString()
         UpdateTime()
         tmEnd.Start()
-
     End Sub
 
     Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbCode1.KeyPress, tbCode2.KeyPress, tbCode3.KeyPress, tbCode4.KeyPress, tbCode5.KeyPress
@@ -70,12 +74,12 @@ Public Class FormGame
         For Each tb As TextBox In pnlTextBox.Controls
             entry += tb.Text
             If tb.Text = GetCodeInd(ind) Then
-                tb.BackColor = Color.LimeGreen
+                tb.BackColor = GetColor(0)
                 cpt += 1
             ElseIf GetCode().Contains(tb.Text) Then
-                tb.BackColor = Color.Orange
+                tb.BackColor = GetColor(1)
             Else
-                tb.BackColor = Color.Red
+                tb.BackColor = GetColor(2)
             End If
             colors(ind) = tb.BackColor
             ind += 1
@@ -146,4 +150,5 @@ Public Class FormGame
             FormMenu.Show()
         End If
     End Sub
+
 End Class

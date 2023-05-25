@@ -1,4 +1,5 @@
-﻿Imports System.IO
+﻿Imports System.Drawing
+Imports System.IO
 Imports System.Windows.Forms
 
 Module Module1
@@ -6,6 +7,8 @@ Module Module1
     Private code() As Char
     Private idFile As Integer = FreeFile()
     Private closeSource As String = ""
+    Private colors(colorSize) As Color
+    Const colorSize As Integer = 3
 
     Public Structure Player
         Dim Name As String
@@ -15,6 +18,20 @@ Module Module1
         Dim P2 As Integer
         Dim TotalTime As Integer
     End Structure
+
+    Public Function GetColorSize() As Integer
+        Return colorSize
+    End Function
+
+    Public Function GetColor(i As Integer) As Color
+        Debug.Assert(i >= 0 And i <= UBound(colors))
+        Return colors(i)
+    End Function
+
+    Public Sub SetColor(c As Color())
+        Debug.Assert(c.Length >= 0 And UBound(c) <= colorSize)
+        colors = c
+    End Sub
 
     Public Function GetCloseSource() As String
         Return closeSource
@@ -181,6 +198,9 @@ Module Module1
     End Function
 
     Sub Main()
+        Dim defaultColors As Color() = {Color.LimeGreen, Color.Orange, Color.Red}
+        setColor(defaultColors)
+
         If Not File.Exists("playerSave.txt") Then
             File.Create("playerSave.txt").Dispose() ' Crée le fichier s'il n'existe pas
         End If

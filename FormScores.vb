@@ -66,9 +66,12 @@ Public Class FormScores
         If GetCloseSource() <> "Button" Then
             If MsgBox("Voulez-vous vraiment fermer cette fenêtre ?", 276, "Attention !") = vbNo Then
                 e.Cancel = True
+            Else
+                FormMenu.Show()
             End If
+        Else
+            FormMenu.Show()
         End If
-        FormMenu.Show()
     End Sub
 
 End Class
