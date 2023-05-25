@@ -34,6 +34,8 @@ Partial Class FormSettings
         Me.cdLabels = New System.Windows.Forms.ColorDialog()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.btnDone = New System.Windows.Forms.Button()
+        Me.lblTries = New System.Windows.Forms.Label()
+        Me.tbTries = New System.Windows.Forms.TextBox()
         Me.pnlColors.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,6 +52,7 @@ Partial Class FormSettings
         '
         'pnlColors
         '
+        Me.pnlColors.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlColors.Controls.Add(Me.tbMissing)
         Me.pnlColors.Controls.Add(Me.tbWrong)
         Me.pnlColors.Controls.Add(Me.tbRight)
@@ -153,12 +156,34 @@ Partial Class FormSettings
         Me.btnDone.Text = "Valider"
         Me.btnDone.UseVisualStyleBackColor = True
         '
+        'lblTries
+        '
+        Me.lblTries.AutoSize = True
+        Me.lblTries.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTries.Location = New System.Drawing.Point(50, 151)
+        Me.lblTries.Name = "lblTries"
+        Me.lblTries.Size = New System.Drawing.Size(344, 40)
+        Me.lblTries.TabIndex = 12
+        Me.lblTries.Text = "Nombre de coups autorisés :"
+        '
+        'tbTries
+        '
+        Me.tbTries.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbTries.Location = New System.Drawing.Point(49, 206)
+        Me.tbTries.MaxLength = 2
+        Me.tbTries.Name = "tbTries"
+        Me.tbTries.Size = New System.Drawing.Size(345, 42)
+        Me.tbTries.TabIndex = 1
+        Me.tbTries.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'FormSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1130, 587)
+        Me.Controls.Add(Me.tbTries)
+        Me.Controls.Add(Me.lblTries)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.pnlColors)
@@ -187,4 +212,6 @@ Partial Class FormSettings
     Friend WithEvents tbWrong As Windows.Forms.TextBox
     Friend WithEvents btnQuit As Windows.Forms.Button
     Friend WithEvents btnDone As Windows.Forms.Button
+    Friend WithEvents lblTries As Windows.Forms.Label
+    Friend WithEvents tbTries As Windows.Forms.TextBox
 End Class

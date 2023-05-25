@@ -2,7 +2,7 @@
 Imports System.Windows.Forms
 
 Public Class FormGame
-    Private nbTries As Integer = 15
+    Private nbTries As Integer = GetNbTries()
     Private maxTime = 90
     Private currentTime = 90
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load

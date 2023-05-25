@@ -3,9 +3,11 @@ Imports System.Reflection.Emit
 Imports System.Windows.Forms
 
 Public Class FormSettings
-
+    Private maxTries As Integer = 15
+    Private tries = GetNbTries()
     Private Sub FormSettings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetCloseSource("")
+        tbTries.Text = GetNbTries().ToString()
         Dim cpt As Integer = 0
         For Each tb As TextBox In pnlColors.Controls.OfType(Of TextBox)
             tb.BackColor = GetColor(cpt)
@@ -47,6 +49,26 @@ Public Class FormSettings
             cpt += 1
         Next
         SetColor(tabColor)
+        SetNbTries(tries)
         Me.Close()
+    End Sub
+
+    Private Sub TbTries_TextChanged(sender As Object, e As EventArgs) Handles tbTries.TextChanged
+        Dim nbTries As Integer
+        Integer.TryParse(tbTries.Text, nbTries)
+        If tbTries.Text <> "" And (nbTries <= 0 Or nbTries > GetNbTries()) Then
+            MsgBox("Veuillez entrer une valeur entre 1 et 15 compris.", MsgBoxStyle.Information, "Attention !")
+            tbTries.Text = GetNbTries().ToString()
+        Else
+            tries = nbTries
+        End If
+    End Sub
+
+    Private Sub TbTries_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbTries.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
     End Sub
 End Class
