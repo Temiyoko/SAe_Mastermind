@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormScores
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormScores
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormScores))
         Me.lblTitle = New System.Windows.Forms.Label()
@@ -65,6 +65,7 @@ Partial Class FormScores
         Me.lstName.Location = New System.Drawing.Point(0, 13)
         Me.lstName.Name = "lstName"
         Me.lstName.Size = New System.Drawing.Size(162, 44)
+        Me.lstName.TabIndex = 1
         Me.lstName.TabIndex = 2
         Me.lstName.TabStop = False
         Me.lstName.UseTabStops = False
@@ -77,6 +78,7 @@ Partial Class FormScores
         Me.lstScore.Location = New System.Drawing.Point(183, 13)
         Me.lstScore.Name = "lstScore"
         Me.lstScore.Size = New System.Drawing.Size(162, 44)
+        Me.lstScore.TabIndex = 2
         Me.lstScore.TabIndex = 3
         Me.lstScore.TabStop = False
         Me.lstScore.UseTabStops = False
@@ -89,6 +91,7 @@ Partial Class FormScores
         Me.lstBestTime.Location = New System.Drawing.Point(373, 13)
         Me.lstBestTime.Name = "lstBestTime"
         Me.lstBestTime.Size = New System.Drawing.Size(162, 44)
+        Me.lstBestTime.TabIndex = 3
         Me.lstBestTime.TabIndex = 4
         Me.lstBestTime.TabStop = False
         Me.lstBestTime.UseTabStops = False
@@ -101,6 +104,7 @@ Partial Class FormScores
         Me.lstP1.Location = New System.Drawing.Point(563, 13)
         Me.lstP1.Name = "lstP1"
         Me.lstP1.Size = New System.Drawing.Size(162, 44)
+        Me.lstP1.TabIndex = 4
         Me.lstP1.TabIndex = 5
         Me.lstP1.TabStop = False
         Me.lstP1.UseTabStops = False
@@ -201,6 +205,7 @@ Partial Class FormScores
         Me.lstP2.Location = New System.Drawing.Point(755, 13)
         Me.lstP2.Name = "lstP2"
         Me.lstP2.Size = New System.Drawing.Size(162, 44)
+        Me.lstP2.TabIndex = 5
         Me.lstP2.TabIndex = 14
         Me.lstP2.TabStop = False
         Me.lstP2.UseTabStops = False
@@ -237,7 +242,7 @@ Partial Class FormScores
         Me.cboSearch.Location = New System.Drawing.Point(13, 440)
         Me.cboSearch.Name = "cboSearch"
         Me.cboSearch.Size = New System.Drawing.Size(498, 48)
-        Me.cboSearch.TabIndex = 17
+        Me.cboSearch.TabIndex = 10
         '
         'btnName
         '
