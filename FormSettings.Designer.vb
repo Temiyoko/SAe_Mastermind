@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormSettings
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormSettings
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormSettings))
         Me.lblTitle = New System.Windows.Forms.Label()
@@ -150,7 +150,8 @@ Partial Class FormSettings
         Me.btnQuit.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(325, 42)
-        Me.btnQuit.TabIndex = 4
+        Me.btnQuit.TabIndex = 11
+        Me.btnQuit.TabStop = False
         Me.btnQuit.Text = "Abandonner"
         Me.btnQuit.UseVisualStyleBackColor = False
         '
@@ -164,7 +165,8 @@ Partial Class FormSettings
         Me.btnDone.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.btnDone.Name = "btnDone"
         Me.btnDone.Size = New System.Drawing.Size(325, 42)
-        Me.btnDone.TabIndex = 3
+        Me.btnDone.TabIndex = 10
+        Me.btnDone.TabStop = False
         Me.btnDone.Text = "Valider"
         Me.btnDone.UseVisualStyleBackColor = False
         '
@@ -186,6 +188,7 @@ Partial Class FormSettings
         Me.tbTries.Name = "tbTries"
         Me.tbTries.Size = New System.Drawing.Size(345, 42)
         Me.tbTries.TabIndex = 1
+        Me.tbTries.TabStop = False
         Me.tbTries.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'CheckBox1
@@ -195,7 +198,8 @@ Partial Class FormSettings
         Me.CheckBox1.Location = New System.Drawing.Point(777, 204)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(154, 44)
-        Me.CheckBox1.TabIndex = 2
+        Me.CheckBox1.TabIndex = 13
+        Me.CheckBox1.TabStop = False
         Me.CheckBox1.Text = "DarkMode"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
