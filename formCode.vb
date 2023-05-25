@@ -80,8 +80,7 @@ Public Class FormCode
             Else
                 FormMenu.Show()
             End If
-        End If
-        If GetCloseSource() = "Button" Then
+        ElseIf GetCloseSource() = "Button" Then
             FormMenu.Show()
         Else
             FormGame.Show()
