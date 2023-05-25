@@ -78,6 +78,7 @@ Partial Class FormSettings
         Me.tbMissing.ReadOnly = True
         Me.tbMissing.Size = New System.Drawing.Size(184, 42)
         Me.tbMissing.TabIndex = 15
+        Me.tbMissing.TabStop = False
         '
         'tbWrong
         '
@@ -87,6 +88,7 @@ Partial Class FormSettings
         Me.tbWrong.ReadOnly = True
         Me.tbWrong.Size = New System.Drawing.Size(184, 42)
         Me.tbWrong.TabIndex = 14
+        Me.tbWrong.TabStop = False
         '
         'tbRight
         '
@@ -96,6 +98,7 @@ Partial Class FormSettings
         Me.tbRight.ReadOnly = True
         Me.tbRight.Size = New System.Drawing.Size(184, 42)
         Me.tbRight.TabIndex = 10
+        Me.tbRight.TabStop = False
         '
         'lblMissing
         '
@@ -148,6 +151,7 @@ Partial Class FormSettings
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(325, 42)
         Me.btnQuit.TabIndex = 11
+        Me.btnQuit.TabStop = False
         Me.btnQuit.Text = "Abandonner"
         Me.btnQuit.UseVisualStyleBackColor = False
         '
@@ -162,6 +166,7 @@ Partial Class FormSettings
         Me.btnDone.Name = "btnDone"
         Me.btnDone.Size = New System.Drawing.Size(325, 42)
         Me.btnDone.TabIndex = 10
+        Me.btnDone.TabStop = False
         Me.btnDone.Text = "Valider"
         Me.btnDone.UseVisualStyleBackColor = False
         '
@@ -183,6 +188,7 @@ Partial Class FormSettings
         Me.tbTries.Name = "tbTries"
         Me.tbTries.Size = New System.Drawing.Size(345, 42)
         Me.tbTries.TabIndex = 1
+        Me.tbTries.TabStop = False
         Me.tbTries.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'CheckBox1
@@ -193,6 +199,7 @@ Partial Class FormSettings
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(154, 44)
         Me.CheckBox1.TabIndex = 13
+        Me.CheckBox1.TabStop = False
         Me.CheckBox1.Text = "DarkMode"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '

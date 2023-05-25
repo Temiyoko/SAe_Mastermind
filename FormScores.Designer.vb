@@ -110,6 +110,7 @@ Partial Class FormScores
         'btnRetour
         '
         Me.btnRetour.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnRetour.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnRetour.FlatAppearance.BorderSize = 0
         Me.btnRetour.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRetour.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -117,6 +118,7 @@ Partial Class FormScores
         Me.btnRetour.Name = "btnRetour"
         Me.btnRetour.Size = New System.Drawing.Size(162, 52)
         Me.btnRetour.TabIndex = 7
+        Me.btnRetour.TabStop = False
         Me.btnRetour.Text = "Retour"
         Me.btnRetour.UseVisualStyleBackColor = False
         '
@@ -235,6 +237,7 @@ Partial Class FormScores
         Me.btnName.Name = "btnName"
         Me.btnName.Size = New System.Drawing.Size(162, 48)
         Me.btnName.TabIndex = 18
+        Me.btnName.TabStop = False
         Me.btnName.Text = "A-Z"
         Me.btnName.UseVisualStyleBackColor = False
         '
@@ -248,6 +251,7 @@ Partial Class FormScores
         Me.btnBestScore.Name = "btnBestScore"
         Me.btnBestScore.Size = New System.Drawing.Size(162, 48)
         Me.btnBestScore.TabIndex = 19
+        Me.btnBestScore.TabStop = False
         Me.btnBestScore.Text = "Score"
         Me.btnBestScore.UseVisualStyleBackColor = False
         '
@@ -261,6 +265,7 @@ Partial Class FormScores
         Me.btnBestTime.Name = "btnBestTime"
         Me.btnBestTime.Size = New System.Drawing.Size(162, 48)
         Me.btnBestTime.TabIndex = 20
+        Me.btnBestTime.TabStop = False
         Me.btnBestTime.Text = "Temps"
         Me.btnBestTime.UseVisualStyleBackColor = False
         '
