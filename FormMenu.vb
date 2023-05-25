@@ -70,4 +70,8 @@ Public Class FormMenu
         If e.KeyChar = ChrW(Keys.Space) Then e.Handled = True
     End Sub
 
+    Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
+        Me.Hide()
+        FormSettings.Show()
+    End Sub
 End Class
