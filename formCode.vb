@@ -77,9 +77,11 @@ Public Class FormCode
         If GetCloseSource() <> "Button" And GetCloseSource() <> "Validation" Then
             If MsgBox("Voulez-vous vraiment fermer cette fenêtre ?", 276, "Attention !") = vbNo Then
                 e.Cancel = True
+            Else
+                FormMenu.Show()
             End If
         End If
-        If GetCloseSource() <> "Validation" Then
+        If GetCloseSource() = "Button" Then
             FormMenu.Show()
         Else
             FormGame.Show()
