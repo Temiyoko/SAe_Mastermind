@@ -82,7 +82,7 @@ Partial Class FormSettings
         '
         'tbWrong
         '
-        Me.tbWrong.Location = New System.Drawing.Point(212, 140)
+        Me.tbWrong.Location = New System.Drawing.Point(212, 133)
         Me.tbWrong.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.tbWrong.Name = "tbWrong"
         Me.tbWrong.ReadOnly = True
@@ -92,7 +92,7 @@ Partial Class FormSettings
         '
         'tbRight
         '
-        Me.tbRight.Location = New System.Drawing.Point(212, 202)
+        Me.tbRight.Location = New System.Drawing.Point(212, 197)
         Me.tbRight.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.tbRight.Name = "tbRight"
         Me.tbRight.ReadOnly = True
@@ -103,7 +103,7 @@ Partial Class FormSettings
         'lblMissing
         '
         Me.lblMissing.AutoSize = True
-        Me.lblMissing.Location = New System.Drawing.Point(18, 205)
+        Me.lblMissing.Location = New System.Drawing.Point(18, 200)
         Me.lblMissing.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblMissing.Name = "lblMissing"
         Me.lblMissing.Size = New System.Drawing.Size(107, 40)
@@ -113,7 +113,7 @@ Partial Class FormSettings
         'lblWrong
         '
         Me.lblWrong.AutoSize = True
-        Me.lblWrong.Location = New System.Drawing.Point(18, 143)
+        Me.lblWrong.Location = New System.Drawing.Point(18, 136)
         Me.lblWrong.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblWrong.Name = "lblWrong"
         Me.lblWrong.Size = New System.Drawing.Size(136, 40)
