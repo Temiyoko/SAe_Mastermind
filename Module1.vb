@@ -1,5 +1,6 @@
 ﻿Imports System.Drawing
 Imports System.Drawing.Drawing2D
+Imports System.Drawing
 Imports System.IO
 Imports System.Windows.Forms
 
