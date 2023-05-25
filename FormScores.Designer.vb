@@ -22,6 +22,7 @@ Partial Class FormScores
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormScores))
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lstName = New System.Windows.Forms.ListBox()
         Me.lstScore = New System.Windows.Forms.ListBox()
@@ -108,13 +109,16 @@ Partial Class FormScores
         '
         'btnRetour
         '
+        Me.btnRetour.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnRetour.FlatAppearance.BorderSize = 0
+        Me.btnRetour.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRetour.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRetour.Location = New System.Drawing.Point(956, 436)
         Me.btnRetour.Name = "btnRetour"
         Me.btnRetour.Size = New System.Drawing.Size(162, 52)
         Me.btnRetour.TabIndex = 7
         Me.btnRetour.Text = "Retour"
-        Me.btnRetour.UseVisualStyleBackColor = True
+        Me.btnRetour.UseVisualStyleBackColor = False
         '
         'lblName
         '
@@ -223,33 +227,42 @@ Partial Class FormScores
         '
         'btnName
         '
+        Me.btnName.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnName.FlatAppearance.BorderSize = 0
+        Me.btnName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnName.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnName.Location = New System.Drawing.Point(13, 386)
         Me.btnName.Name = "btnName"
         Me.btnName.Size = New System.Drawing.Size(162, 48)
         Me.btnName.TabIndex = 18
         Me.btnName.Text = "A-Z"
-        Me.btnName.UseVisualStyleBackColor = True
+        Me.btnName.UseVisualStyleBackColor = False
         '
         'btnBestScore
         '
+        Me.btnBestScore.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnBestScore.FlatAppearance.BorderSize = 0
+        Me.btnBestScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBestScore.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBestScore.Location = New System.Drawing.Point(181, 386)
         Me.btnBestScore.Name = "btnBestScore"
         Me.btnBestScore.Size = New System.Drawing.Size(162, 48)
         Me.btnBestScore.TabIndex = 19
         Me.btnBestScore.Text = "Score"
-        Me.btnBestScore.UseVisualStyleBackColor = True
+        Me.btnBestScore.UseVisualStyleBackColor = False
         '
         'btnBestTime
         '
+        Me.btnBestTime.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnBestTime.FlatAppearance.BorderSize = 0
+        Me.btnBestTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBestTime.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBestTime.Location = New System.Drawing.Point(349, 386)
         Me.btnBestTime.Name = "btnBestTime"
         Me.btnBestTime.Size = New System.Drawing.Size(162, 48)
         Me.btnBestTime.TabIndex = 20
         Me.btnBestTime.Text = "Temps"
-        Me.btnBestTime.UseVisualStyleBackColor = True
+        Me.btnBestTime.UseVisualStyleBackColor = False
         '
         'lblFilter
         '
@@ -266,6 +279,7 @@ Partial Class FormScores
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1130, 587)
         Me.Controls.Add(Me.lblFilter)
         Me.Controls.Add(Me.btnBestTime)
@@ -283,8 +297,10 @@ Partial Class FormScores
         Me.Controls.Add(Me.btnRetour)
         Me.Controls.Add(Me.lblTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FormScores"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Scores"
         Me.pnlList.ResumeLayout(False)
         Me.ResumeLayout(False)

@@ -22,6 +22,7 @@ Partial Class FormSettings
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormSettings))
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.pnlColors = New System.Windows.Forms.Panel()
         Me.tbMissing = New System.Windows.Forms.TextBox()
@@ -36,6 +37,8 @@ Partial Class FormSettings
         Me.btnDone = New System.Windows.Forms.Button()
         Me.lblTries = New System.Windows.Forms.Label()
         Me.tbTries = New System.Windows.Forms.TextBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.pnlColors.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -136,6 +139,9 @@ Partial Class FormSettings
         '
         'btnQuit
         '
+        Me.btnQuit.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnQuit.FlatAppearance.BorderSize = 0
+        Me.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnQuit.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnQuit.Location = New System.Drawing.Point(777, 526)
         Me.btnQuit.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
@@ -143,10 +149,13 @@ Partial Class FormSettings
         Me.btnQuit.Size = New System.Drawing.Size(325, 42)
         Me.btnQuit.TabIndex = 11
         Me.btnQuit.Text = "Abandonner"
-        Me.btnQuit.UseVisualStyleBackColor = True
+        Me.btnQuit.UseVisualStyleBackColor = False
         '
         'btnDone
         '
+        Me.btnDone.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnDone.FlatAppearance.BorderSize = 0
+        Me.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDone.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDone.Location = New System.Drawing.Point(777, 470)
         Me.btnDone.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
@@ -154,7 +163,7 @@ Partial Class FormSettings
         Me.btnDone.Size = New System.Drawing.Size(325, 42)
         Me.btnDone.TabIndex = 10
         Me.btnDone.Text = "Valider"
-        Me.btnDone.UseVisualStyleBackColor = True
+        Me.btnDone.UseVisualStyleBackColor = False
         '
         'lblTries
         '
@@ -169,12 +178,33 @@ Partial Class FormSettings
         'tbTries
         '
         Me.tbTries.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbTries.Location = New System.Drawing.Point(49, 206)
+        Me.tbTries.Location = New System.Drawing.Point(57, 206)
         Me.tbTries.MaxLength = 2
         Me.tbTries.Name = "tbTries"
         Me.tbTries.Size = New System.Drawing.Size(345, 42)
         Me.tbTries.TabIndex = 1
         Me.tbTries.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.Location = New System.Drawing.Point(777, 204)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(154, 44)
+        Me.CheckBox1.TabIndex = 13
+        Me.CheckBox1.Text = "DarkMode"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(770, 151)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(96, 40)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Thème"
         '
         'FormSettings
         '
@@ -182,16 +212,19 @@ Partial Class FormSettings
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1130, 587)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.tbTries)
         Me.Controls.Add(Me.lblTries)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.pnlColors)
         Me.Controls.Add(Me.lblTitle)
-        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FormSettings"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Paramètres"
         Me.pnlColors.ResumeLayout(False)
         Me.pnlColors.PerformLayout()
@@ -214,4 +247,6 @@ Partial Class FormSettings
     Friend WithEvents btnDone As Windows.Forms.Button
     Friend WithEvents lblTries As Windows.Forms.Label
     Friend WithEvents tbTries As Windows.Forms.TextBox
+    Friend WithEvents CheckBox1 As Windows.Forms.CheckBox
+    Friend WithEvents Label1 As Windows.Forms.Label
 End Class

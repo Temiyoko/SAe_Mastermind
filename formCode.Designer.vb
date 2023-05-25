@@ -100,13 +100,16 @@ Partial Class FormCode
         '
         'btnHide
         '
+        Me.btnHide.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnHide.FlatAppearance.BorderSize = 0
+        Me.btnHide.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnHide.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHide.Location = New System.Drawing.Point(930, 134)
         Me.btnHide.Name = "btnHide"
         Me.btnHide.Size = New System.Drawing.Size(147, 42)
         Me.btnHide.TabIndex = 6
         Me.btnHide.Text = "btnHide"
-        Me.btnHide.UseVisualStyleBackColor = True
+        Me.btnHide.UseVisualStyleBackColor = False
         '
         'lblChar
         '
@@ -130,24 +133,30 @@ Partial Class FormCode
         '
         'btnDone
         '
+        Me.btnDone.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnDone.FlatAppearance.BorderSize = 0
+        Me.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDone.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDone.Location = New System.Drawing.Point(43, 235)
         Me.btnDone.Name = "btnDone"
         Me.btnDone.Size = New System.Drawing.Size(325, 42)
         Me.btnDone.TabIndex = 7
         Me.btnDone.Text = "Valider"
-        Me.btnDone.UseVisualStyleBackColor = True
+        Me.btnDone.UseVisualStyleBackColor = False
         Me.btnDone.Visible = False
         '
         'btnQuit
         '
+        Me.btnQuit.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnQuit.FlatAppearance.BorderSize = 0
+        Me.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnQuit.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnQuit.Location = New System.Drawing.Point(43, 283)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(325, 42)
         Me.btnQuit.TabIndex = 8
         Me.btnQuit.Text = "Abandonner"
-        Me.btnQuit.UseVisualStyleBackColor = True
+        Me.btnQuit.UseVisualStyleBackColor = False
         '
         'pnlTextBox
         '
@@ -178,6 +187,7 @@ Partial Class FormCode
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FormCode"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Saisie du code"
         Me.pnlTextBox.ResumeLayout(False)
         Me.pnlTextBox.PerformLayout()

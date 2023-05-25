@@ -90,35 +90,45 @@ Partial Class FormMenu
         '
         'btnStart
         '
+        Me.btnStart.BackColor = System.Drawing.SystemColors.ControlLight
         Me.btnStart.FlatAppearance.BorderSize = 0
+        Me.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStart.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStart.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnStart.Location = New System.Drawing.Point(79, 412)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(457, 58)
         Me.btnStart.TabIndex = 6
         Me.btnStart.Text = "Jouer !"
-        Me.btnStart.UseVisualStyleBackColor = True
+        Me.btnStart.UseVisualStyleBackColor = False
         '
         'btnScores
         '
         Me.btnScores.AutoSize = True
+        Me.btnScores.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnScores.FlatAppearance.BorderSize = 0
+        Me.btnScores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnScores.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnScores.Location = New System.Drawing.Point(579, 412)
         Me.btnScores.Name = "btnScores"
         Me.btnScores.Size = New System.Drawing.Size(457, 58)
         Me.btnScores.TabIndex = 7
         Me.btnScores.Text = "Scores"
-        Me.btnScores.UseVisualStyleBackColor = True
+        Me.btnScores.UseVisualStyleBackColor = False
         '
         'btnQuit
         '
+        Me.btnQuit.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnQuit.FlatAppearance.BorderSize = 0
+        Me.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnQuit.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnQuit.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnQuit.Location = New System.Drawing.Point(79, 490)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(957, 58)
         Me.btnQuit.TabIndex = 8
         Me.btnQuit.Text = "Quitter"
-        Me.btnQuit.UseVisualStyleBackColor = True
+        Me.btnQuit.UseVisualStyleBackColor = False
         '
         'btnSettings
         '
@@ -152,6 +162,7 @@ Partial Class FormMenu
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FormMenu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
         Me.ResumeLayout(False)
         Me.PerformLayout()

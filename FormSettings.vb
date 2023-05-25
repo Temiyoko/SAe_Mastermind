@@ -13,6 +13,8 @@ Public Class FormSettings
             tb.BackColor = GetColor(cpt)
             cpt += 1
         Next
+        RoundButton(btnDone, 15)
+        RoundButton(btnQuit, 15)
     End Sub
 
     Private Sub FormSettings_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing

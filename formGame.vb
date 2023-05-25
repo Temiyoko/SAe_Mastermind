@@ -15,6 +15,8 @@ Public Class FormGame
         lblSel.Text = PlayableCharToString()
         UpdateTime()
         tmEnd.Start()
+        RoundButton(btnBack, 15)
+        RoundButton(btnGuess, 15)
     End Sub
 
     Private Sub TbCode_KeyPress(sender As Object, e As KeyPressEventArgs) Handles tbCode1.KeyPress, tbCode2.KeyPress, tbCode3.KeyPress, tbCode4.KeyPress, tbCode5.KeyPress

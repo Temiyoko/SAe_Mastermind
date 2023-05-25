@@ -7,6 +7,9 @@ Public Class FormCode
         lblSel.Text = PlayableCharToString()
         btnHide.Text = "Afficher"
         ObfuscateTextboxes()
+        RoundButton(btnDone, 15)
+        RoundButton(btnHide, 15)
+        RoundButton(btnQuit, 15)
     End Sub
 
     Private Sub BtnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click

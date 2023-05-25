@@ -10,6 +10,10 @@ Public Class FormScores
         playerList.AddRange(GetAllPlayer())
         PopulateListBoxes()
         cboSearch.Items.Clear()
+        RoundButton(btnBestScore, 15)
+        RoundButton(btnBestTime, 15)
+        RoundButton(btnName, 15)
+        RoundButton(btnRetour, 15)
 
         For Each p As Player In playerList
             cboSearch.Items.Add(p.Name)

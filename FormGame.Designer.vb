@@ -156,14 +156,17 @@ Partial Class FormGame
         '
         'btnGuess
         '
+        Me.btnGuess.BackColor = System.Drawing.SystemColors.ControlLight
         Me.btnGuess.Enabled = False
+        Me.btnGuess.FlatAppearance.BorderSize = 0
+        Me.btnGuess.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuess.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuess.Location = New System.Drawing.Point(930, 134)
         Me.btnGuess.Name = "btnGuess"
         Me.btnGuess.Size = New System.Drawing.Size(147, 42)
         Me.btnGuess.TabIndex = 14
         Me.btnGuess.Text = "Valider"
-        Me.btnGuess.UseVisualStyleBackColor = True
+        Me.btnGuess.UseVisualStyleBackColor = False
         '
         'lblTitle
         '
@@ -239,13 +242,16 @@ Partial Class FormGame
         '
         'btnBack
         '
+        Me.btnBack.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnBack.FlatAppearance.BorderSize = 0
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBack.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBack.Location = New System.Drawing.Point(930, 851)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(147, 43)
         Me.btnBack.TabIndex = 23
         Me.btnBack.Text = "Retour"
-        Me.btnBack.UseVisualStyleBackColor = True
+        Me.btnBack.UseVisualStyleBackColor = False
         Me.btnBack.Visible = False
         '
         'lblMissing
@@ -1260,6 +1266,7 @@ Partial Class FormGame
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FormGame"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "formGame"
         Me.pnlTextBox.ResumeLayout(False)
         Me.pnlTextBox.PerformLayout()
