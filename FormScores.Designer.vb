@@ -65,7 +65,7 @@ Partial Class FormScores
         Me.lstName.Location = New System.Drawing.Point(0, 13)
         Me.lstName.Name = "lstName"
         Me.lstName.Size = New System.Drawing.Size(162, 44)
-        Me.lstName.TabIndex = 2
+        Me.lstName.TabIndex = 1
         '
         'lstScore
         '
@@ -75,7 +75,7 @@ Partial Class FormScores
         Me.lstScore.Location = New System.Drawing.Point(183, 13)
         Me.lstScore.Name = "lstScore"
         Me.lstScore.Size = New System.Drawing.Size(162, 44)
-        Me.lstScore.TabIndex = 3
+        Me.lstScore.TabIndex = 2
         '
         'lstBestTime
         '
@@ -85,7 +85,7 @@ Partial Class FormScores
         Me.lstBestTime.Location = New System.Drawing.Point(373, 13)
         Me.lstBestTime.Name = "lstBestTime"
         Me.lstBestTime.Size = New System.Drawing.Size(162, 44)
-        Me.lstBestTime.TabIndex = 4
+        Me.lstBestTime.TabIndex = 3
         '
         'lstP1
         '
@@ -95,7 +95,7 @@ Partial Class FormScores
         Me.lstP1.Location = New System.Drawing.Point(563, 13)
         Me.lstP1.Name = "lstP1"
         Me.lstP1.Size = New System.Drawing.Size(162, 44)
-        Me.lstP1.TabIndex = 5
+        Me.lstP1.TabIndex = 4
         '
         'lstTotalTime
         '
@@ -116,7 +116,7 @@ Partial Class FormScores
         Me.btnRetour.Location = New System.Drawing.Point(956, 436)
         Me.btnRetour.Name = "btnRetour"
         Me.btnRetour.Size = New System.Drawing.Size(162, 52)
-        Me.btnRetour.TabIndex = 7
+        Me.btnRetour.TabIndex = 11
         Me.btnRetour.Text = "Retour"
         Me.btnRetour.UseVisualStyleBackColor = False
         '
@@ -189,7 +189,7 @@ Partial Class FormScores
         Me.lstP2.Location = New System.Drawing.Point(755, 13)
         Me.lstP2.Name = "lstP2"
         Me.lstP2.Size = New System.Drawing.Size(162, 44)
-        Me.lstP2.TabIndex = 14
+        Me.lstP2.TabIndex = 5
         '
         'lblP2
         '
@@ -223,7 +223,7 @@ Partial Class FormScores
         Me.cboSearch.Location = New System.Drawing.Point(13, 440)
         Me.cboSearch.Name = "cboSearch"
         Me.cboSearch.Size = New System.Drawing.Size(498, 48)
-        Me.cboSearch.TabIndex = 17
+        Me.cboSearch.TabIndex = 10
         '
         'btnName
         '
@@ -234,7 +234,7 @@ Partial Class FormScores
         Me.btnName.Location = New System.Drawing.Point(13, 386)
         Me.btnName.Name = "btnName"
         Me.btnName.Size = New System.Drawing.Size(162, 48)
-        Me.btnName.TabIndex = 18
+        Me.btnName.TabIndex = 7
         Me.btnName.Text = "A-Z"
         Me.btnName.UseVisualStyleBackColor = False
         '
@@ -247,7 +247,7 @@ Partial Class FormScores
         Me.btnBestScore.Location = New System.Drawing.Point(181, 386)
         Me.btnBestScore.Name = "btnBestScore"
         Me.btnBestScore.Size = New System.Drawing.Size(162, 48)
-        Me.btnBestScore.TabIndex = 19
+        Me.btnBestScore.TabIndex = 8
         Me.btnBestScore.Text = "Score"
         Me.btnBestScore.UseVisualStyleBackColor = False
         '
@@ -260,7 +260,7 @@ Partial Class FormScores
         Me.btnBestTime.Location = New System.Drawing.Point(349, 386)
         Me.btnBestTime.Name = "btnBestTime"
         Me.btnBestTime.Size = New System.Drawing.Size(162, 48)
-        Me.btnBestTime.TabIndex = 20
+        Me.btnBestTime.TabIndex = 9
         Me.btnBestTime.Text = "Temps"
         Me.btnBestTime.UseVisualStyleBackColor = False
         '
