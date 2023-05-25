@@ -22,6 +22,7 @@ Partial Class FormMenu
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenu))
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblP1 = New System.Windows.Forms.Label()
         Me.cboP1 = New System.Windows.Forms.ComboBox()
@@ -89,6 +90,7 @@ Partial Class FormMenu
         '
         'btnStart
         '
+        Me.btnStart.FlatAppearance.BorderSize = 0
         Me.btnStart.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStart.Location = New System.Drawing.Point(79, 412)
         Me.btnStart.Name = "btnStart"
@@ -120,12 +122,15 @@ Partial Class FormMenu
         '
         'btnSettings
         '
+        Me.btnSettings.BackgroundImage = Global.SAé_Mastermind.My.Resources.Resources.cog
+        Me.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnSettings.FlatAppearance.BorderSize = 0
+        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSettings.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSettings.Location = New System.Drawing.Point(1006, 60)
+        Me.btnSettings.Location = New System.Drawing.Point(1038, 12)
         Me.btnSettings.Name = "btnSettings"
-        Me.btnSettings.Size = New System.Drawing.Size(40, 40)
+        Me.btnSettings.Size = New System.Drawing.Size(70, 70)
         Me.btnSettings.TabIndex = 9
-        Me.btnSettings.Text = "Button1"
         Me.btnSettings.UseVisualStyleBackColor = True
         '
         'FormMenu
@@ -144,6 +149,7 @@ Partial Class FormMenu
         Me.Controls.Add(Me.lblP1)
         Me.Controls.Add(Me.lblTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FormMenu"
         Me.Text = "Menu"

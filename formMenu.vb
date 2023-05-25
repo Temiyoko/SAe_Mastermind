@@ -8,7 +8,9 @@ Public Class FormMenu
         cboP2.Items.Clear()
         cboP1.Items.AddRange(GetAllNames())
         cboP2.Items.AddRange(GetAllNames())
-        RoundButton(btnStart, 20)
+        RoundButton(btnStart, 15)
+        RoundButton(btnQuit, 15)
+        RoundButton(btnScores, 15)
     End Sub
 
     Private Sub BtnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
