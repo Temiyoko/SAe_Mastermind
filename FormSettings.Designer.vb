@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormSettings
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormSettings
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormSettings))
         Me.lblTitle = New System.Windows.Forms.Label()
@@ -64,7 +64,7 @@ Partial Class FormSettings
         Me.pnlColors.Controls.Add(Me.lblRight)
         Me.pnlColors.Controls.Add(Me.lblColorCode)
         Me.pnlColors.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pnlColors.Location = New System.Drawing.Point(11, 309)
+        Me.pnlColors.Location = New System.Drawing.Point(57, 309)
         Me.pnlColors.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.pnlColors.Name = "pnlColors"
         Me.pnlColors.Size = New System.Drawing.Size(434, 259)
@@ -82,7 +82,7 @@ Partial Class FormSettings
         '
         'tbWrong
         '
-        Me.tbWrong.Location = New System.Drawing.Point(212, 140)
+        Me.tbWrong.Location = New System.Drawing.Point(212, 133)
         Me.tbWrong.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.tbWrong.Name = "tbWrong"
         Me.tbWrong.ReadOnly = True
@@ -92,7 +92,7 @@ Partial Class FormSettings
         '
         'tbRight
         '
-        Me.tbRight.Location = New System.Drawing.Point(212, 202)
+        Me.tbRight.Location = New System.Drawing.Point(212, 197)
         Me.tbRight.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.tbRight.Name = "tbRight"
         Me.tbRight.ReadOnly = True
@@ -103,7 +103,7 @@ Partial Class FormSettings
         'lblMissing
         '
         Me.lblMissing.AutoSize = True
-        Me.lblMissing.Location = New System.Drawing.Point(18, 205)
+        Me.lblMissing.Location = New System.Drawing.Point(18, 200)
         Me.lblMissing.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblMissing.Name = "lblMissing"
         Me.lblMissing.Size = New System.Drawing.Size(107, 40)
@@ -113,7 +113,7 @@ Partial Class FormSettings
         'lblWrong
         '
         Me.lblWrong.AutoSize = True
-        Me.lblWrong.Location = New System.Drawing.Point(18, 143)
+        Me.lblWrong.Location = New System.Drawing.Point(18, 136)
         Me.lblWrong.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblWrong.Name = "lblWrong"
         Me.lblWrong.Size = New System.Drawing.Size(136, 40)
