@@ -20,6 +20,10 @@ Public Class FormScores
         Next
     End Sub
 
+    Private Sub FormScores_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        lstName.Focus()
+    End Sub
+
     Private Sub Lst_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstName.SelectedIndexChanged, lstScore.SelectedIndexChanged, lstBestTime.SelectedIndexChanged, lstP1.SelectedIndexChanged, lstP2.SelectedIndexChanged, lstTotalTime.SelectedIndexChanged
         Dim send As ListBox = DirectCast(sender, ListBox)
         For Each lst As ListBox In pnlList.Controls
