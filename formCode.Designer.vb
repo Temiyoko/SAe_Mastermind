@@ -45,7 +45,7 @@ Partial Class FormCode
         Me.lblTitle.Location = New System.Drawing.Point(425, 9)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(282, 70)
-        Me.lblTitle.TabIndex = 0
+        Me.lblTitle.TabIndex = 6
         Me.lblTitle.Text = "Mastermind"
         '
         'tbCode2
@@ -55,7 +55,7 @@ Partial Class FormCode
         Me.tbCode2.MaxLength = 1
         Me.tbCode2.Name = "tbCode2"
         Me.tbCode2.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode2.TabIndex = 3
+        Me.tbCode2.TabIndex = 2
         Me.tbCode2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode3
@@ -65,7 +65,7 @@ Partial Class FormCode
         Me.tbCode3.MaxLength = 1
         Me.tbCode3.Name = "tbCode3"
         Me.tbCode3.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode3.TabIndex = 4
+        Me.tbCode3.TabIndex = 3
         Me.tbCode3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode4
@@ -75,7 +75,7 @@ Partial Class FormCode
         Me.tbCode4.MaxLength = 1
         Me.tbCode4.Name = "tbCode4"
         Me.tbCode4.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode4.TabIndex = 5
+        Me.tbCode4.TabIndex = 4
         Me.tbCode4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode5
@@ -85,7 +85,7 @@ Partial Class FormCode
         Me.tbCode5.MaxLength = 1
         Me.tbCode5.Name = "tbCode5"
         Me.tbCode5.Size = New System.Drawing.Size(147, 42)
-        Me.tbCode5.TabIndex = 1
+        Me.tbCode5.TabIndex = 5
         Me.tbCode5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'tbCode1
@@ -107,7 +107,7 @@ Partial Class FormCode
         Me.btnHide.Location = New System.Drawing.Point(930, 134)
         Me.btnHide.Name = "btnHide"
         Me.btnHide.Size = New System.Drawing.Size(147, 42)
-        Me.btnHide.TabIndex = 6
+        Me.btnHide.TabIndex = 7
         Me.btnHide.TabStop = False
         Me.btnHide.Text = "btnHide"
         Me.btnHide.UseVisualStyleBackColor = False
@@ -119,7 +119,7 @@ Partial Class FormCode
         Me.lblChar.Location = New System.Drawing.Point(748, 219)
         Me.lblChar.Name = "lblChar"
         Me.lblChar.Size = New System.Drawing.Size(265, 40)
-        Me.lblChar.TabIndex = 9
+        Me.lblChar.TabIndex = 10
         Me.lblChar.Text = "Caractères jouables :"
         '
         'lblSel
@@ -129,7 +129,7 @@ Partial Class FormCode
         Me.lblSel.Location = New System.Drawing.Point(771, 259)
         Me.lblSel.Name = "lblSel"
         Me.lblSel.Size = New System.Drawing.Size(74, 40)
-        Me.lblSel.TabIndex = 10
+        Me.lblSel.TabIndex = 11
         Me.lblSel.Text = "lblSel"
         '
         'btnDone
@@ -141,7 +141,7 @@ Partial Class FormCode
         Me.btnDone.Location = New System.Drawing.Point(43, 235)
         Me.btnDone.Name = "btnDone"
         Me.btnDone.Size = New System.Drawing.Size(325, 42)
-        Me.btnDone.TabIndex = 7
+        Me.btnDone.TabIndex = 8
         Me.btnDone.TabStop = False
         Me.btnDone.Text = "Valider"
         Me.btnDone.UseVisualStyleBackColor = False
@@ -156,7 +156,7 @@ Partial Class FormCode
         Me.btnQuit.Location = New System.Drawing.Point(43, 283)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(325, 42)
-        Me.btnQuit.TabIndex = 8
+        Me.btnQuit.TabIndex = 9
         Me.btnQuit.TabStop = False
         Me.btnQuit.Text = "Abandonner"
         Me.btnQuit.UseVisualStyleBackColor = False
