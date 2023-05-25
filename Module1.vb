@@ -9,6 +9,7 @@ Module Module1
     Private idFile As Integer = FreeFile()
     Private closeSource As String = ""
     Private colors(colorSize) As Color
+    Private nbTries As Integer = 15
     Const colorSize As Integer = 3
 
     Public Structure Player
@@ -19,6 +20,14 @@ Module Module1
         Dim P2 As Integer
         Dim TotalTime As Integer
     End Structure
+
+    Public Function GetNbTries() As Integer
+        Return nbTries
+    End Function
+
+    Public Sub SetNbTries(i As Integer)
+        nbTries = i
+    End Sub
 
     Public Function GetColorSize() As Integer
         Return colorSize
