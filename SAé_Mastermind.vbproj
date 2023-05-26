@@ -75,7 +75,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DarkTheme.vb" />
+    <Compile Include="DarkMode.vb" />
     <Compile Include="FormCode.Designer.vb">
       <DependentUpon>FormCode.vb</DependentUpon>
     </Compile>

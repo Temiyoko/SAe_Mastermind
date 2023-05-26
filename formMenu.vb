@@ -11,7 +11,9 @@ Public Class FormMenu
         RoundButton(btnStart, 15)
         RoundButton(btnQuit, 15)
         RoundButton(btnScores, 15)
+        RoundButton(btnSettings, 26)
     End Sub
+
 
     Private Sub BtnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
         ' 276 est le résultat de 4 (Oui/Non) + 16 (Critical) + 256 (2e bouton par défaut)

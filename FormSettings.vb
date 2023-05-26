@@ -1,10 +1,12 @@
 ﻿Imports System.Drawing
 Imports System.Windows.Forms
 
+
 Public Class FormSettings
     Private tries As Integer = GetNbTries()
     Private currentTime As Integer = GetMaxTime()
     Private Sub FormSettings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SetMode(Me)
         SetCloseSource("")
         sbChrono.Value = 90
         tbTries.Text = GetNbTries().ToString()
@@ -14,9 +16,11 @@ Public Class FormSettings
             cpt += 1
         Next
         If GetMaxTime() = Integer.MaxValue Then cbDisable.Checked = True
+        If GetDarkMode() Then cbDarkMode.Checked = True
         CbDisable_CheckedChanged(cbDisable, New EventArgs())
         RoundButton(btnDone, 15)
         RoundButton(btnQuit, 15)
+
     End Sub
 
     Private Sub FormSettings_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
@@ -24,9 +28,11 @@ Public Class FormSettings
             If MsgBox("Voulez-vous vraiment fermer cette fenêtre ?", 276, "Attention !") = vbNo Then
                 e.Cancel = True
             Else
+                SetMode(FormMenu)
                 FormMenu.Show()
             End If
         Else
+            SetMode(FormMenu)
             FormMenu.Show()
         End If
     End Sub
@@ -64,6 +70,7 @@ Public Class FormSettings
 
     Private Sub BtnDone_Click(sender As Object, e As EventArgs) Handles btnDone.Click
         SetCloseSource("Button")
+
         ' On valide les changements
         Dim tabColor(GetColorSize()) As Color
         Dim cpt As Integer = 0
@@ -71,6 +78,7 @@ Public Class FormSettings
             tabColor(cpt) = tb.BackColor
             cpt += 1
         Next
+
         If cbDisable.Checked = True Then
             SetChronoEnabled(False)
             SetMaxTime(Integer.MaxValue)
@@ -78,8 +86,16 @@ Public Class FormSettings
             SetChronoEnabled(True)
             SetMaxTime(sbChrono.Value)
         End If
+
         SetColor(tabColor)
         SetNbTries(tries)
+
+        If cbDarkMode.Checked = True Then
+            SetDarkMode(True)
+        Else
+            SetDarkMode(False)
+        End If
+
         Me.Close()
     End Sub
 
@@ -97,4 +113,5 @@ Public Class FormSettings
         currentTime = sbChrono.Value
         lblSelected.Text = GetTimeToString(currentTime)
     End Sub
+
 End Class

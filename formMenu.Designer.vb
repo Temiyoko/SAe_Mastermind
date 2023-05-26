@@ -30,8 +30,8 @@ Partial Class FormMenu
         Me.btnStart = New System.Windows.Forms.Button()
         Me.btnScores = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
-        Me.pbMaster = New System.Windows.Forms.PictureBox()
         Me.btnSettings = New System.Windows.Forms.Button()
+        Me.pbMaster = New System.Windows.Forms.PictureBox()
         CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -125,6 +125,20 @@ Partial Class FormMenu
         Me.btnQuit.Text = "Quitter"
         Me.btnQuit.UseVisualStyleBackColor = False
         '
+        'btnSettings
+        '
+        Me.btnSettings.BackgroundImage = CType(resources.GetObject("btnSettings.BackgroundImage"), System.Drawing.Image)
+        Me.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnSettings.FlatAppearance.BorderSize = 0
+        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSettings.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSettings.Location = New System.Drawing.Point(1048, 12)
+        Me.btnSettings.Name = "btnSettings"
+        Me.btnSettings.Size = New System.Drawing.Size(70, 70)
+        Me.btnSettings.TabIndex = 9
+        Me.btnSettings.TabStop = False
+        Me.btnSettings.UseVisualStyleBackColor = True
+        '
         'pbMaster
         '
         Me.pbMaster.BackgroundImage = CType(resources.GetObject("pbMaster.BackgroundImage"), System.Drawing.Image)
@@ -134,20 +148,6 @@ Partial Class FormMenu
         Me.pbMaster.Size = New System.Drawing.Size(957, 336)
         Me.pbMaster.TabIndex = 10
         Me.pbMaster.TabStop = False
-        '
-        'btnSettings
-        '
-        Me.btnSettings.BackgroundImage = CType(resources.GetObject("btnSettings.BackgroundImage"), System.Drawing.Image)
-        Me.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnSettings.FlatAppearance.BorderSize = 0
-        Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSettings.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSettings.Location = New System.Drawing.Point(1038, 12)
-        Me.btnSettings.Name = "btnSettings"
-        Me.btnSettings.Size = New System.Drawing.Size(70, 70)
-        Me.btnSettings.TabIndex = 9
-        Me.btnSettings.TabStop = False
-        Me.btnSettings.UseVisualStyleBackColor = True
         '
         'FormMenu
         '
@@ -165,7 +165,6 @@ Partial Class FormMenu
         Me.Controls.Add(Me.cboP1)
         Me.Controls.Add(Me.lblP1)
         Me.Controls.Add(Me.pbMaster)
-        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False

@@ -4,6 +4,7 @@ Imports System.Windows.Forms
 Public Class FormCode
 
     Private Sub FormCode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SetMode(Me)
         SetCloseSource("")
         lblSel.Text = PlayableCharToString()
         BtnHide_MouseUp(btnHide, New MouseEventArgs(MouseButtons.Left, 1, 0, 0, 0))

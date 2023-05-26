@@ -1,3 +1,0 @@
-﻿Module DarkTheme
-
-End Module

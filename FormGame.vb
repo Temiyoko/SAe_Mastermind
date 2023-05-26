@@ -6,6 +6,7 @@ Public Class FormGame
     Private currentTime = GetMaxTime()
 
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SetMode(Me)
         SetCloseSource("")
         Dim cpt As Integer = 0
         For Each lbl As Label In pnlLabels.Controls

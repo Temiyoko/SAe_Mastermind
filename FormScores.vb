@@ -4,6 +4,7 @@ Public Class FormScores
     Private playerList As New List(Of Player)()
 
     Private Sub FormScores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SetMode(Me)
         SetCloseSource("")
         playerList.Clear()
         playerList.AddRange(GetAllPlayer())
