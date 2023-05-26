@@ -15,6 +15,9 @@ Public Class FormSettings
             cpt += 1
         Next
 
+        RoundButton(btnInfo, 10)
+        btnInfo.BackgroundImage = Image.FromFile("../../images/information.png")
+
         If GetDarkMode() = False Then
             pbDark.BackgroundImage = Image.FromFile("../../images/brush.png")
             pbMusic.BackgroundImage = Image.FromFile("../../images/music.png")
@@ -132,4 +135,8 @@ Public Class FormSettings
         lblSelected.Text = GetTimeToString(currentTime)
     End Sub
 
+    Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
+        Me.Close()
+
+    End Sub
 End Class

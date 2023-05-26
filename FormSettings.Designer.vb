@@ -48,6 +48,7 @@ Partial Class FormSettings
         Me.pbMusic = New System.Windows.Forms.PictureBox()
         Me.pbDark = New System.Windows.Forms.PictureBox()
         Me.pbMaster = New System.Windows.Forms.PictureBox()
+        Me.btnInfo = New System.Windows.Forms.Button()
         Me.pnlColors.SuspendLayout()
         CType(Me.pbMusic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbDark, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -316,12 +317,27 @@ Partial Class FormSettings
         Me.pbMaster.TabIndex = 30
         Me.pbMaster.TabStop = False
         '
+        'btnInfo
+        '
+        Me.btnInfo.BackColor = System.Drawing.Color.Transparent
+        Me.btnInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnInfo.FlatAppearance.BorderSize = 0
+        Me.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnInfo.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInfo.Location = New System.Drawing.Point(1042, 12)
+        Me.btnInfo.Name = "btnInfo"
+        Me.btnInfo.Size = New System.Drawing.Size(70, 70)
+        Me.btnInfo.TabIndex = 34
+        Me.btnInfo.TabStop = False
+        Me.btnInfo.UseVisualStyleBackColor = False
+        '
         'FormSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1130, 587)
+        Me.Controls.Add(Me.btnInfo)
         Me.Controls.Add(Me.pbMusic)
         Me.Controls.Add(Me.pbDark)
         Me.Controls.Add(Me.cbMusic)
@@ -380,4 +396,5 @@ Partial Class FormSettings
     Friend WithEvents cbMusic As Windows.Forms.CheckBox
     Friend WithEvents pbDark As Windows.Forms.PictureBox
     Friend WithEvents pbMusic As Windows.Forms.PictureBox
+    Friend WithEvents btnInfo As Windows.Forms.Button
 End Class
