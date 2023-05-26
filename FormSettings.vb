@@ -114,45 +114,4 @@ Public Class FormSettings
         currentTime = sbChrono.Value
         lblSelected.Text = GetTimeToString(currentTime)
     End Sub
-
-    Private player As New SoundPlayer()
-
-    Public Sub New()
-        ' Set up the button
-        Dim btnMusic As New Button()
-        btnMusic.Name = "btnMusic"
-        btnMusic.Text = "Play Music"
-        AddHandler btnMusic.Click, AddressOf PlayMusic
-        AddHandler btnMusic.MouseDown, AddressOf StartMusic
-        AddHandler btnMusic.MouseUp, AddressOf StopMusic
-        Me.Controls.Add(btnMusic)
-
-        ' Set the path to your music file
-        player.SoundLocation = "../../audios/"
-    End Sub
-
-    Private Sub PlayMusic(sender As Object, e As EventArgs)
-        ' Check if the music is already playing
-        If Not player.IsLoadCompleted Then
-            ' Play the music
-            player.Play()
-        End If
-    End Sub
-
-    Private Sub StartMusic(sender As Object, e As MouseEventArgs)
-        ' Check if the mouse button is the left button
-        If e.Button = MouseButtons.Left Then
-            ' Play the music when the left mouse button is pressed down on the btnMusic button
-            player.Play()
-        End If
-    End Sub
-
-    Private Sub StopMusic(sender As Object, e As MouseEventArgs)
-        ' Check if the mouse button is the left button
-        If e.Button = MouseButtons.Left Then
-            ' Stop the music when the left mouse button is released from the btnMusic button
-            player.Stop()
-        End If
-    End Sub
-
 End Class
