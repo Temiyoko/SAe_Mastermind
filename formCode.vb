@@ -1,12 +1,12 @@
-﻿Imports System.Windows.Forms
+﻿Imports System.Drawing
+Imports System.Windows.Forms
 
 Public Class FormCode
 
     Private Sub FormCode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetCloseSource("")
         lblSel.Text = PlayableCharToString()
-        btnHide.Text = "Afficher"
-        ObfuscateTextboxes()
+        BtnHide_MouseUp(btnHide, New MouseEventArgs(MouseButtons.Left, 1, 0, 0, 0))
         RoundButton(btnDone, 15)
         RoundButton(btnHide, 15)
         RoundButton(btnQuit, 15)
@@ -37,12 +37,12 @@ Public Class FormCode
     End Sub
 
     Private Sub BtnHide_MouseDown(sender As Object, e As MouseEventArgs) Handles btnHide.MouseDown
-        btnHide.Text = "Cacher"
+        btnHide.BackgroundImage = Image.FromFile("../../images/eyeA.png")
         RevealTextboxes()
     End Sub
 
     Private Sub BtnHide_MouseUp(sender As Object, e As MouseEventArgs) Handles btnHide.MouseUp
-        btnHide.Text = "Afficher"
+        btnHide.BackgroundImage = Image.FromFile("../../images/eyeC.png")
         ObfuscateTextboxes()
     End Sub
 
@@ -89,4 +89,5 @@ Public Class FormCode
             FormGame.Show()
         End If
     End Sub
+
 End Class

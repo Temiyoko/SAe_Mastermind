@@ -28,12 +28,12 @@ Partial Class FormCode
         Me.tbCode4 = New System.Windows.Forms.TextBox()
         Me.tbCode5 = New System.Windows.Forms.TextBox()
         Me.tbCode1 = New System.Windows.Forms.TextBox()
-        Me.btnHide = New System.Windows.Forms.Button()
         Me.lblChar = New System.Windows.Forms.Label()
         Me.lblSel = New System.Windows.Forms.Label()
         Me.btnDone = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.pnlTextBox = New System.Windows.Forms.Panel()
+        Me.btnHide = New System.Windows.Forms.Button()
         Me.pbMaster = New System.Windows.Forms.PictureBox()
         Me.pnlTextBox.SuspendLayout()
         CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -88,20 +88,6 @@ Partial Class FormCode
         Me.tbCode1.Size = New System.Drawing.Size(147, 42)
         Me.tbCode1.TabIndex = 1
         Me.tbCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'btnHide
-        '
-        Me.btnHide.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.btnHide.FlatAppearance.BorderSize = 0
-        Me.btnHide.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHide.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnHide.Location = New System.Drawing.Point(930, 134)
-        Me.btnHide.Name = "btnHide"
-        Me.btnHide.Size = New System.Drawing.Size(147, 42)
-        Me.btnHide.TabIndex = 7
-        Me.btnHide.TabStop = False
-        Me.btnHide.Text = "btnHide"
-        Me.btnHide.UseVisualStyleBackColor = False
         '
         'lblChar
         '
@@ -163,6 +149,21 @@ Partial Class FormCode
         Me.pnlTextBox.Name = "pnlTextBox"
         Me.pnlTextBox.Size = New System.Drawing.Size(891, 100)
         Me.pnlTextBox.TabIndex = 11
+        '
+        'btnHide
+        '
+        Me.btnHide.BackColor = System.Drawing.Color.Transparent
+        Me.btnHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnHide.FlatAppearance.BorderSize = 0
+        Me.btnHide.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHide.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHide.ForeColor = System.Drawing.Color.Transparent
+        Me.btnHide.Location = New System.Drawing.Point(930, 134)
+        Me.btnHide.Name = "btnHide"
+        Me.btnHide.Size = New System.Drawing.Size(147, 42)
+        Me.btnHide.TabIndex = 7
+        Me.btnHide.TabStop = False
+        Me.btnHide.UseVisualStyleBackColor = False
         '
         'pbMaster
         '

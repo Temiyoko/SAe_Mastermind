@@ -161,6 +161,7 @@
   <ItemGroup>
     <None Include="images\cog.png" />
     <None Include="images\mastermindWhite.png" />
+    <None Include="images\eyeA.png" />
     <Content Include="logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
