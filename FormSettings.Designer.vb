@@ -46,6 +46,7 @@ Partial Class FormSettings
         Me.lblActualTime = New System.Windows.Forms.Label()
         Me.lblSelected = New System.Windows.Forms.Label()
         Me.pbMaster = New System.Windows.Forms.PictureBox()
+        Me.btnMusic = New System.Windows.Forms.Button()
         Me.pnlColors.SuspendLayout()
         CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -294,12 +295,28 @@ Partial Class FormSettings
         Me.pbMaster.TabIndex = 30
         Me.pbMaster.TabStop = False
         '
+        'btnMusic
+        '
+        Me.btnMusic.BackColor = System.Drawing.Color.Transparent
+        Me.btnMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnMusic.FlatAppearance.BorderSize = 0
+        Me.btnMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMusic.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMusic.ForeColor = System.Drawing.Color.Transparent
+        Me.btnMusic.Location = New System.Drawing.Point(567, 392)
+        Me.btnMusic.Name = "btnMusic"
+        Me.btnMusic.Size = New System.Drawing.Size(147, 42)
+        Me.btnMusic.TabIndex = 31
+        Me.btnMusic.TabStop = False
+        Me.btnMusic.UseVisualStyleBackColor = False
+        '
         'FormSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1130, 587)
+        Me.Controls.Add(Me.btnMusic)
         Me.Controls.Add(Me.lblSelected)
         Me.Controls.Add(Me.lblActualTime)
         Me.Controls.Add(Me.lblFin)
@@ -351,4 +368,5 @@ Partial Class FormSettings
     Friend WithEvents lblActualTime As Windows.Forms.Label
     Friend WithEvents lblSelected As Windows.Forms.Label
     Friend WithEvents pbMaster As Windows.Forms.PictureBox
+    Friend WithEvents btnMusic As Windows.Forms.Button
 End Class

@@ -38,6 +38,7 @@ Partial Class FormMenu
         'lblP1
         '
         Me.lblP1.AutoSize = True
+        Me.lblP1.BackColor = System.Drawing.Color.Transparent
         Me.lblP1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblP1.Location = New System.Drawing.Point(101, 188)
         Me.lblP1.Name = "lblP1"
@@ -72,6 +73,7 @@ Partial Class FormMenu
         'lblP2
         '
         Me.lblP2.AutoSize = True
+        Me.lblP2.BackColor = System.Drawing.Color.Transparent
         Me.lblP2.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblP2.Location = New System.Drawing.Point(702, 188)
         Me.lblP2.Name = "lblP2"
@@ -127,6 +129,7 @@ Partial Class FormMenu
         '
         'btnSettings
         '
+        Me.btnSettings.BackColor = System.Drawing.Color.Transparent
         Me.btnSettings.BackgroundImage = CType(resources.GetObject("btnSettings.BackgroundImage"), System.Drawing.Image)
         Me.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnSettings.FlatAppearance.BorderSize = 0
@@ -137,15 +140,16 @@ Partial Class FormMenu
         Me.btnSettings.Size = New System.Drawing.Size(70, 70)
         Me.btnSettings.TabIndex = 9
         Me.btnSettings.TabStop = False
-        Me.btnSettings.UseVisualStyleBackColor = True
+        Me.btnSettings.UseVisualStyleBackColor = False
         '
         'pbMaster
         '
+        Me.pbMaster.BackColor = System.Drawing.Color.Transparent
         Me.pbMaster.BackgroundImage = CType(resources.GetObject("pbMaster.BackgroundImage"), System.Drawing.Image)
-        Me.pbMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.pbMaster.Location = New System.Drawing.Point(79, -108)
+        Me.pbMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.pbMaster.Location = New System.Drawing.Point(79, -139)
         Me.pbMaster.Name = "pbMaster"
-        Me.pbMaster.Size = New System.Drawing.Size(957, 336)
+        Me.pbMaster.Size = New System.Drawing.Size(986, 296)
         Me.pbMaster.TabIndex = 10
         Me.pbMaster.TabStop = False
         '
