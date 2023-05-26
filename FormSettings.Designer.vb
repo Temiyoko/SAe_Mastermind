@@ -45,6 +45,7 @@ Partial Class FormSettings
         Me.lblFin = New System.Windows.Forms.Label()
         Me.lblActualTime = New System.Windows.Forms.Label()
         Me.lblSelected = New System.Windows.Forms.Label()
+        Me.pbMaster = New System.Windows.Forms.PictureBox()
         Me.pnlColors.SuspendLayout()
         CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -290,7 +291,7 @@ Partial Class FormSettings
         Me.pbMaster.Location = New System.Drawing.Point(79, -108)
         Me.pbMaster.Name = "pbMaster"
         Me.pbMaster.Size = New System.Drawing.Size(957, 336)
-        Me.pbMaster.TabIndex = 15
+        Me.pbMaster.TabIndex = 30
         Me.pbMaster.TabStop = False
         '
         'FormSettings
@@ -349,4 +350,5 @@ Partial Class FormSettings
     Friend WithEvents lblFin As Windows.Forms.Label
     Friend WithEvents lblActualTime As Windows.Forms.Label
     Friend WithEvents lblSelected As Windows.Forms.Label
+    Friend WithEvents pbMaster As Windows.Forms.PictureBox
 End Class
