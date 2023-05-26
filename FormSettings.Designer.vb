@@ -37,8 +37,15 @@ Partial Class FormSettings
         Me.btnDone = New System.Windows.Forms.Button()
         Me.lblTries = New System.Windows.Forms.Label()
         Me.tbTries = New System.Windows.Forms.TextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cbDarkMode = New System.Windows.Forms.CheckBox()
+        Me.lblTheme = New System.Windows.Forms.Label()
+        Me.lblChrono = New System.Windows.Forms.Label()
+        Me.cbDisable = New System.Windows.Forms.CheckBox()
+        Me.sbChrono = New System.Windows.Forms.HScrollBar()
+        Me.lblDebut = New System.Windows.Forms.Label()
+        Me.lblFin = New System.Windows.Forms.Label()
+        Me.lblActualTime = New System.Windows.Forms.Label()
+        Me.lblSelected = New System.Windows.Forms.Label()
         Me.pnlColors.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -174,7 +181,7 @@ Partial Class FormSettings
         '
         Me.lblTries.AutoSize = True
         Me.lblTries.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTries.Location = New System.Drawing.Point(50, 151)
+        Me.lblTries.Location = New System.Drawing.Point(45, 145)
         Me.lblTries.Name = "lblTries"
         Me.lblTries.Size = New System.Drawing.Size(344, 40)
         Me.lblTries.TabIndex = 12
@@ -183,7 +190,7 @@ Partial Class FormSettings
         'tbTries
         '
         Me.tbTries.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbTries.Location = New System.Drawing.Point(57, 206)
+        Me.tbTries.Location = New System.Drawing.Point(52, 200)
         Me.tbTries.MaxLength = 2
         Me.tbTries.Name = "tbTries"
         Me.tbTries.Size = New System.Drawing.Size(345, 42)
@@ -191,27 +198,101 @@ Partial Class FormSettings
         Me.tbTries.TabStop = False
         Me.tbTries.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox1
+        'cbDarkMode
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(777, 204)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(154, 44)
-        Me.CheckBox1.TabIndex = 13
-        Me.CheckBox1.TabStop = False
-        Me.CheckBox1.Text = "DarkMode"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.cbDarkMode.AutoSize = True
+        Me.cbDarkMode.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbDarkMode.Location = New System.Drawing.Point(567, 524)
+        Me.cbDarkMode.Name = "cbDarkMode"
+        Me.cbDarkMode.Size = New System.Drawing.Size(154, 44)
+        Me.cbDarkMode.TabIndex = 13
+        Me.cbDarkMode.TabStop = False
+        Me.cbDarkMode.Text = "DarkMode"
+        Me.cbDarkMode.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lblTheme
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(770, 151)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 40)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Thème"
+        Me.lblTheme.AutoSize = True
+        Me.lblTheme.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTheme.Location = New System.Drawing.Point(576, 481)
+        Me.lblTheme.Name = "lblTheme"
+        Me.lblTheme.Size = New System.Drawing.Size(106, 40)
+        Me.lblTheme.TabIndex = 14
+        Me.lblTheme.Text = "Thème :"
+        '
+        'lblChrono
+        '
+        Me.lblChrono.AutoSize = True
+        Me.lblChrono.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblChrono.Location = New System.Drawing.Point(606, 141)
+        Me.lblChrono.Name = "lblChrono"
+        Me.lblChrono.Size = New System.Drawing.Size(184, 40)
+        Me.lblChrono.TabIndex = 15
+        Me.lblChrono.Text = "Chronomètre :"
+        '
+        'cbDisable
+        '
+        Me.cbDisable.AutoSize = True
+        Me.cbDisable.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbDisable.Location = New System.Drawing.Point(942, 141)
+        Me.cbDisable.Name = "cbDisable"
+        Me.cbDisable.Size = New System.Drawing.Size(160, 44)
+        Me.cbDisable.TabIndex = 16
+        Me.cbDisable.TabStop = False
+        Me.cbDisable.Text = "Désactiver"
+        Me.cbDisable.UseVisualStyleBackColor = True
+        '
+        'sbChrono
+        '
+        Me.sbChrono.LargeChange = 60
+        Me.sbChrono.Location = New System.Drawing.Point(619, 200)
+        Me.sbChrono.Maximum = 359
+        Me.sbChrono.Minimum = 10
+        Me.sbChrono.Name = "sbChrono"
+        Me.sbChrono.Size = New System.Drawing.Size(483, 37)
+        Me.sbChrono.SmallChange = 5
+        Me.sbChrono.TabIndex = 17
+        Me.sbChrono.Value = 10
+        '
+        'lblDebut
+        '
+        Me.lblDebut.AutoSize = True
+        Me.lblDebut.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDebut.Location = New System.Drawing.Point(612, 246)
+        Me.lblDebut.Name = "lblDebut"
+        Me.lblDebut.Size = New System.Drawing.Size(70, 40)
+        Me.lblDebut.TabIndex = 18
+        Me.lblDebut.Text = "00:10"
+        '
+        'lblFin
+        '
+        Me.lblFin.AutoSize = True
+        Me.lblFin.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFin.Location = New System.Drawing.Point(1026, 256)
+        Me.lblFin.Name = "lblFin"
+        Me.lblFin.Size = New System.Drawing.Size(77, 40)
+        Me.lblFin.TabIndex = 19
+        Me.lblFin.Text = "05:00"
+        '
+        'lblActualTime
+        '
+        Me.lblActualTime.AutoSize = True
+        Me.lblActualTime.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblActualTime.Location = New System.Drawing.Point(606, 314)
+        Me.lblActualTime.Name = "lblActualTime"
+        Me.lblActualTime.Size = New System.Drawing.Size(182, 40)
+        Me.lblActualTime.TabIndex = 20
+        Me.lblActualTime.Text = "Temps actuel :"
+        '
+        'lblSelected
+        '
+        Me.lblSelected.AutoSize = True
+        Me.lblSelected.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSelected.Location = New System.Drawing.Point(794, 314)
+        Me.lblSelected.Name = "lblSelected"
+        Me.lblSelected.Size = New System.Drawing.Size(122, 36)
+        Me.lblSelected.TabIndex = 21
+        Me.lblSelected.Text = "lblSelected"
         '
         'FormSettings
         '
@@ -219,8 +300,15 @@ Partial Class FormSettings
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1130, 587)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.lblSelected)
+        Me.Controls.Add(Me.lblActualTime)
+        Me.Controls.Add(Me.lblFin)
+        Me.Controls.Add(Me.lblDebut)
+        Me.Controls.Add(Me.sbChrono)
+        Me.Controls.Add(Me.cbDisable)
+        Me.Controls.Add(Me.lblChrono)
+        Me.Controls.Add(Me.lblTheme)
+        Me.Controls.Add(Me.cbDarkMode)
         Me.Controls.Add(Me.tbTries)
         Me.Controls.Add(Me.lblTries)
         Me.Controls.Add(Me.btnQuit)
@@ -254,6 +342,13 @@ Partial Class FormSettings
     Friend WithEvents btnDone As Windows.Forms.Button
     Friend WithEvents lblTries As Windows.Forms.Label
     Friend WithEvents tbTries As Windows.Forms.TextBox
-    Friend WithEvents CheckBox1 As Windows.Forms.CheckBox
-    Friend WithEvents Label1 As Windows.Forms.Label
+    Friend WithEvents cbDarkMode As Windows.Forms.CheckBox
+    Friend WithEvents lblTheme As Windows.Forms.Label
+    Friend WithEvents lblChrono As Windows.Forms.Label
+    Friend WithEvents cbDisable As Windows.Forms.CheckBox
+    Friend WithEvents sbChrono As Windows.Forms.HScrollBar
+    Friend WithEvents lblDebut As Windows.Forms.Label
+    Friend WithEvents lblFin As Windows.Forms.Label
+    Friend WithEvents lblActualTime As Windows.Forms.Label
+    Friend WithEvents lblSelected As Windows.Forms.Label
 End Class

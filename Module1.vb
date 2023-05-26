@@ -6,10 +6,12 @@ Imports System.Windows.Forms
 Module Module1
     Private playableChar() As Char
     Private code() As Char
-    Private idFile As Integer = FreeFile()
+    ReadOnly idFile As Integer = FreeFile()
     Private closeSource As String = ""
     Private colors(colorSize) As Color
+    Private chronoEnabled As Boolean = True
     Private nbTries As Integer = 15
+    Private maxTime As Integer = 90
     Const colorSize As Integer = 3
 
     Public Structure Player
@@ -20,6 +22,29 @@ Module Module1
         Dim P2 As Integer
         Dim TotalTime As Integer
     End Structure
+
+    Public Function GetMaxTime() As Integer
+        Return maxTime
+    End Function
+
+    Public Function GetTimeToString(i As Integer) As String
+        Dim minutes As Integer = i \ 60
+        Dim seconds As Integer = i Mod 60
+
+        Return minutes & " minute(s) et " & seconds & " seconde(s)"
+    End Function
+
+    Public Sub SetMaxTime(i As Integer)
+        maxTime = i
+    End Sub
+
+    Public Function GetChronoEnabled() As Boolean
+        Return chronoEnabled
+    End Function
+
+    Public Sub SetChronoEnabled(b As Boolean)
+        chronoEnabled = b
+    End Sub
 
     Public Function GetNbTries() As Integer
         Return nbTries
