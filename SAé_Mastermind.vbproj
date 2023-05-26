@@ -75,6 +75,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DarkTheme.vb" />
     <Compile Include="FormCode.Designer.vb">
       <DependentUpon>FormCode.vb</DependentUpon>
     </Compile>
@@ -162,6 +163,7 @@
   <ItemGroup>
     <None Include="images\cog.png" />
     <None Include="images\mastermindWhite.png" />
+    <None Include="images\eyeA.png" />
     <Content Include="logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

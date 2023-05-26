@@ -149,9 +149,9 @@ Partial Class FormScores
         Me.lblBestTime.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBestTime.Location = New System.Drawing.Point(356, 223)
         Me.lblBestTime.Name = "lblBestTime"
-        Me.lblBestTime.Size = New System.Drawing.Size(216, 40)
+        Me.lblBestTime.Size = New System.Drawing.Size(192, 40)
         Me.lblBestTime.TabIndex = 10
-        Me.lblBestTime.Text = "Meilleur temps ('')"
+        Me.lblBestTime.Text = "Meilleur temps''"
         Me.lblBestTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblNbGames
@@ -170,9 +170,9 @@ Partial Class FormScores
         Me.lblTotalTime.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTotalTime.Location = New System.Drawing.Point(932, 223)
         Me.lblTotalTime.Name = "lblTotalTime"
-        Me.lblTotalTime.Size = New System.Drawing.Size(182, 40)
+        Me.lblTotalTime.Size = New System.Drawing.Size(158, 40)
         Me.lblTotalTime.TabIndex = 12
-        Me.lblTotalTime.Text = "Temps joué ('')"
+        Me.lblTotalTime.Text = "Temps joué''"
         '
         'lblP1
         '
