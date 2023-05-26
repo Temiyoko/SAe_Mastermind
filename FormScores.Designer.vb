@@ -23,7 +23,6 @@ Partial Class FormScores
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormScores))
-        Me.lblTitle = New System.Windows.Forms.Label()
         Me.lstName = New System.Windows.Forms.ListBox()
         Me.lstScore = New System.Windows.Forms.ListBox()
         Me.lstBestTime = New System.Windows.Forms.ListBox()
@@ -44,18 +43,10 @@ Partial Class FormScores
         Me.btnBestScore = New System.Windows.Forms.Button()
         Me.btnBestTime = New System.Windows.Forms.Button()
         Me.lblFilter = New System.Windows.Forms.Label()
+        Me.pbMaster = New System.Windows.Forms.PictureBox()
         Me.pnlList.SuspendLayout()
+        CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lblTitle
-        '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Poppins", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(425, 9)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(282, 70)
-        Me.lblTitle.TabIndex = 1
-        Me.lblTitle.Text = "Mastermind"
         '
         'lstName
         '
@@ -65,7 +56,6 @@ Partial Class FormScores
         Me.lstName.Location = New System.Drawing.Point(0, 13)
         Me.lstName.Name = "lstName"
         Me.lstName.Size = New System.Drawing.Size(162, 44)
-        Me.lstName.TabIndex = 1
         Me.lstName.TabIndex = 2
         Me.lstName.TabStop = False
         Me.lstName.UseTabStops = False
@@ -78,7 +68,6 @@ Partial Class FormScores
         Me.lstScore.Location = New System.Drawing.Point(183, 13)
         Me.lstScore.Name = "lstScore"
         Me.lstScore.Size = New System.Drawing.Size(162, 44)
-        Me.lstScore.TabIndex = 2
         Me.lstScore.TabIndex = 3
         Me.lstScore.TabStop = False
         Me.lstScore.UseTabStops = False
@@ -91,7 +80,6 @@ Partial Class FormScores
         Me.lstBestTime.Location = New System.Drawing.Point(373, 13)
         Me.lstBestTime.Name = "lstBestTime"
         Me.lstBestTime.Size = New System.Drawing.Size(162, 44)
-        Me.lstBestTime.TabIndex = 3
         Me.lstBestTime.TabIndex = 4
         Me.lstBestTime.TabStop = False
         Me.lstBestTime.UseTabStops = False
@@ -104,7 +92,6 @@ Partial Class FormScores
         Me.lstP1.Location = New System.Drawing.Point(563, 13)
         Me.lstP1.Name = "lstP1"
         Me.lstP1.Size = New System.Drawing.Size(162, 44)
-        Me.lstP1.TabIndex = 4
         Me.lstP1.TabIndex = 5
         Me.lstP1.TabStop = False
         Me.lstP1.UseTabStops = False
@@ -128,7 +115,7 @@ Partial Class FormScores
         Me.btnRetour.FlatAppearance.BorderSize = 0
         Me.btnRetour.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRetour.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRetour.Location = New System.Drawing.Point(956, 436)
+        Me.btnRetour.Location = New System.Drawing.Point(956, 523)
         Me.btnRetour.Name = "btnRetour"
         Me.btnRetour.Size = New System.Drawing.Size(162, 52)
         Me.btnRetour.TabIndex = 7
@@ -140,7 +127,7 @@ Partial Class FormScores
         '
         Me.lblName.AutoSize = True
         Me.lblName.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.Location = New System.Drawing.Point(44, 136)
+        Me.lblName.Location = New System.Drawing.Point(44, 223)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(72, 40)
         Me.lblName.TabIndex = 8
@@ -150,7 +137,7 @@ Partial Class FormScores
         '
         Me.lblScore.AutoSize = True
         Me.lblScore.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblScore.Location = New System.Drawing.Point(236, 136)
+        Me.lblScore.Location = New System.Drawing.Point(236, 223)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(82, 40)
         Me.lblScore.TabIndex = 9
@@ -160,7 +147,7 @@ Partial Class FormScores
         '
         Me.lblBestTime.AutoSize = True
         Me.lblBestTime.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBestTime.Location = New System.Drawing.Point(356, 136)
+        Me.lblBestTime.Location = New System.Drawing.Point(356, 223)
         Me.lblBestTime.Name = "lblBestTime"
         Me.lblBestTime.Size = New System.Drawing.Size(220, 40)
         Me.lblBestTime.TabIndex = 10
@@ -171,7 +158,7 @@ Partial Class FormScores
         '
         Me.lblNbGames.AutoSize = True
         Me.lblNbGames.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNbGames.Location = New System.Drawing.Point(598, 96)
+        Me.lblNbGames.Location = New System.Drawing.Point(598, 183)
         Me.lblNbGames.Name = "lblNbGames"
         Me.lblNbGames.Size = New System.Drawing.Size(312, 40)
         Me.lblNbGames.TabIndex = 11
@@ -181,7 +168,7 @@ Partial Class FormScores
         '
         Me.lblTotalTime.AutoSize = True
         Me.lblTotalTime.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalTime.Location = New System.Drawing.Point(932, 136)
+        Me.lblTotalTime.Location = New System.Drawing.Point(932, 223)
         Me.lblTotalTime.Name = "lblTotalTime"
         Me.lblTotalTime.Size = New System.Drawing.Size(186, 40)
         Me.lblTotalTime.TabIndex = 12
@@ -191,7 +178,7 @@ Partial Class FormScores
         '
         Me.lblP1.AutoSize = True
         Me.lblP1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblP1.Location = New System.Drawing.Point(598, 136)
+        Me.lblP1.Location = New System.Drawing.Point(598, 223)
         Me.lblP1.Name = "lblP1"
         Me.lblP1.Size = New System.Drawing.Size(109, 40)
         Me.lblP1.TabIndex = 13
@@ -205,7 +192,6 @@ Partial Class FormScores
         Me.lstP2.Location = New System.Drawing.Point(755, 13)
         Me.lstP2.Name = "lstP2"
         Me.lstP2.Size = New System.Drawing.Size(162, 44)
-        Me.lstP2.TabIndex = 5
         Me.lstP2.TabIndex = 14
         Me.lstP2.TabStop = False
         Me.lstP2.UseTabStops = False
@@ -214,7 +200,7 @@ Partial Class FormScores
         '
         Me.lblP2.AutoSize = True
         Me.lblP2.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblP2.Location = New System.Drawing.Point(789, 136)
+        Me.lblP2.Location = New System.Drawing.Point(789, 223)
         Me.lblP2.Name = "lblP2"
         Me.lblP2.Size = New System.Drawing.Size(115, 40)
         Me.lblP2.TabIndex = 15
@@ -228,7 +214,7 @@ Partial Class FormScores
         Me.pnlList.Controls.Add(Me.lstBestTime)
         Me.pnlList.Controls.Add(Me.lstP1)
         Me.pnlList.Controls.Add(Me.lstTotalTime)
-        Me.pnlList.Location = New System.Drawing.Point(12, 179)
+        Me.pnlList.Location = New System.Drawing.Point(12, 266)
         Me.pnlList.Name = "pnlList"
         Me.pnlList.Size = New System.Drawing.Size(1106, 71)
         Me.pnlList.TabIndex = 16
@@ -239,7 +225,7 @@ Partial Class FormScores
         Me.cboSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cboSearch.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboSearch.FormattingEnabled = True
-        Me.cboSearch.Location = New System.Drawing.Point(13, 440)
+        Me.cboSearch.Location = New System.Drawing.Point(13, 527)
         Me.cboSearch.Name = "cboSearch"
         Me.cboSearch.Size = New System.Drawing.Size(498, 48)
         Me.cboSearch.TabIndex = 10
@@ -250,7 +236,7 @@ Partial Class FormScores
         Me.btnName.FlatAppearance.BorderSize = 0
         Me.btnName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnName.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnName.Location = New System.Drawing.Point(13, 386)
+        Me.btnName.Location = New System.Drawing.Point(13, 473)
         Me.btnName.Name = "btnName"
         Me.btnName.Size = New System.Drawing.Size(162, 48)
         Me.btnName.TabIndex = 18
@@ -264,7 +250,7 @@ Partial Class FormScores
         Me.btnBestScore.FlatAppearance.BorderSize = 0
         Me.btnBestScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBestScore.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBestScore.Location = New System.Drawing.Point(181, 386)
+        Me.btnBestScore.Location = New System.Drawing.Point(181, 473)
         Me.btnBestScore.Name = "btnBestScore"
         Me.btnBestScore.Size = New System.Drawing.Size(162, 48)
         Me.btnBestScore.TabIndex = 19
@@ -278,7 +264,7 @@ Partial Class FormScores
         Me.btnBestTime.FlatAppearance.BorderSize = 0
         Me.btnBestTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBestTime.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBestTime.Location = New System.Drawing.Point(349, 386)
+        Me.btnBestTime.Location = New System.Drawing.Point(349, 473)
         Me.btnBestTime.Name = "btnBestTime"
         Me.btnBestTime.Size = New System.Drawing.Size(162, 48)
         Me.btnBestTime.TabIndex = 20
@@ -290,11 +276,21 @@ Partial Class FormScores
         '
         Me.lblFilter.AutoSize = True
         Me.lblFilter.Font = New System.Drawing.Font("Poppins SemiBold", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFilter.Location = New System.Drawing.Point(220, 343)
+        Me.lblFilter.Location = New System.Drawing.Point(220, 430)
         Me.lblFilter.Name = "lblFilter"
         Me.lblFilter.Size = New System.Drawing.Size(86, 40)
         Me.lblFilter.TabIndex = 21
         Me.lblFilter.Text = "Filtres"
+        '
+        'pbMaster
+        '
+        Me.pbMaster.BackgroundImage = CType(resources.GetObject("pbMaster.BackgroundImage"), System.Drawing.Image)
+        Me.pbMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbMaster.Location = New System.Drawing.Point(79, -108)
+        Me.pbMaster.Name = "pbMaster"
+        Me.pbMaster.Size = New System.Drawing.Size(957, 336)
+        Me.pbMaster.TabIndex = 22
+        Me.pbMaster.TabStop = False
         '
         'FormScores
         '
@@ -317,7 +313,7 @@ Partial Class FormScores
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.btnRetour)
-        Me.Controls.Add(Me.lblTitle)
+        Me.Controls.Add(Me.pbMaster)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -325,12 +321,11 @@ Partial Class FormScores
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Scores"
         Me.pnlList.ResumeLayout(False)
+        CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblTitle As Windows.Forms.Label
     Friend WithEvents lstName As Windows.Forms.ListBox
     Friend WithEvents lstScore As Windows.Forms.ListBox
     Friend WithEvents lstBestTime As Windows.Forms.ListBox
@@ -351,4 +346,5 @@ Partial Class FormScores
     Friend WithEvents btnBestScore As Windows.Forms.Button
     Friend WithEvents btnBestTime As Windows.Forms.Button
     Friend WithEvents lblFilter As Windows.Forms.Label
+    Friend WithEvents pbMaster As Windows.Forms.PictureBox
 End Class

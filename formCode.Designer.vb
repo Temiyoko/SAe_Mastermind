@@ -23,7 +23,6 @@ Partial Class FormCode
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormCode))
-        Me.lblTitle = New System.Windows.Forms.Label()
         Me.tbCode2 = New System.Windows.Forms.TextBox()
         Me.tbCode3 = New System.Windows.Forms.TextBox()
         Me.tbCode4 = New System.Windows.Forms.TextBox()
@@ -35,18 +34,10 @@ Partial Class FormCode
         Me.btnDone = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.pnlTextBox = New System.Windows.Forms.Panel()
+        Me.pbMaster = New System.Windows.Forms.PictureBox()
         Me.pnlTextBox.SuspendLayout()
+        CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lblTitle
-        '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Poppins", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(425, 9)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(282, 70)
-        Me.lblTitle.TabIndex = 6
-        Me.lblTitle.Text = "Mastermind"
         '
         'tbCode2
         '
@@ -173,19 +164,29 @@ Partial Class FormCode
         Me.pnlTextBox.Size = New System.Drawing.Size(891, 100)
         Me.pnlTextBox.TabIndex = 11
         '
+        'pbMaster
+        '
+        Me.pbMaster.BackgroundImage = CType(resources.GetObject("pbMaster.BackgroundImage"), System.Drawing.Image)
+        Me.pbMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbMaster.Location = New System.Drawing.Point(79, -108)
+        Me.pbMaster.Name = "pbMaster"
+        Me.pbMaster.Size = New System.Drawing.Size(957, 336)
+        Me.pbMaster.TabIndex = 16
+        Me.pbMaster.TabStop = False
+        '
         'FormCode
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(1130, 337)
+        Me.ClientSize = New System.Drawing.Size(1130, 336)
         Me.Controls.Add(Me.pnlTextBox)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.lblSel)
         Me.Controls.Add(Me.lblChar)
         Me.Controls.Add(Me.btnHide)
-        Me.Controls.Add(Me.lblTitle)
+        Me.Controls.Add(Me.pbMaster)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -194,12 +195,11 @@ Partial Class FormCode
         Me.Text = "Saisie du code"
         Me.pnlTextBox.ResumeLayout(False)
         Me.pnlTextBox.PerformLayout()
+        CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblTitle As Windows.Forms.Label
     Friend WithEvents tbCode2 As Windows.Forms.TextBox
     Friend WithEvents tbCode3 As Windows.Forms.TextBox
     Friend WithEvents tbCode4 As Windows.Forms.TextBox
@@ -211,4 +211,5 @@ Partial Class FormCode
     Friend WithEvents btnDone As Windows.Forms.Button
     Friend WithEvents btnQuit As Windows.Forms.Button
     Friend WithEvents pnlTextBox As Windows.Forms.Panel
+    Friend WithEvents pbMaster As Windows.Forms.PictureBox
 End Class

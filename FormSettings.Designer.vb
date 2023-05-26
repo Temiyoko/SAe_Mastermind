@@ -23,7 +23,6 @@ Partial Class FormSettings
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormSettings))
-        Me.lblTitle = New System.Windows.Forms.Label()
         Me.pnlColors = New System.Windows.Forms.Panel()
         Me.tbMissing = New System.Windows.Forms.TextBox()
         Me.tbWrong = New System.Windows.Forms.TextBox()
@@ -39,19 +38,10 @@ Partial Class FormSettings
         Me.tbTries = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.pbMaster = New System.Windows.Forms.PictureBox()
         Me.pnlColors.SuspendLayout()
+        CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lblTitle
-        '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Poppins", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(425, 9)
-        Me.lblTitle.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(282, 70)
-        Me.lblTitle.TabIndex = 1
-        Me.lblTitle.Text = "Mastermind"
         '
         'pnlColors
         '
@@ -174,7 +164,7 @@ Partial Class FormSettings
         '
         Me.lblTries.AutoSize = True
         Me.lblTries.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTries.Location = New System.Drawing.Point(50, 151)
+        Me.lblTries.Location = New System.Drawing.Point(50, 196)
         Me.lblTries.Name = "lblTries"
         Me.lblTries.Size = New System.Drawing.Size(344, 40)
         Me.lblTries.TabIndex = 12
@@ -183,7 +173,7 @@ Partial Class FormSettings
         'tbTries
         '
         Me.tbTries.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbTries.Location = New System.Drawing.Point(57, 206)
+        Me.tbTries.Location = New System.Drawing.Point(57, 247)
         Me.tbTries.MaxLength = 2
         Me.tbTries.Name = "tbTries"
         Me.tbTries.Size = New System.Drawing.Size(345, 42)
@@ -195,7 +185,7 @@ Partial Class FormSettings
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(777, 204)
+        Me.CheckBox1.Location = New System.Drawing.Point(777, 249)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(154, 44)
         Me.CheckBox1.TabIndex = 13
@@ -207,11 +197,21 @@ Partial Class FormSettings
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(770, 151)
+        Me.Label1.Location = New System.Drawing.Point(770, 196)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(96, 40)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Thème"
+        '
+        'pbMaster
+        '
+        Me.pbMaster.BackgroundImage = CType(resources.GetObject("pbMaster.BackgroundImage"), System.Drawing.Image)
+        Me.pbMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbMaster.Location = New System.Drawing.Point(79, -108)
+        Me.pbMaster.Name = "pbMaster"
+        Me.pbMaster.Size = New System.Drawing.Size(957, 336)
+        Me.pbMaster.TabIndex = 15
+        Me.pbMaster.TabStop = False
         '
         'FormSettings
         '
@@ -226,7 +226,7 @@ Partial Class FormSettings
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnDone)
         Me.Controls.Add(Me.pnlColors)
-        Me.Controls.Add(Me.lblTitle)
+        Me.Controls.Add(Me.pbMaster)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -235,12 +235,11 @@ Partial Class FormSettings
         Me.Text = "Paramètres"
         Me.pnlColors.ResumeLayout(False)
         Me.pnlColors.PerformLayout()
+        CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblTitle As Windows.Forms.Label
     Friend WithEvents pnlColors As Windows.Forms.Panel
     Friend WithEvents lblMissing As Windows.Forms.Label
     Friend WithEvents lblWrong As Windows.Forms.Label
@@ -256,4 +255,5 @@ Partial Class FormSettings
     Friend WithEvents tbTries As Windows.Forms.TextBox
     Friend WithEvents CheckBox1 As Windows.Forms.CheckBox
     Friend WithEvents Label1 As Windows.Forms.Label
+    Friend WithEvents pbMaster As Windows.Forms.PictureBox
 End Class

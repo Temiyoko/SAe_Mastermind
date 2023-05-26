@@ -23,7 +23,6 @@ Partial Class FormMenu
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenu))
-        Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblP1 = New System.Windows.Forms.Label()
         Me.cboP1 = New System.Windows.Forms.ComboBox()
         Me.cboP2 = New System.Windows.Forms.ComboBox()
@@ -31,18 +30,10 @@ Partial Class FormMenu
         Me.btnStart = New System.Windows.Forms.Button()
         Me.btnScores = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
+        Me.pbMaster = New System.Windows.Forms.PictureBox()
         Me.btnSettings = New System.Windows.Forms.Button()
+        CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lblTitle
-        '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Poppins", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(425, 9)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(282, 70)
-        Me.lblTitle.TabIndex = 0
-        Me.lblTitle.Text = "Mastermind"
         '
         'lblP1
         '
@@ -134,9 +125,19 @@ Partial Class FormMenu
         Me.btnQuit.Text = "Quitter"
         Me.btnQuit.UseVisualStyleBackColor = False
         '
+        'pbMaster
+        '
+        Me.pbMaster.BackgroundImage = CType(resources.GetObject("pbMaster.BackgroundImage"), System.Drawing.Image)
+        Me.pbMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbMaster.Location = New System.Drawing.Point(79, -108)
+        Me.pbMaster.Name = "pbMaster"
+        Me.pbMaster.Size = New System.Drawing.Size(957, 336)
+        Me.pbMaster.TabIndex = 10
+        Me.pbMaster.TabStop = False
+        '
         'btnSettings
         '
-        Me.btnSettings.BackgroundImage = Global.SAé_Mastermind.My.Resources.Resources.cog
+        Me.btnSettings.BackgroundImage = CType(resources.GetObject("btnSettings.BackgroundImage"), System.Drawing.Image)
         Me.btnSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnSettings.FlatAppearance.BorderSize = 0
         Me.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -153,6 +154,7 @@ Partial Class FormMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
+        Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1130, 587)
         Me.Controls.Add(Me.btnSettings)
         Me.Controls.Add(Me.btnQuit)
@@ -162,19 +164,19 @@ Partial Class FormMenu
         Me.Controls.Add(Me.lblP2)
         Me.Controls.Add(Me.cboP1)
         Me.Controls.Add(Me.lblP1)
-        Me.Controls.Add(Me.lblTitle)
+        Me.Controls.Add(Me.pbMaster)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "FormMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
+        CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblTitle As Windows.Forms.Label
     Friend WithEvents lblP1 As Windows.Forms.Label
     Friend WithEvents cboP1 As Windows.Forms.ComboBox
     Friend WithEvents cboP2 As Windows.Forms.ComboBox
@@ -183,4 +185,5 @@ Partial Class FormMenu
     Friend WithEvents btnScores As Windows.Forms.Button
     Friend WithEvents btnQuit As Windows.Forms.Button
     Friend WithEvents btnSettings As Windows.Forms.Button
+    Friend WithEvents pbMaster As Windows.Forms.PictureBox
 End Class

@@ -25,7 +25,6 @@ Partial Class FormGame
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormGame))
         Me.btnGuess = New System.Windows.Forms.Button()
-        Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblTries = New System.Windows.Forms.Label()
         Me.lblColorCode = New System.Windows.Forms.Label()
         Me.lblWrong = New System.Windows.Forms.Label()
@@ -134,6 +133,7 @@ Partial Class FormGame
         Me.Label1 = New System.Windows.Forms.Label()
         Me.tmEnd = New System.Windows.Forms.Timer(Me.components)
         Me.pnlLabels = New System.Windows.Forms.Panel()
+        Me.pbMaster = New System.Windows.Forms.PictureBox()
         Me.pnlTextBox.SuspendLayout()
         Me.pnlTries.SuspendLayout()
         Me.Panel15.SuspendLayout()
@@ -152,6 +152,7 @@ Partial Class FormGame
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.pnlLabels.SuspendLayout()
+        CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnGuess
@@ -169,16 +170,6 @@ Partial Class FormGame
         Me.btnGuess.TabStop = False
         Me.btnGuess.Text = "Valider"
         Me.btnGuess.UseVisualStyleBackColor = False
-        '
-        'lblTitle
-        '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Poppins", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(425, 9)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(282, 70)
-        Me.lblTitle.TabIndex = 8
-        Me.lblTitle.Text = "Mastermind"
         '
         'lblTries
         '
@@ -1247,6 +1238,16 @@ Partial Class FormGame
         Me.pnlLabels.Size = New System.Drawing.Size(200, 131)
         Me.pnlLabels.TabIndex = 28
         '
+        'pbMaster
+        '
+        Me.pbMaster.BackgroundImage = CType(resources.GetObject("pbMaster.BackgroundImage"), System.Drawing.Image)
+        Me.pbMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbMaster.Location = New System.Drawing.Point(79, -108)
+        Me.pbMaster.Name = "pbMaster"
+        Me.pbMaster.Size = New System.Drawing.Size(957, 336)
+        Me.pbMaster.TabIndex = 29
+        Me.pbMaster.TabStop = False
+        '
         'FormGame
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1263,7 +1264,7 @@ Partial Class FormGame
         Me.Controls.Add(Me.lblColorCode)
         Me.Controls.Add(Me.lblTries)
         Me.Controls.Add(Me.btnGuess)
-        Me.Controls.Add(Me.lblTitle)
+        Me.Controls.Add(Me.pbMaster)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -1305,11 +1306,11 @@ Partial Class FormGame
         Me.Panel2.PerformLayout()
         Me.pnlLabels.ResumeLayout(False)
         Me.pnlLabels.PerformLayout()
+        CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents lblTitle As Windows.Forms.Label
     Friend WithEvents lblTries As Windows.Forms.Label
     Friend WithEvents lblColorCode As Windows.Forms.Label
     Friend WithEvents lblWrong As Windows.Forms.Label
@@ -1419,4 +1420,5 @@ Partial Class FormGame
     Friend WithEvents Label51 As Windows.Forms.Label
     Friend WithEvents tmEnd As Windows.Forms.Timer
     Friend WithEvents pnlLabels As Windows.Forms.Panel
+    Friend WithEvents pbMaster As Windows.Forms.PictureBox
 End Class
