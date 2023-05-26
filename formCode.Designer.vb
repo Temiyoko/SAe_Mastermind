@@ -127,6 +127,7 @@ Partial Class FormCode
         'btnQuit
         '
         Me.btnQuit.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.btnQuit.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnQuit.FlatAppearance.BorderSize = 0
         Me.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnQuit.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
