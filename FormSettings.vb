@@ -13,6 +13,7 @@ Public Class FormSettings
             tb.BackColor = GetColor(cpt)
             cpt += 1
         Next
+        If GetMaxTime() = Integer.MaxValue Then cbDisable.Checked = True
         CbDisable_CheckedChanged(cbDisable, New EventArgs())
         RoundButton(btnDone, 15)
         RoundButton(btnQuit, 15)
