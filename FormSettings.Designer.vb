@@ -324,9 +324,9 @@ Partial Class FormSettings
         Me.btnInfo.FlatAppearance.BorderSize = 0
         Me.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnInfo.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInfo.Location = New System.Drawing.Point(1042, 12)
+        Me.btnInfo.Location = New System.Drawing.Point(1043, 12)
         Me.btnInfo.Name = "btnInfo"
-        Me.btnInfo.Size = New System.Drawing.Size(70, 70)
+        Me.btnInfo.Size = New System.Drawing.Size(60, 60)
         Me.btnInfo.TabIndex = 34
         Me.btnInfo.TabStop = False
         Me.btnInfo.UseVisualStyleBackColor = False
