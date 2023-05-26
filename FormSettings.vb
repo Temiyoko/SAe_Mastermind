@@ -2,16 +2,18 @@
 Imports System.Windows.Forms
 
 Public Class FormSettings
-    Private maxTries As Integer = 15
-    Private tries = GetNbTries()
+    Private tries As Integer = GetNbTries()
+    Private currentTime As Integer = GetMaxTime()
     Private Sub FormSettings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetCloseSource("")
+        sbChrono.Value = 90
         tbTries.Text = GetNbTries().ToString()
         Dim cpt As Integer = 0
         For Each tb As TextBox In pnlColors.Controls.OfType(Of TextBox)
             tb.BackColor = GetColor(cpt)
             cpt += 1
         Next
+        CbDisable_CheckedChanged(cbDisable, New EventArgs())
         RoundButton(btnDone, 15)
         RoundButton(btnQuit, 15)
     End Sub
@@ -40,20 +42,6 @@ Public Class FormSettings
         Me.Close()
     End Sub
 
-    Private Sub BtnDone_Click(sender As Object, e As EventArgs) Handles btnDone.Click
-        SetCloseSource("Button")
-        ' On valide les changements
-        Dim tabColor(GetColorSize()) As Color
-        Dim cpt As Integer = 0
-        For Each tb As TextBox In pnlColors.Controls.OfType(Of TextBox)
-            tabColor(cpt) = tb.BackColor
-            cpt += 1
-        Next
-        SetColor(tabColor)
-        SetNbTries(tries)
-        Me.Close()
-    End Sub
-
     Private Sub TbTries_TextChanged(sender As Object, e As EventArgs) Handles tbTries.TextChanged
         Dim nbTries As Integer
         Integer.TryParse(tbTries.Text, nbTries)
@@ -71,5 +59,41 @@ Public Class FormSettings
                 e.Handled = True
             End If
         End If
+    End Sub
+
+    Private Sub BtnDone_Click(sender As Object, e As EventArgs) Handles btnDone.Click
+        SetCloseSource("Button")
+        ' On valide les changements
+        Dim tabColor(GetColorSize()) As Color
+        Dim cpt As Integer = 0
+        For Each tb As TextBox In pnlColors.Controls.OfType(Of TextBox)
+            tabColor(cpt) = tb.BackColor
+            cpt += 1
+        Next
+        If cbDisable.Checked = True Then
+            SetChronoEnabled(False)
+            SetMaxTime(Integer.MaxValue)
+        Else
+            SetChronoEnabled(True)
+            SetMaxTime(sbChrono.Value)
+        End If
+        SetColor(tabColor)
+        SetNbTries(tries)
+        Me.Close()
+    End Sub
+
+    Private Sub CbDisable_CheckedChanged(sender As Object, e As EventArgs) Handles cbDisable.CheckedChanged
+        If cbDisable.Checked = True Then
+            sbChrono.Enabled = False
+            lblSelected.Text = "-"
+        Else
+            sbChrono.Enabled = True
+            lblSelected.Text = GetTimeToString(currentTime)
+        End If
+    End Sub
+
+    Private Sub SbChrono_Scroll(sender As Object, e As ScrollEventArgs) Handles sbChrono.Scroll
+        currentTime = sbChrono.Value
+        lblSelected.Text = GetTimeToString(currentTime)
     End Sub
 End Class

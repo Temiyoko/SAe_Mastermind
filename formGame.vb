@@ -3,8 +3,8 @@ Imports System.Windows.Forms
 
 Public Class FormGame
     Private nbTries As Integer = GetNbTries()
-    Private maxTime = 90
-    Private currentTime = 90
+    Private currentTime = GetMaxTime()
+
     Private Sub FormGame_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetCloseSource("")
         Dim cpt As Integer = 0
@@ -14,7 +14,7 @@ Public Class FormGame
         Next
         lblSel.Text = PlayableCharToString()
         UpdateTime()
-        tmEnd.Start()
+        If GetChronoEnabled() Then tmEnd.Start()
         RoundButton(btnBack, 15)
         RoundButton(btnGuess, 15)
     End Sub
@@ -118,8 +118,8 @@ Public Class FormGame
         btnGuess.Enabled = False
         btnBack.Visible = True
         UpdateTime()
-        UpdatePlayer(FormMenu.cboP1.Text, maxTime - currentTime, 1, True)
-        UpdatePlayer(FormMenu.cboP2.Text, maxTime - currentTime, 2, False)
+        UpdatePlayer(FormMenu.cboP1.Text, GetMaxTime() - currentTime, 1, True)
+        UpdatePlayer(FormMenu.cboP2.Text, GetMaxTime() - currentTime, 2, False)
     End Sub
 
     Private Sub WonGame()
@@ -128,15 +128,19 @@ Public Class FormGame
         btnGuess.Enabled = False
         lblFound.Visible = True
         btnBack.Visible = True
-        UpdatePlayer(FormMenu.cboP1.Text, maxTime - currentTime, 1, False)
-        UpdatePlayer(FormMenu.cboP2.Text, maxTime - currentTime, 2, True)
+        UpdatePlayer(FormMenu.cboP1.Text, GetMaxTime() - currentTime, 1, False)
+        UpdatePlayer(FormMenu.cboP2.Text, GetMaxTime() - currentTime, 2, True)
     End Sub
 
     Private Sub UpdateTime()
-        Dim minutes As Integer = currentTime \ 60
-        Dim seconds As Integer = currentTime Mod 60
+        If GetChronoEnabled() Then
+            Dim minutes As Integer = currentTime \ 60
+            Dim seconds As Integer = currentTime Mod 60
 
-        Me.Text = "Il vous reste " & nbTries & " coup(s) et " & minutes & " minute et " & seconds & " secondes"
+            Me.Text = "Il vous reste " & nbTries & " coup(s) et " & GetTimeToString(currentTime)
+        Else
+            Me.Text = "Il vous reste " & nbTries & " coup(s)"
+        End If
     End Sub
 
     Private Sub FormGame_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
