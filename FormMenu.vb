@@ -22,10 +22,21 @@ Public Class FormMenu
     End Sub
 
     Private Sub Cbo_GotFocus(sender As Object, e As EventArgs) Handles cboP1.GotFocus, cboP2.GotFocus
-        If sender.Equals(cboP1) Then
-            lblP1.ForeColor = Color.Black
+        SetCboColor(sender)
+    End Sub
+
+    Private Sub SetCboColor(s As ComboBox)
+        Dim lbl As Label
+        If s.Equals(cboP1) Then
+            lbl = lblP1
         Else
-            lblP2.ForeColor = Color.Black
+            lbl = lblP2
+        End If
+
+        If GetDarkMode() Then
+            lbl.ForeColor = Color.White
+        Else
+            lbl.ForeColor = Color.Black
         End If
     End Sub
 

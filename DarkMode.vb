@@ -29,7 +29,7 @@ Module DarkMode
         For Each control As Control In f.Controls
             currentSettings(control) = control.BackColor
 
-            If TypeOf control Is TextBox Then
+            If TypeOf control Is TextBox Or TypeOf control Is ComboBox Or TypeOf control Is ListBox Then
                 control.BackColor = Color.FromArgb(60, 60, 60)
                 control.ForeColor = Color.White
             ElseIf TypeOf control Is Label Or TypeOf control Is CheckBox Then
@@ -62,7 +62,7 @@ Module DarkMode
         Next
 
         If f Is FormMenu Then
-
+            FormMenu.pbMaster.BackgroundImage = Image.FromFile("../../images/mastermindWhite.png")
         End If
         darkModeSettings.Clear()
     End Sub
