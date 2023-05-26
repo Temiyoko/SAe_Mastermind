@@ -37,7 +37,6 @@ Partial Class FormSettings
         Me.lblTries = New System.Windows.Forms.Label()
         Me.tbTries = New System.Windows.Forms.TextBox()
         Me.cbDarkMode = New System.Windows.Forms.CheckBox()
-        Me.lblTheme = New System.Windows.Forms.Label()
         Me.lblChrono = New System.Windows.Forms.Label()
         Me.cbDisable = New System.Windows.Forms.CheckBox()
         Me.sbChrono = New System.Windows.Forms.HScrollBar()
@@ -45,9 +44,13 @@ Partial Class FormSettings
         Me.lblFin = New System.Windows.Forms.Label()
         Me.lblActualTime = New System.Windows.Forms.Label()
         Me.lblSelected = New System.Windows.Forms.Label()
+        Me.cbMusic = New System.Windows.Forms.CheckBox()
+        Me.pbMusic = New System.Windows.Forms.PictureBox()
+        Me.pbDark = New System.Windows.Forms.PictureBox()
         Me.pbMaster = New System.Windows.Forms.PictureBox()
-        Me.btnMusic = New System.Windows.Forms.Button()
         Me.pnlColors.SuspendLayout()
+        CType(Me.pbMusic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDark, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -144,10 +147,10 @@ Partial Class FormSettings
         Me.btnQuit.FlatAppearance.BorderSize = 0
         Me.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnQuit.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnQuit.Location = New System.Drawing.Point(777, 526)
+        Me.btnQuit.Location = New System.Drawing.Point(619, 526)
         Me.btnQuit.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.btnQuit.Name = "btnQuit"
-        Me.btnQuit.Size = New System.Drawing.Size(325, 42)
+        Me.btnQuit.Size = New System.Drawing.Size(483, 42)
         Me.btnQuit.TabIndex = 11
         Me.btnQuit.TabStop = False
         Me.btnQuit.Text = "Abandonner"
@@ -159,10 +162,10 @@ Partial Class FormSettings
         Me.btnDone.FlatAppearance.BorderSize = 0
         Me.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDone.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDone.Location = New System.Drawing.Point(777, 470)
+        Me.btnDone.Location = New System.Drawing.Point(619, 470)
         Me.btnDone.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.btnDone.Name = "btnDone"
-        Me.btnDone.Size = New System.Drawing.Size(325, 42)
+        Me.btnDone.Size = New System.Drawing.Size(483, 42)
         Me.btnDone.TabIndex = 10
         Me.btnDone.TabStop = False
         Me.btnDone.Text = "Valider"
@@ -193,23 +196,12 @@ Partial Class FormSettings
         '
         Me.cbDarkMode.AutoSize = True
         Me.cbDarkMode.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbDarkMode.Location = New System.Drawing.Point(567, 524)
+        Me.cbDarkMode.Location = New System.Drawing.Point(619, 395)
         Me.cbDarkMode.Name = "cbDarkMode"
-        Me.cbDarkMode.Size = New System.Drawing.Size(154, 44)
+        Me.cbDarkMode.Size = New System.Drawing.Size(18, 17)
         Me.cbDarkMode.TabIndex = 13
         Me.cbDarkMode.TabStop = False
-        Me.cbDarkMode.Text = "DarkMode"
         Me.cbDarkMode.UseVisualStyleBackColor = True
-        '
-        'lblTheme
-        '
-        Me.lblTheme.AutoSize = True
-        Me.lblTheme.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTheme.Location = New System.Drawing.Point(576, 481)
-        Me.lblTheme.Name = "lblTheme"
-        Me.lblTheme.Size = New System.Drawing.Size(106, 40)
-        Me.lblTheme.TabIndex = 14
-        Me.lblTheme.Text = "Thème :"
         '
         'lblChrono
         '
@@ -269,7 +261,7 @@ Partial Class FormSettings
         '
         Me.lblActualTime.AutoSize = True
         Me.lblActualTime.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblActualTime.Location = New System.Drawing.Point(606, 314)
+        Me.lblActualTime.Location = New System.Drawing.Point(606, 309)
         Me.lblActualTime.Name = "lblActualTime"
         Me.lblActualTime.Size = New System.Drawing.Size(182, 40)
         Me.lblActualTime.TabIndex = 20
@@ -279,11 +271,40 @@ Partial Class FormSettings
         '
         Me.lblSelected.AutoSize = True
         Me.lblSelected.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSelected.Location = New System.Drawing.Point(794, 314)
+        Me.lblSelected.Location = New System.Drawing.Point(794, 309)
         Me.lblSelected.Name = "lblSelected"
         Me.lblSelected.Size = New System.Drawing.Size(122, 36)
         Me.lblSelected.TabIndex = 21
         Me.lblSelected.Text = "lblSelected"
+        '
+        'cbMusic
+        '
+        Me.cbMusic.AutoSize = True
+        Me.cbMusic.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbMusic.Location = New System.Drawing.Point(942, 395)
+        Me.cbMusic.Name = "cbMusic"
+        Me.cbMusic.Size = New System.Drawing.Size(18, 17)
+        Me.cbMusic.TabIndex = 31
+        Me.cbMusic.TabStop = False
+        Me.cbMusic.UseVisualStyleBackColor = True
+        '
+        'pbMusic
+        '
+        Me.pbMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbMusic.Location = New System.Drawing.Point(988, 366)
+        Me.pbMusic.Name = "pbMusic"
+        Me.pbMusic.Size = New System.Drawing.Size(70, 70)
+        Me.pbMusic.TabIndex = 33
+        Me.pbMusic.TabStop = False
+        '
+        'pbDark
+        '
+        Me.pbDark.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.pbDark.Location = New System.Drawing.Point(664, 366)
+        Me.pbDark.Name = "pbDark"
+        Me.pbDark.Size = New System.Drawing.Size(70, 70)
+        Me.pbDark.TabIndex = 32
+        Me.pbDark.TabStop = False
         '
         'pbMaster
         '
@@ -295,28 +316,15 @@ Partial Class FormSettings
         Me.pbMaster.TabIndex = 30
         Me.pbMaster.TabStop = False
         '
-        'btnMusic
-        '
-        Me.btnMusic.BackColor = System.Drawing.Color.Transparent
-        Me.btnMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btnMusic.FlatAppearance.BorderSize = 0
-        Me.btnMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMusic.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnMusic.ForeColor = System.Drawing.Color.Transparent
-        Me.btnMusic.Location = New System.Drawing.Point(567, 392)
-        Me.btnMusic.Name = "btnMusic"
-        Me.btnMusic.Size = New System.Drawing.Size(147, 42)
-        Me.btnMusic.TabIndex = 31
-        Me.btnMusic.TabStop = False
-        Me.btnMusic.UseVisualStyleBackColor = False
-        '
         'FormSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1130, 587)
-        Me.Controls.Add(Me.btnMusic)
+        Me.Controls.Add(Me.pbMusic)
+        Me.Controls.Add(Me.pbDark)
+        Me.Controls.Add(Me.cbMusic)
         Me.Controls.Add(Me.lblSelected)
         Me.Controls.Add(Me.lblActualTime)
         Me.Controls.Add(Me.lblFin)
@@ -324,7 +332,6 @@ Partial Class FormSettings
         Me.Controls.Add(Me.sbChrono)
         Me.Controls.Add(Me.cbDisable)
         Me.Controls.Add(Me.lblChrono)
-        Me.Controls.Add(Me.lblTheme)
         Me.Controls.Add(Me.cbDarkMode)
         Me.Controls.Add(Me.tbTries)
         Me.Controls.Add(Me.lblTries)
@@ -340,6 +347,8 @@ Partial Class FormSettings
         Me.Text = "Paramètres"
         Me.pnlColors.ResumeLayout(False)
         Me.pnlColors.PerformLayout()
+        CType(Me.pbMusic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDark, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbMaster, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -359,7 +368,6 @@ Partial Class FormSettings
     Friend WithEvents lblTries As Windows.Forms.Label
     Friend WithEvents tbTries As Windows.Forms.TextBox
     Friend WithEvents cbDarkMode As Windows.Forms.CheckBox
-    Friend WithEvents lblTheme As Windows.Forms.Label
     Friend WithEvents lblChrono As Windows.Forms.Label
     Friend WithEvents cbDisable As Windows.Forms.CheckBox
     Friend WithEvents sbChrono As Windows.Forms.HScrollBar
@@ -369,4 +377,7 @@ Partial Class FormSettings
     Friend WithEvents lblSelected As Windows.Forms.Label
     Friend WithEvents pbMaster As Windows.Forms.PictureBox
     Friend WithEvents btnMusic As Windows.Forms.Button
+    Friend WithEvents cbMusic As Windows.Forms.CheckBox
+    Friend WithEvents pbDark As Windows.Forms.PictureBox
+    Friend WithEvents pbMusic As Windows.Forms.PictureBox
 End Class

@@ -159,10 +159,11 @@ Partial Class FormGame
         '
         Me.btnGuess.BackColor = System.Drawing.SystemColors.ControlLight
         Me.btnGuess.Enabled = False
-        Me.btnGuess.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnGuess.FlatAppearance.BorderColor = System.Drawing.Color.Gray
         Me.btnGuess.FlatAppearance.BorderSize = 0
         Me.btnGuess.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuess.Font = New System.Drawing.Font("Poppins", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuess.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnGuess.Location = New System.Drawing.Point(930, 134)
         Me.btnGuess.Name = "btnGuess"
         Me.btnGuess.Size = New System.Drawing.Size(147, 42)

@@ -1,7 +1,5 @@
 ﻿Imports System.Drawing
-Imports System.Media
 Imports System.Windows.Forms
-
 
 Public Class FormSettings
     Private tries As Integer = GetNbTries()
@@ -16,8 +14,18 @@ Public Class FormSettings
             tb.BackColor = GetColor(cpt)
             cpt += 1
         Next
+
+        If GetDarkMode() = False Then
+            pbDark.BackgroundImage = Image.FromFile("../../images/brush.png")
+            pbMusic.BackgroundImage = Image.FromFile("../../images/music.png")
+        Else
+            pbDark.BackgroundImage = Image.FromFile("../../images/brushWhite.png")
+            pbMusic.BackgroundImage = Image.FromFile("../../images/musicWhite.png")
+        End If
+
         If GetMaxTime() = Integer.MaxValue Then cbDisable.Checked = True
         If GetDarkMode() Then cbDarkMode.Checked = True
+        If GetIsPlaying() Then cbMusic.Checked = True
         CbDisable_CheckedChanged(cbDisable, New EventArgs())
         RoundButton(btnDone, 15)
         RoundButton(btnQuit, 15)
@@ -97,6 +105,15 @@ Public Class FormSettings
             SetDarkMode(False)
         End If
 
+        If cbMusic.Checked Then
+            SetIsPlaying(True)
+            PlayMusic("../../audios/music.wav")
+        Else
+            SetIsPlaying(False)
+            StopMusic()
+        End If
+
+
         Me.Close()
     End Sub
 
@@ -113,46 +130,6 @@ Public Class FormSettings
     Private Sub SbChrono_Scroll(sender As Object, e As ScrollEventArgs) Handles sbChrono.Scroll
         currentTime = sbChrono.Value
         lblSelected.Text = GetTimeToString(currentTime)
-    End Sub
-
-    Private player As New SoundPlayer()
-
-    Public Sub New()
-        ' Set up the button
-        Dim btnMusic As New Button()
-        btnMusic.Name = "btnMusic"
-        btnMusic.Text = "Play Music"
-        AddHandler btnMusic.Click, AddressOf PlayMusic
-        AddHandler btnMusic.MouseDown, AddressOf StartMusic
-        AddHandler btnMusic.MouseUp, AddressOf StopMusic
-        Me.Controls.Add(btnMusic)
-
-        ' Set the path to your music file
-        player.SoundLocation = "../../audios/"
-    End Sub
-
-    Private Sub PlayMusic(sender As Object, e As EventArgs)
-        ' Check if the music is already playing
-        If Not player.IsLoadCompleted Then
-            ' Play the music
-            player.Play()
-        End If
-    End Sub
-
-    Private Sub StartMusic(sender As Object, e As MouseEventArgs)
-        ' Check if the mouse button is the left button
-        If e.Button = MouseButtons.Left Then
-            ' Play the music when the left mouse button is pressed down on the btnMusic button
-            player.Play()
-        End If
-    End Sub
-
-    Private Sub StopMusic(sender As Object, e As MouseEventArgs)
-        ' Check if the mouse button is the left button
-        If e.Button = MouseButtons.Left Then
-            ' Stop the music when the left mouse button is released from the btnMusic button
-            player.Stop()
-        End If
     End Sub
 
 End Class

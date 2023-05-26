@@ -34,7 +34,7 @@ Module DarkMode
                 control.ForeColor = Color.White
             ElseIf TypeOf control Is Label Or TypeOf control Is CheckBox Then
                 control.ForeColor = Color.White
-            ElseIf TypeOf control Is Button Or TypeOf control Is ScrollBar Then
+            ElseIf TypeOf control Is Button Then
                 control.BackColor = Color.FromArgb(45, 45, 45)
                 control.ForeColor = Color.White
             ElseIf TypeOf control Is Panel Then
