@@ -135,8 +135,8 @@ Public Class FormSettings
         lblSelected.Text = GetTimeToString(currentTime)
     End Sub
 
-    Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
-        Me.Close()
-
+    Private Sub BtnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
+        Me.Hide()
+        FormInfo.Show()
     End Sub
 End Class
